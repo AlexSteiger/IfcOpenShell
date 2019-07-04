@@ -4,7 +4,6 @@
  * either version 3.0 of the License, or (at your option) any later version.    *
  ********************************************************************************/                                                                                                                     
 
-
 #include <string>
 #include <iostream>
 #include <typeinfo>       // operator typeid
@@ -26,7 +25,6 @@
 #include <TopoDS.hxx>
 
 #include <BRepPrimAPI_MakeBox.hxx>
-#include <BRepPrimAPI_MakeSphere.hxx>
 #include <BRepPrimAPI_MakeHalfSpace.hxx>
 
 #include <BRepAlgoAPI_Cut.hxx>
@@ -231,7 +229,6 @@ void createGroundShape(TopoDS_Shape& shape) {
 	cv.SetValue(1, 1, gp_Pnt( -7670,  -2670,  2000));
 	cv.SetValue(1, 2, gp_Pnt( -9000,      0,  1000));
 	cv.SetValue(1, 3, gp_Pnt( -7670,   4670,  3000));
-    
 	cv.SetValue(1, 4, gp_Pnt( -3330,   5000,  4130));
 	cv.SetValue(2, 0, gp_Pnt(     0,  -5000, -5530));
 	cv.SetValue(2, 1, gp_Pnt(     0,  -2670,  3000));

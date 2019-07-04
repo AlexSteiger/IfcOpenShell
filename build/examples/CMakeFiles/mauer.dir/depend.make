@@ -87,15 +87,10 @@ examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepMesh_VertexInspe
 examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepMesh_VertexTool.hxx
 examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrimAPI_MakeBox.hxx
 examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrimAPI_MakeHalfSpace.hxx
-examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrimAPI_MakeOneAxis.hxx
-examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrimAPI_MakeSphere.hxx
 examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrim_Builder.hxx
 examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrim_Builder.lxx
 examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrim_Direction.hxx
 examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrim_GWedge.hxx
-examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrim_OneAxis.hxx
-examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrim_Revolution.hxx
-examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrim_Sphere.hxx
 examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepPrim_Wedge.hxx
 examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepTools.hxx
 examples/CMakeFiles/mauer.dir/mauer.cpp.o: /usr/include/oce/BRepTools_Modifier.hxx

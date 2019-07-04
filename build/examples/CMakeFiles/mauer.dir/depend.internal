@@ -88,15 +88,10 @@ examples/CMakeFiles/mauer.dir/mauer.cpp.o
  /usr/include/oce/BRepMesh_VertexTool.hxx
  /usr/include/oce/BRepPrimAPI_MakeBox.hxx
  /usr/include/oce/BRepPrimAPI_MakeHalfSpace.hxx
- /usr/include/oce/BRepPrimAPI_MakeOneAxis.hxx
- /usr/include/oce/BRepPrimAPI_MakeSphere.hxx
  /usr/include/oce/BRepPrim_Builder.hxx
  /usr/include/oce/BRepPrim_Builder.lxx
  /usr/include/oce/BRepPrim_Direction.hxx
  /usr/include/oce/BRepPrim_GWedge.hxx
- /usr/include/oce/BRepPrim_OneAxis.hxx
- /usr/include/oce/BRepPrim_Revolution.hxx
- /usr/include/oce/BRepPrim_Sphere.hxx
  /usr/include/oce/BRepPrim_Wedge.hxx
  /usr/include/oce/BRepTools.hxx
  /usr/include/oce/BRepTools_Modifier.hxx
