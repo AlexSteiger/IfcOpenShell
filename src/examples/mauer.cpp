@@ -49,7 +49,7 @@ typedef std::string S;
 typedef IfcParse::IfcGlobalId guid;
 boost::none_t const null = boost::none;
 // The creation of Nurbs-surface for the IfcSite mesh, to be implemented lateron
-void createGroundShape(TopoDS_Shape& shape);
+void createBSplineShape(TopoDS_Shape& shape);
 
 int main() {
 
@@ -170,7 +170,7 @@ int main() {
 	// For the ground mesh of the IfcSite we will use a Nurbs surface created in Open Cascade. Only
 	// in IFC4 the surface can be directly serialized. In IFC2X3 the it will have to be tesselated.
 	TopoDS_Shape shape;
-	createGroundShape(shape);
+	createBSplineShape(shape);
     
     //Trying to make a Triangula Mesh
     double const deflection = 1000;
@@ -218,7 +218,7 @@ int main() {
     std::cout << "Halbraum is type: " << typeid(Halbraum).name() << std::endl;  
 }
 
-void createGroundShape(TopoDS_Shape& shape) {
+void createBSplineShape(TopoDS_Shape& shape) {
 	TColgp_Array2OfPnt cv (0, 4, 0, 4);
 	cv.SetValue(0, 0, gp_Pnt(-10000,  -5000, -4130));
 	cv.SetValue(0, 1, gp_Pnt(-10000,  -2330, -1130));
