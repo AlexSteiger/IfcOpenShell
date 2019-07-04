@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+78bbe2a8090e04a677fea651352272fb ifcwrap/IfcPythonPYTHON_wrap.cxx
