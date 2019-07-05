@@ -29,6 +29,18 @@ ADD_EXECUTABLE(IfcAdvancedHouse IfcAdvancedHouse.cpp)
 TARGET_LINK_LIBRARIES(IfcAdvancedHouse ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES})
 set_target_properties(IfcAdvancedHouse PROPERTIES FOLDER Examples)
 
+ADD_EXECUTABLE(hellowall hellowall.cpp)
+TARGET_LINK_LIBRARIES(hellowall ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES})
+set_target_properties(hellowall PROPERTIES FOLDER Examples)
+
+ADD_EXECUTABLE(hellowalls hellowalls.cpp)
+TARGET_LINK_LIBRARIES(hellowalls ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES})
+set_target_properties(hellowalls PROPERTIES FOLDER Examples)
+
+ADD_EXECUTABLE(extrusion extrusion.cpp)
+TARGET_LINK_LIBRARIES(extrusion ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES})
+set_target_properties(extrusion PROPERTIES FOLDER Examples)
+
 ADD_EXECUTABLE(mauer mauer.cpp)
 TARGET_LINK_LIBRARIES(mauer ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES})
 set_target_properties(mauer PROPERTIES FOLDER Examples)

@@ -62,21 +62,9 @@ int main() {
 	// constructed by applying boolean operations. Naturally, in IFC, building elements should be 
 	// modeled separately, with rich parametric and relational semantics. Creating geometry in this
 	// way does not preserve any history and is merely a demonstration of technical capabilities.
-	TopoDS_Shape outer =   BRepPrimAPI_MakeBox(gp_Pnt(-9000., -  0., -5000.), gp_Pnt(9000., 2000., 4000.)).Shape();
-	TopoDS_Shape inner =   BRepPrimAPI_MakeBox(gp_Pnt(-4640.,  180.,     0.), gp_Pnt(4640., 4820., 3000.)).Shape();
-	TopoDS_Shape window1 = BRepPrimAPI_MakeBox(gp_Pnt(-5000., -180.,   400.), gp_Pnt( 500., 1180., 2000.)).Shape();
-	TopoDS_Shape window2 = BRepPrimAPI_MakeBox(gp_Pnt( 6000.,    0., -2000.), gp_Pnt(8000., 2000., 2000.)).Shape();
-    
-	TopoDS_Shape building_shell = BRepAlgoAPI_Cut(
-		BRepAlgoAPI_Cut(
-			BRepAlgoAPI_Cut(outer, inner),
-			window1
-			),
-		window2
-	);
-    
-    TopoDS_Shape building_shell_v2 = BRepAlgoAPI_Cut(BRepAlgoAPI_Cut(outer, inner),window2);
-    TopoDS_Shape building_shell_v3 = BRepAlgoAPI_Cut(outer,window2);
+	TopoDS_Shape wall_shell =   BRepPrimAPI_MakeBox(gp_Pnt(-9000., -  0., -5000.), gp_Pnt(9000., 2000., 4000.)).Shape();
+	TopoDS_Shape window = BRepPrimAPI_MakeBox(gp_Pnt( 6000.,    0., -2000.), gp_Pnt(8000., 2000., 2000.)).Shape();
+    TopoDS_Shape wall_shell_with_window = BRepAlgoAPI_Cut(outer,window);
 
     //First Wall
     IfcSchema::IfcWallStandardCase* wall = new IfcSchema::IfcWallStandardCase(
@@ -120,7 +108,7 @@ int main() {
         );
     file.addBuildingProduct(wall2);                                                                          
     wall2->setOwnerHistory(file.getSingle<IfcSchema::IfcOwnerHistory>());
-    IfcSchema::IfcProductDefinitionShape* wall2_2_shape = IfcGeom::serialise(building_shell_v3, false);
+    IfcSchema::IfcProductDefinitionShape* wall2_2_shape = IfcGeom::serialise(wall_shell_with_window, false);
 	file.addEntity(wall2_2_shape);
     IfcSchema::IfcRepresentation* rep2 = *wall2_2_shape->Representations()->begin();
 	rep2->setContextOfItems(file.getRepresentationContext("model"));
@@ -142,7 +130,7 @@ int main() {
         );
     file.addBuildingProduct(wall2_2);                                                                          
     wall2_2->setOwnerHistory(file.getSingle<IfcSchema::IfcOwnerHistory>());
-    IfcSchema::IfcProductDefinitionShape* wall2_shape = IfcGeom::serialise(building_shell_v3, false);
+    IfcSchema::IfcProductDefinitionShape* wall2_shape = IfcGeom::serialise(wall_shell_with_window, false);
 	file.addEntity(wall2_shape);
     IfcSchema::IfcRepresentation* rep2_2 = *wall2_shape->Representations()->begin();
 	rep2_2->setContextOfItems(file.getRepresentationContext("model"));
@@ -162,29 +150,25 @@ int main() {
         , IfcSchema::IfcWallTypeEnum::IfcWallType Standard
 #endif
         );
-    file.addBuildingProduct(wall3);
- 	// By adding a building, a hierarchy has been automatically created that consists of the following
-	// structure: IfcProject > IfcSite > IfcBuilding                                                                             
+    file.addBuildingProduct(wall3);                                                                          
     wall3->setOwnerHistory(file.getSingle<IfcSchema::IfcOwnerHistory>());
     
-	// For the ground mesh of the IfcSite we will use a Nurbs surface created in Open Cascade. Only
+	// For the Surfacemesh we will use a Nurbs surface created in Open Cascade. Only
 	// in IFC4 the surface can be directly serialized. In IFC2X3 the it will have to be tesselated.
 	TopoDS_Shape shape;
 	createBSplineShape(shape);
     
-    //Trying to make a Triangula Mesh
+    //Make a Triangula Mesh
     double const deflection = 1000;
     double const angulardeflection = 1000;
     BRepMesh_IncrementalMesh tess(shape, deflection, angulardeflection);
     tess.Perform();
-    TopoDS_Face meshFace = TopoDS::Face(tess.Shape());
-    TopLoc_Location loc;
-    Handle(Poly_Triangulation) triangulation = BRep_Tool::Triangulation(meshFace, loc);
+    TopoDS_Face Face = TopoDS::Face(tess.Shape());
     //Cut a solid with a face
     // 1. Use BRepPrimAPI_MakeHalfSpace to create a half-space.    
     TopoDS_Solid Halbraum = BRepPrimAPI_MakeHalfSpace(meshFace, gp_Pnt( 0., 1180., 5000.)).Solid();
     // 2. Use Boolean APIs do sub and intersection operations
-    TopoDS_Shape UpperHalf = BRepAlgoAPI_Cut(building_shell_v3,Halbraum);
+    TopoDS_Shape UpperHalf = BRepAlgoAPI_Cut(wall_shell_with_window,Halbraum);
 
     // Since the solid consists only of planar faces and straight edges it can be serialized as an
 	// IfcFacetedBRep. If it would not be a polyhedron, serialise() can only be successful when linked
@@ -205,7 +189,7 @@ int main() {
     
     STEPControl_Writer writer;
     //writer.Transfer(outer,STEPControl_AsIs);
-    writer.Transfer(building_shell_v3,STEPControl_AsIs);
+    writer.Transfer(wall_shell_with_window,STEPControl_AsIs);
     writer.Transfer(shape,STEPControl_AsIs);
     //writer.Transfer(UpperHalf,STEPControl_AsIs);    
     writer.Write("Mauer.stp");
@@ -213,8 +197,7 @@ int main() {
     std::cout << "building_shell is type: " << typeid(building_shell).name() << std::endl;
     std::cout << "shape is type: " << typeid(shape).name() << std::endl;  
     std::cout << "tess is type: " << typeid(tess).name() << std::endl; 
-    std::cout << "meshFace is type: " << typeid(meshFace).name() << std::endl; 
-    std::cout << "triangulation is type: " << typeid(triangulation).name() << std::endl;     
+    std::cout << "meshFace is type: " << typeid(meshFace).name() << std::endl;     
     std::cout << "Halbraum is type: " << typeid(Halbraum).name() << std::endl;  
 }
 
