@@ -489,6 +489,8 @@ CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurve
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o: /usr/include/oce/gp_XY.lxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o: /usr/include/oce/gp_XYZ.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o: /usr/include/oce/gp_XYZ.lxx
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o: /usr/include/x86_64-linux-gnu/sys/errno.h
 
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
@@ -1005,6 +1007,8 @@ CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o: /usr/include/oce/gp_XY.lxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o: /usr/include/oce/gp_XYZ.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o: /usr/include/oce/gp_XYZ.lxx
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o: /usr/include/x86_64-linux-gnu/sys/errno.h
 
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
@@ -1677,6 +1681,7 @@ CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunct
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o: /usr/include/oce/math_FunctionWithDerivative.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o: /usr/include/oce/math_SingleTab.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o: /usr/include/oce/math_Vector.hxx
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
 
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
@@ -2159,6 +2164,7 @@ CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpe
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o: /usr/include/oce/gp_XY.lxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o: /usr/include/oce/gp_XYZ.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o: /usr/include/oce/gp_XYZ.lxx
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
 
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.h
@@ -2499,6 +2505,7 @@ CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRende
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o: /usr/include/oce/gp_XY.lxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o: /usr/include/oce/gp_XYZ.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o: /usr/include/oce/gp_XYZ.lxx
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
 
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
@@ -2863,6 +2870,7 @@ CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepre
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o: /usr/include/oce/gp_XY.lxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o: /usr/include/oce/gp_XYZ.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o: /usr/include/oce/gp_XYZ.lxx
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
 
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
@@ -3219,6 +3227,8 @@ CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSeria
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o: /usr/include/oce/gp_XY.lxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o: /usr/include/oce/gp_XYZ.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o: /usr/include/oce/gp_XYZ.lxx
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o: /usr/include/x86_64-linux-gnu/sys/errno.h
 
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
@@ -3751,6 +3761,7 @@ CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShape
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o: /usr/include/oce/gp_XY.lxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o: /usr/include/oce/gp_XYZ.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o: /usr/include/oce/gp_XYZ.lxx
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
 
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
@@ -4263,6 +4274,8 @@ CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o: /usr/include/oce/gp_XY.lxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o: /usr/include/oce/gp_XYZ.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o: /usr/include/oce/gp_XYZ.lxx
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o: /usr/include/x86_64-linux-gnu/sys/errno.h
 
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
@@ -4593,4 +4606,5 @@ CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o: /usr/include/oce/gp_XY.lxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o: /usr/include/oce/gp_XYZ.hxx
 CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o: /usr/include/oce/gp_XYZ.lxx
+CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
 

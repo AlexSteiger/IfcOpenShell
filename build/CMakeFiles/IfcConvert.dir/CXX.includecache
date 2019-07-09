@@ -5424,6 +5424,8 @@ Standard_ConstructionError.hxx
 Standard_OutOfRange.hxx
 -
 
+/usr/include/x86_64-linux-gnu/oce-config.h
+
 /usr/local/include/opencollada/COLLADABaseUtils/COLLADABUNativeString.h
 COLLADABUPrerequisites.h
 /usr/local/include/opencollada/COLLADABaseUtils/COLLADABUPrerequisites.h

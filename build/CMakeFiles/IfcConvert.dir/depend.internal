@@ -334,6 +334,7 @@ CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/Collad
  /usr/include/oce/gp_XY.lxx
  /usr/include/oce/gp_XYZ.hxx
  /usr/include/oce/gp_XYZ.lxx
+ /usr/include/x86_64-linux-gnu/oce-config.h
  /usr/local/include/opencollada/COLLADABaseUtils/COLLADABUNativeString.h
  /usr/local/include/opencollada/COLLADABaseUtils/COLLADABUPlatform.h
  /usr/local/include/opencollada/COLLADABaseUtils/COLLADABUPrerequisites.h
@@ -783,6 +784,7 @@ CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcCon
  /usr/include/oce/gp_XY.lxx
  /usr/include/oce/gp_XYZ.hxx
  /usr/include/oce/gp_XYZ.lxx
+ /usr/include/x86_64-linux-gnu/oce-config.h
  /usr/local/include/opencollada/COLLADABaseUtils/COLLADABUNativeString.h
  /usr/local/include/opencollada/COLLADABaseUtils/COLLADABUPlatform.h
  /usr/local/include/opencollada/COLLADABaseUtils/COLLADABUPrerequisites.h
@@ -1151,6 +1153,7 @@ CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCa
  /usr/include/oce/gp_XY.lxx
  /usr/include/oce/gp_XYZ.hxx
  /usr/include/oce/gp_XYZ.lxx
+ /usr/include/x86_64-linux-gnu/oce-config.h
 CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
  /home/alex/Documents/IfcOpenShell/src/ifcconvert/GeometrySerializer.h
  /home/alex/Documents/IfcOpenShell/src/ifcconvert/Serializer.h
@@ -1524,6 +1527,7 @@ CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSer
  /usr/include/oce/gp_XY.lxx
  /usr/include/oce/gp_XYZ.hxx
  /usr/include/oce/gp_XYZ.lxx
+ /usr/include/x86_64-linux-gnu/oce-config.h
 CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
  /home/alex/Documents/IfcOpenShell/src/ifcconvert/GeometrySerializer.h
  /home/alex/Documents/IfcOpenShell/src/ifcconvert/Serializer.h
@@ -1857,6 +1861,7 @@ CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/Wavefr
  /usr/include/oce/gp_XY.lxx
  /usr/include/oce/gp_XYZ.hxx
  /usr/include/oce/gp_XYZ.lxx
+ /usr/include/x86_64-linux-gnu/oce-config.h
 CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
  /home/alex/Documents/IfcOpenShell/src/ifcconvert/Serializer.h
  /home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp
@@ -2188,6 +2193,7 @@ CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSer
  /usr/include/oce/gp_XY.lxx
  /usr/include/oce/gp_XYZ.hxx
  /usr/include/oce/gp_XYZ.lxx
+ /usr/include/x86_64-linux-gnu/oce-config.h
 CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o
  /home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp
  /home/alex/Documents/IfcOpenShell/src/ifcconvert/util.h

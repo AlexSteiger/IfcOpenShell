@@ -21,6 +21,14 @@ cmake_minimum_required (VERSION 2.8.5)
 
 project (IfcOpenShell)
 
+#For PCL:
+find_package(PCL 1.2 REQUIRED)
+
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+
 OPTION(UNICODE_SUPPORT "Build IfcOpenShell with Unicode support (requires ICU)." ON)
 OPTION(COLLADA_SUPPORT "Build IfcConvert with COLLADA support (requires OpenCOLLADA)." ON)
 OPTION(ENABLE_BUILD_OPTIMIZATIONS "Enable certain compiler and linker optimizations on RelWithDebInfo and Release builds." OFF)

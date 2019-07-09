@@ -333,4 +333,5 @@ CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/
 CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o: /usr/include/oce/gp_XY.lxx
 CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o: /usr/include/oce/gp_XYZ.hxx
 CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o: /usr/include/oce/gp_XYZ.lxx
+CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
 

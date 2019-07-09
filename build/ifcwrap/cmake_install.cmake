@@ -93,6 +93,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 file(INSTALL DESTINATION "/usr/lib/python3/dist-packages/ifcopenshell" TYPE MODULE FILES "/home/alex/Documents/IfcOpenShell/build/ifcwrap/_ifcopenshell_wrapper.so")
   if(EXISTS "$ENV{DESTDIR}/usr/lib/python3/dist-packages/ifcopenshell/_ifcopenshell_wrapper.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/lib/python3/dist-packages/ifcopenshell/_ifcopenshell_wrapper.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/usr/lib/python3/dist-packages/ifcopenshell/_ifcopenshell_wrapper.so"
+         OLD_RPATH "/usr/local/lib:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/lib/python3/dist-packages/ifcopenshell/_ifcopenshell_wrapper.so")
     endif()

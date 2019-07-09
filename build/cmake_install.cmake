@@ -151,6 +151,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 file(INSTALL DESTINATION "/usr/local/bin" TYPE EXECUTABLE FILES "/home/alex/Documents/IfcOpenShell/build/IfcConvert")
   if(EXISTS "$ENV{DESTDIR}/usr/local/bin/IfcConvert" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/bin/IfcConvert")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/usr/local/bin/IfcConvert"
+         OLD_RPATH "/usr/local/lib:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/local/bin/IfcConvert")
     endif()
@@ -175,6 +179,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 file(INSTALL DESTINATION "/usr/local/bin" TYPE EXECUTABLE FILES "/home/alex/Documents/IfcOpenShell/build/IfcGeomServer")
   if(EXISTS "$ENV{DESTDIR}/usr/local/bin/IfcGeomServer" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/bin/IfcGeomServer")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/usr/local/bin/IfcGeomServer"
+         OLD_RPATH "/usr/local/lib:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/local/bin/IfcGeomServer")
     endif()

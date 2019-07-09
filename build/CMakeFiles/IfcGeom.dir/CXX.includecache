@@ -10100,3 +10100,9 @@ gp_XY.hxx
 gp_XYZ.hxx
 -
 
+/usr/include/x86_64-linux-gnu/oce-config.h
+
+/usr/include/x86_64-linux-gnu/sys/errno.h
+errno.h
+-
+

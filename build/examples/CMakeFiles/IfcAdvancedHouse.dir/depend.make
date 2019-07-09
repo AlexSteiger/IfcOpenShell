@@ -416,4 +416,6 @@ examples/CMakeFiles/IfcAdvancedHouse.dir/IfcAdvancedHouse.cpp.o: /usr/include/oc
 examples/CMakeFiles/IfcAdvancedHouse.dir/IfcAdvancedHouse.cpp.o: /usr/include/oce/gp_XY.lxx
 examples/CMakeFiles/IfcAdvancedHouse.dir/IfcAdvancedHouse.cpp.o: /usr/include/oce/gp_XYZ.hxx
 examples/CMakeFiles/IfcAdvancedHouse.dir/IfcAdvancedHouse.cpp.o: /usr/include/oce/gp_XYZ.lxx
+examples/CMakeFiles/IfcAdvancedHouse.dir/IfcAdvancedHouse.cpp.o: /usr/include/x86_64-linux-gnu/oce-config.h
+examples/CMakeFiles/IfcAdvancedHouse.dir/IfcAdvancedHouse.cpp.o: /usr/include/x86_64-linux-gnu/sys/errno.h
 

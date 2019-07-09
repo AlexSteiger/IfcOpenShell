@@ -64,7 +64,7 @@ int main() {
 	// way does not preserve any history and is merely a demonstration of technical capabilities.
 	TopoDS_Shape wall_shell =   BRepPrimAPI_MakeBox(gp_Pnt(-9000., -  0., -5000.), gp_Pnt(9000., 2000., 4000.)).Shape();
 	TopoDS_Shape window = BRepPrimAPI_MakeBox(gp_Pnt( 6000.,    0., -2000.), gp_Pnt(8000., 2000., 2000.)).Shape();
-    TopoDS_Shape wall_shell_with_window = BRepAlgoAPI_Cut(outer,window);
+    TopoDS_Shape wall_shell_with_window = BRepAlgoAPI_Cut(wall_shell,window);
 
     //First Wall
     IfcSchema::IfcWallStandardCase* wall = new IfcSchema::IfcWallStandardCase(
@@ -86,7 +86,7 @@ int main() {
     wall->setOwnerHistory(file.getSingle<IfcSchema::IfcOwnerHistory>());
     IfcSchema::IfcObjectPlacement* storey_placement = file.getSingle<IfcSchema::IfcBuildingStorey>()->ObjectPlacement();
     wall->setObjectPlacement(file.addLocalPlacement(storey_placement, 0, 20000, 0));
-    IfcSchema::IfcProductDefinitionShape* wall_shape = IfcGeom::serialise(outer, false);
+    IfcSchema::IfcProductDefinitionShape* wall_shape = IfcGeom::serialise(wall_shell, false);
 	file.addEntity(wall_shape);
 	IfcSchema::IfcRepresentation* rep = *wall_shape->Representations()->begin();
 	rep->setContextOfItems(file.getRepresentationContext("model"));
@@ -163,7 +163,7 @@ int main() {
     double const angulardeflection = 1000;
     BRepMesh_IncrementalMesh tess(shape, deflection, angulardeflection);
     tess.Perform();
-    TopoDS_Face Face = TopoDS::Face(tess.Shape());
+    TopoDS_Face meshFace = TopoDS::Face(tess.Shape());
     //Cut a solid with a face
     // 1. Use BRepPrimAPI_MakeHalfSpace to create a half-space.    
     TopoDS_Solid Halbraum = BRepPrimAPI_MakeHalfSpace(meshFace, gp_Pnt( 0., 1180., 5000.)).Solid();
@@ -194,7 +194,7 @@ int main() {
     //writer.Transfer(UpperHalf,STEPControl_AsIs);    
     writer.Write("Mauer.stp");
     
-    std::cout << "building_shell is type: " << typeid(building_shell).name() << std::endl;
+    std::cout << "wall_shell is type: " << typeid(wall_shell).name() << std::endl;
     std::cout << "shape is type: " << typeid(shape).name() << std::endl;  
     std::cout << "tess is type: " << typeid(tess).name() << std::endl; 
     std::cout << "meshFace is type: " << typeid(meshFace).name() << std::endl;     

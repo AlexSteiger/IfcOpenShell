@@ -420,3 +420,5 @@ examples/CMakeFiles/mauer.dir/mauer.cpp.o
  /usr/include/oce/gp_XY.lxx
  /usr/include/oce/gp_XYZ.hxx
  /usr/include/oce/gp_XYZ.lxx
+ /usr/include/x86_64-linux-gnu/oce-config.h
+ /usr/include/x86_64-linux-gnu/sys/errno.h
