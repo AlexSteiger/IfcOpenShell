@@ -248,6 +248,19 @@ IfcOpenHouse/fast:
 .PHONY : IfcOpenHouse/fast
 
 #=============================================================================
+# Target rules for targets named hydromapper
+
+# Build rule for target.
+hydromapper: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hydromapper
+.PHONY : hydromapper
+
+# fast build rule for target.
+hydromapper/fast:
+	$(MAKE) -f examples/CMakeFiles/hydromapper.dir/build.make examples/CMakeFiles/hydromapper.dir/build
+.PHONY : hydromapper/fast
+
+#=============================================================================
 # Target rules for targets named IfcAdvancedHouse
 
 # Build rule for target.
@@ -1141,6 +1154,7 @@ help:
 	@echo "... _ifcopenshell_wrapper"
 	@echo "... mauer"
 	@echo "... IfcOpenHouse"
+	@echo "... hydromapper"
 	@echo "... IfcAdvancedHouse"
 	@echo "... IfcParseExamples"
 	@echo "... hellowall"

@@ -187,6 +187,21 @@ IfcOpenHouse/fast:
 .PHONY : IfcOpenHouse/fast
 
 # Convenience name for target.
+examples/CMakeFiles/hydromapper.dir/rule:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hydromapper.dir/rule
+.PHONY : examples/CMakeFiles/hydromapper.dir/rule
+
+# Convenience name for target.
+hydromapper: examples/CMakeFiles/hydromapper.dir/rule
+
+.PHONY : hydromapper
+
+# fast build rule for target.
+hydromapper/fast:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper.dir/build.make examples/CMakeFiles/hydromapper.dir/build
+.PHONY : hydromapper/fast
+
+# Convenience name for target.
 examples/CMakeFiles/IfcAdvancedHouse.dir/rule:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/IfcAdvancedHouse.dir/rule
 .PHONY : examples/CMakeFiles/IfcAdvancedHouse.dir/rule
@@ -423,6 +438,33 @@ hellowalls.cpp.s:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/hellowalls.cpp.s
 .PHONY : hellowalls.cpp.s
 
+hydromapper.o: hydromapper.cpp.o
+
+.PHONY : hydromapper.o
+
+# target to build an object file
+hydromapper.cpp.o:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper.dir/build.make examples/CMakeFiles/hydromapper.dir/hydromapper.cpp.o
+.PHONY : hydromapper.cpp.o
+
+hydromapper.i: hydromapper.cpp.i
+
+.PHONY : hydromapper.i
+
+# target to preprocess a source file
+hydromapper.cpp.i:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper.dir/build.make examples/CMakeFiles/hydromapper.dir/hydromapper.cpp.i
+.PHONY : hydromapper.cpp.i
+
+hydromapper.s: hydromapper.cpp.s
+
+.PHONY : hydromapper.s
+
+# target to generate assembly for a file
+hydromapper.cpp.s:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper.dir/build.make examples/CMakeFiles/hydromapper.dir/hydromapper.cpp.s
+.PHONY : hydromapper.cpp.s
+
 mauer.o: mauer.cpp.o
 
 .PHONY : mauer.o
@@ -462,6 +504,7 @@ help:
 	@echo "... install/local"
 	@echo "... mauer"
 	@echo "... IfcOpenHouse"
+	@echo "... hydromapper"
 	@echo "... IfcAdvancedHouse"
 	@echo "... IfcParseExamples"
 	@echo "... install"
@@ -487,6 +530,9 @@ help:
 	@echo "... hellowalls.o"
 	@echo "... hellowalls.i"
 	@echo "... hellowalls.s"
+	@echo "... hydromapper.o"
+	@echo "... hydromapper.i"
+	@echo "... hydromapper.s"
 	@echo "... mauer.o"
 	@echo "... mauer.i"
 	@echo "... mauer.s"
