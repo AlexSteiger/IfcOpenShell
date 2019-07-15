@@ -222,6 +222,19 @@ _ifcopenshell_wrapper/fast:
 .PHONY : _ifcopenshell_wrapper/fast
 
 #=============================================================================
+# Target rules for targets named hydromapper_v2
+
+# Build rule for target.
+hydromapper_v2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hydromapper_v2
+.PHONY : hydromapper_v2
+
+# fast build rule for target.
+hydromapper_v2/fast:
+	$(MAKE) -f examples/CMakeFiles/hydromapper_v2.dir/build.make examples/CMakeFiles/hydromapper_v2.dir/build
+.PHONY : hydromapper_v2/fast
+
+#=============================================================================
 # Target rules for targets named mauer
 
 # Build rule for target.
@@ -1152,6 +1165,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... _ifcopenshell_wrapper"
+	@echo "... hydromapper_v2"
 	@echo "... mauer"
 	@echo "... IfcOpenHouse"
 	@echo "... hydromapper"
