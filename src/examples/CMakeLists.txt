@@ -52,3 +52,7 @@ set_target_properties(hydromapper PROPERTIES FOLDER Examples)
 ADD_EXECUTABLE(hydromapper_v2 hydromapper_v2.cpp)
 TARGET_LINK_LIBRARIES(hydromapper_v2 ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES} ${PCL_LIBRARIES})
 set_target_properties(hydromapper_v2 PROPERTIES FOLDER Examples)
+
+ADD_EXECUTABLE(hydromapper_v3_defo hydromapper_v3_defo.cpp)
+TARGET_LINK_LIBRARIES(hydromapper_v3_defo ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES} ${PCL_LIBRARIES})
+set_target_properties(hydromapper_v3_defo PROPERTIES FOLDER Examples)
