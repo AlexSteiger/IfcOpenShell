@@ -62,8 +62,8 @@ int main() {
 	// constructed by applying boolean operations. Naturally, in IFC, building elements should be 
 	// modeled separately, with rich parametric and relational semantics. Creating geometry in this
 	// way does not preserve any history and is merely a demonstration of technical capabilities.
-	TopoDS_Shape wall_shell =   BRepPrimAPI_MakeBox(gp_Pnt(-9000., -  0., -5000.), gp_Pnt(9000., 2000., 4000.)).Shape();
-	TopoDS_Shape window = BRepPrimAPI_MakeBox(gp_Pnt( 6000.,    0., -2000.), gp_Pnt(8000., 2000., 2000.)).Shape();
+	TopoDS_Shape wall_shell =   BRepPrimAPI_MakeBox(gp_Pnt(-9000., 0., -5000.), gp_Pnt(9000., 2000., 4000.)).Shape();
+	TopoDS_Shape window = BRepPrimAPI_MakeBox(gp_Pnt( 6000., 0., -2000.), gp_Pnt(8000., 2000., 2000.)).Shape();
     TopoDS_Shape wall_shell_with_window = BRepAlgoAPI_Cut(wall_shell,window);
 
     //First Wall
@@ -88,7 +88,7 @@ int main() {
     wall->setObjectPlacement(file.addLocalPlacement(storey_placement, 0, 20000, 0));
     IfcSchema::IfcProductDefinitionShape* wall_shape = IfcGeom::serialise(wall_shell, false);
 	file.addEntity(wall_shape);
-	IfcSchema::IfcRepresentation* rep = *wall_shape->Representations()->begin();
+ 	IfcSchema::IfcRepresentation* rep = *wall_shape->Representations()->begin();
 	rep->setContextOfItems(file.getRepresentationContext("model"));
 	wall->setRepresentation(wall_shape);
     
@@ -174,14 +174,13 @@ int main() {
 	// IfcFacetedBRep. If it would not be a polyhedron, serialise() can only be successful when linked
 	// to the IFC4 model and with `advanced` set to `true` which introduces IfcAdvancedFace. It would
 	// return `0` otherwise.
-    IfcSchema::IfcProductDefinitionShape* wall3_shape = IfcGeom::serialise(shape, true);    
-    wall3_shape = IfcGeom::tesselate(UpperHalf, 100.);
+    IfcSchema::IfcProductDefinitionShape* wall3_shape = IfcGeom::tesselate(UpperHalf, 100.);
  	file.addEntity(wall3_shape);
  	IfcSchema::IfcRepresentation* represent = *wall3_shape->Representations()->begin();   
     represent->setContextOfItems(file.getRepresentationContext("model"));
 	wall3->setRepresentation(wall3_shape);
 	// A pale white colour is assigned to the building.
-	file.setSurfaceColour(wall3_shape, 0.75, 0.73, 0.68);
+	file.setSurfaceColour(wall3_shape, 0.55 , 0.25 , 0.05);
 
 	// Finally create a file stream for our output and write the IFC file to it.
 	std::ofstream f("Mauer.ifc");

@@ -37,22 +37,19 @@ ADD_EXECUTABLE(hellowalls hellowalls.cpp)
 TARGET_LINK_LIBRARIES(hellowalls ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES})
 set_target_properties(hellowalls PROPERTIES FOLDER Examples)
 
-ADD_EXECUTABLE(extrusion extrusion.cpp)
-TARGET_LINK_LIBRARIES(extrusion ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES})
-set_target_properties(extrusion PROPERTIES FOLDER Examples)
-
 ADD_EXECUTABLE(mauer mauer.cpp)
 TARGET_LINK_LIBRARIES(mauer ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES} ${PCL_LIBRARIES})
 set_target_properties(mauer PROPERTIES FOLDER Examples)
 
-ADD_EXECUTABLE(hydromapper hydromapper.cpp)
-TARGET_LINK_LIBRARIES(hydromapper ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES} ${PCL_LIBRARIES})
-set_target_properties(hydromapper PROPERTIES FOLDER Examples)
+ADD_EXECUTABLE(hydromapper_multiplecuts hydromapper_multiplecuts.cpp)
+TARGET_LINK_LIBRARIES(hydromapper_multiplecuts ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES} ${PCL_LIBRARIES})
+set_target_properties(hydromapper_multiplecuts PROPERTIES FOLDER Examples)
 
-ADD_EXECUTABLE(hydromapper_v2 hydromapper_v2.cpp)
-TARGET_LINK_LIBRARIES(hydromapper_v2 ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES} ${PCL_LIBRARIES})
-set_target_properties(hydromapper_v2 PROPERTIES FOLDER Examples)
+ADD_EXECUTABLE(verformungen verformungen.cpp)
+TARGET_LINK_LIBRARIES(verformungen ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES} ${PCL_LIBRARIES})
+set_target_properties(verformungen PROPERTIES FOLDER Examples)
 
-ADD_EXECUTABLE(hydromapper_v3_defo hydromapper_v3_defo.cpp)
-TARGET_LINK_LIBRARIES(hydromapper_v3_defo ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES} ${PCL_LIBRARIES})
-set_target_properties(hydromapper_v3_defo PROPERTIES FOLDER Examples)
+ADD_EXECUTABLE(extrusion extrusion.cpp)
+TARGET_LINK_LIBRARIES(extrusion ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES} ${PCL_LIBRARIES})
+set_target_properties(extrusion PROPERTIES FOLDER Examples)
+

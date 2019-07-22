@@ -105,6 +105,7 @@ int main() {
 	IfcSchema::IfcPresentationStyleAssignment* wall_colour = file.setSurfaceColour(
 		south_wall_shape, 0.75, 0.73, 0.68);
 
+    /////////////////////////////////////////////////////////////////////////////////////////////
 	// Now create a footing for the wall to rest on.
 	IfcSchema::IfcFooting* footing = new IfcSchema::IfcFooting(guid(), file.getSingle<IfcSchema::IfcOwnerHistory>(),
 		S("Footing"), null, null, 0, 0, null, IfcSchema::IfcFootingTypeEnum::IfcFootingType_STRIP_FOOTING);

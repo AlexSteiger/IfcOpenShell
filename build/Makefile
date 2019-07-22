@@ -222,43 +222,43 @@ _ifcopenshell_wrapper/fast:
 .PHONY : _ifcopenshell_wrapper/fast
 
 #=============================================================================
-# Target rules for targets named hydromapper_v3_defo
+# Target rules for targets named extrusion
 
 # Build rule for target.
-hydromapper_v3_defo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hydromapper_v3_defo
-.PHONY : hydromapper_v3_defo
+extrusion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 extrusion
+.PHONY : extrusion
 
 # fast build rule for target.
-hydromapper_v3_defo/fast:
-	$(MAKE) -f examples/CMakeFiles/hydromapper_v3_defo.dir/build.make examples/CMakeFiles/hydromapper_v3_defo.dir/build
-.PHONY : hydromapper_v3_defo/fast
+extrusion/fast:
+	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
+.PHONY : extrusion/fast
 
 #=============================================================================
-# Target rules for targets named hydromapper_v2
+# Target rules for targets named verformungen
 
 # Build rule for target.
-hydromapper_v2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hydromapper_v2
-.PHONY : hydromapper_v2
+verformungen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 verformungen
+.PHONY : verformungen
 
 # fast build rule for target.
-hydromapper_v2/fast:
-	$(MAKE) -f examples/CMakeFiles/hydromapper_v2.dir/build.make examples/CMakeFiles/hydromapper_v2.dir/build
-.PHONY : hydromapper_v2/fast
+verformungen/fast:
+	$(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/build
+.PHONY : verformungen/fast
 
 #=============================================================================
-# Target rules for targets named mauer
+# Target rules for targets named hydromapper_multiplecuts
 
 # Build rule for target.
-mauer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mauer
-.PHONY : mauer
+hydromapper_multiplecuts: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hydromapper_multiplecuts
+.PHONY : hydromapper_multiplecuts
 
 # fast build rule for target.
-mauer/fast:
-	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
-.PHONY : mauer/fast
+hydromapper_multiplecuts/fast:
+	$(MAKE) -f examples/CMakeFiles/hydromapper_multiplecuts.dir/build.make examples/CMakeFiles/hydromapper_multiplecuts.dir/build
+.PHONY : hydromapper_multiplecuts/fast
 
 #=============================================================================
 # Target rules for targets named IfcOpenHouse
@@ -272,19 +272,6 @@ IfcOpenHouse: cmake_check_build_system
 IfcOpenHouse/fast:
 	$(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/build
 .PHONY : IfcOpenHouse/fast
-
-#=============================================================================
-# Target rules for targets named hydromapper
-
-# Build rule for target.
-hydromapper: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hydromapper
-.PHONY : hydromapper
-
-# fast build rule for target.
-hydromapper/fast:
-	$(MAKE) -f examples/CMakeFiles/hydromapper.dir/build.make examples/CMakeFiles/hydromapper.dir/build
-.PHONY : hydromapper/fast
 
 #=============================================================================
 # Target rules for targets named IfcAdvancedHouse
@@ -339,17 +326,17 @@ hellowalls/fast:
 .PHONY : hellowalls/fast
 
 #=============================================================================
-# Target rules for targets named extrusion
+# Target rules for targets named mauer
 
 # Build rule for target.
-extrusion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 extrusion
-.PHONY : extrusion
+mauer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mauer
+.PHONY : mauer
 
 # fast build rule for target.
-extrusion/fast:
-	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
-.PHONY : extrusion/fast
+mauer/fast:
+	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
+.PHONY : mauer/fast
 
 home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.o: home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
 
@@ -1178,16 +1165,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... _ifcopenshell_wrapper"
-	@echo "... hydromapper_v3_defo"
-	@echo "... hydromapper_v2"
-	@echo "... mauer"
+	@echo "... extrusion"
+	@echo "... verformungen"
+	@echo "... hydromapper_multiplecuts"
 	@echo "... IfcOpenHouse"
-	@echo "... hydromapper"
 	@echo "... IfcAdvancedHouse"
 	@echo "... IfcParseExamples"
 	@echo "... hellowall"
 	@echo "... hellowalls"
-	@echo "... extrusion"
+	@echo "... mauer"
 	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.o"
 	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.i"
 	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.s"

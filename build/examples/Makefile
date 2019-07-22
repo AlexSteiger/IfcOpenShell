@@ -89,18 +89,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -123,6 +111,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,49 +157,49 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-examples/CMakeFiles/hydromapper_v3_defo.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hydromapper_v3_defo.dir/rule
-.PHONY : examples/CMakeFiles/hydromapper_v3_defo.dir/rule
+examples/CMakeFiles/extrusion.dir/rule:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/extrusion.dir/rule
+.PHONY : examples/CMakeFiles/extrusion.dir/rule
 
 # Convenience name for target.
-hydromapper_v3_defo: examples/CMakeFiles/hydromapper_v3_defo.dir/rule
+extrusion: examples/CMakeFiles/extrusion.dir/rule
 
-.PHONY : hydromapper_v3_defo
+.PHONY : extrusion
 
 # fast build rule for target.
-hydromapper_v3_defo/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_v3_defo.dir/build.make examples/CMakeFiles/hydromapper_v3_defo.dir/build
-.PHONY : hydromapper_v3_defo/fast
+extrusion/fast:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
+.PHONY : extrusion/fast
 
 # Convenience name for target.
-examples/CMakeFiles/hydromapper_v2.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hydromapper_v2.dir/rule
-.PHONY : examples/CMakeFiles/hydromapper_v2.dir/rule
+examples/CMakeFiles/verformungen.dir/rule:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/verformungen.dir/rule
+.PHONY : examples/CMakeFiles/verformungen.dir/rule
 
 # Convenience name for target.
-hydromapper_v2: examples/CMakeFiles/hydromapper_v2.dir/rule
+verformungen: examples/CMakeFiles/verformungen.dir/rule
 
-.PHONY : hydromapper_v2
+.PHONY : verformungen
 
 # fast build rule for target.
-hydromapper_v2/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_v2.dir/build.make examples/CMakeFiles/hydromapper_v2.dir/build
-.PHONY : hydromapper_v2/fast
+verformungen/fast:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/build
+.PHONY : verformungen/fast
 
 # Convenience name for target.
-examples/CMakeFiles/mauer.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/mauer.dir/rule
-.PHONY : examples/CMakeFiles/mauer.dir/rule
+examples/CMakeFiles/hydromapper_multiplecuts.dir/rule:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hydromapper_multiplecuts.dir/rule
+.PHONY : examples/CMakeFiles/hydromapper_multiplecuts.dir/rule
 
 # Convenience name for target.
-mauer: examples/CMakeFiles/mauer.dir/rule
+hydromapper_multiplecuts: examples/CMakeFiles/hydromapper_multiplecuts.dir/rule
 
-.PHONY : mauer
+.PHONY : hydromapper_multiplecuts
 
 # fast build rule for target.
-mauer/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
-.PHONY : mauer/fast
+hydromapper_multiplecuts/fast:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_multiplecuts.dir/build.make examples/CMakeFiles/hydromapper_multiplecuts.dir/build
+.PHONY : hydromapper_multiplecuts/fast
 
 # Convenience name for target.
 examples/CMakeFiles/IfcOpenHouse.dir/rule:
@@ -215,21 +215,6 @@ IfcOpenHouse: examples/CMakeFiles/IfcOpenHouse.dir/rule
 IfcOpenHouse/fast:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/build
 .PHONY : IfcOpenHouse/fast
-
-# Convenience name for target.
-examples/CMakeFiles/hydromapper.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hydromapper.dir/rule
-.PHONY : examples/CMakeFiles/hydromapper.dir/rule
-
-# Convenience name for target.
-hydromapper: examples/CMakeFiles/hydromapper.dir/rule
-
-.PHONY : hydromapper
-
-# fast build rule for target.
-hydromapper/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper.dir/build.make examples/CMakeFiles/hydromapper.dir/build
-.PHONY : hydromapper/fast
 
 # Convenience name for target.
 examples/CMakeFiles/IfcAdvancedHouse.dir/rule:
@@ -292,19 +277,19 @@ hellowalls/fast:
 .PHONY : hellowalls/fast
 
 # Convenience name for target.
-examples/CMakeFiles/extrusion.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/extrusion.dir/rule
-.PHONY : examples/CMakeFiles/extrusion.dir/rule
+examples/CMakeFiles/mauer.dir/rule:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/mauer.dir/rule
+.PHONY : examples/CMakeFiles/mauer.dir/rule
 
 # Convenience name for target.
-extrusion: examples/CMakeFiles/extrusion.dir/rule
+mauer: examples/CMakeFiles/mauer.dir/rule
 
-.PHONY : extrusion
+.PHONY : mauer
 
 # fast build rule for target.
-extrusion/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
-.PHONY : extrusion/fast
+mauer/fast:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
+.PHONY : mauer/fast
 
 IfcAdvancedHouse.o: IfcAdvancedHouse.cpp.o
 
@@ -468,86 +453,32 @@ hellowalls.cpp.s:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/hellowalls.cpp.s
 .PHONY : hellowalls.cpp.s
 
-hydromapper.o: hydromapper.cpp.o
+hydromapper_multiplecuts.o: hydromapper_multiplecuts.cpp.o
 
-.PHONY : hydromapper.o
-
-# target to build an object file
-hydromapper.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper.dir/build.make examples/CMakeFiles/hydromapper.dir/hydromapper.cpp.o
-.PHONY : hydromapper.cpp.o
-
-hydromapper.i: hydromapper.cpp.i
-
-.PHONY : hydromapper.i
-
-# target to preprocess a source file
-hydromapper.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper.dir/build.make examples/CMakeFiles/hydromapper.dir/hydromapper.cpp.i
-.PHONY : hydromapper.cpp.i
-
-hydromapper.s: hydromapper.cpp.s
-
-.PHONY : hydromapper.s
-
-# target to generate assembly for a file
-hydromapper.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper.dir/build.make examples/CMakeFiles/hydromapper.dir/hydromapper.cpp.s
-.PHONY : hydromapper.cpp.s
-
-hydromapper_v2.o: hydromapper_v2.cpp.o
-
-.PHONY : hydromapper_v2.o
+.PHONY : hydromapper_multiplecuts.o
 
 # target to build an object file
-hydromapper_v2.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_v2.dir/build.make examples/CMakeFiles/hydromapper_v2.dir/hydromapper_v2.cpp.o
-.PHONY : hydromapper_v2.cpp.o
+hydromapper_multiplecuts.cpp.o:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_multiplecuts.dir/build.make examples/CMakeFiles/hydromapper_multiplecuts.dir/hydromapper_multiplecuts.cpp.o
+.PHONY : hydromapper_multiplecuts.cpp.o
 
-hydromapper_v2.i: hydromapper_v2.cpp.i
+hydromapper_multiplecuts.i: hydromapper_multiplecuts.cpp.i
 
-.PHONY : hydromapper_v2.i
-
-# target to preprocess a source file
-hydromapper_v2.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_v2.dir/build.make examples/CMakeFiles/hydromapper_v2.dir/hydromapper_v2.cpp.i
-.PHONY : hydromapper_v2.cpp.i
-
-hydromapper_v2.s: hydromapper_v2.cpp.s
-
-.PHONY : hydromapper_v2.s
-
-# target to generate assembly for a file
-hydromapper_v2.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_v2.dir/build.make examples/CMakeFiles/hydromapper_v2.dir/hydromapper_v2.cpp.s
-.PHONY : hydromapper_v2.cpp.s
-
-hydromapper_v3_defo.o: hydromapper_v3_defo.cpp.o
-
-.PHONY : hydromapper_v3_defo.o
-
-# target to build an object file
-hydromapper_v3_defo.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_v3_defo.dir/build.make examples/CMakeFiles/hydromapper_v3_defo.dir/hydromapper_v3_defo.cpp.o
-.PHONY : hydromapper_v3_defo.cpp.o
-
-hydromapper_v3_defo.i: hydromapper_v3_defo.cpp.i
-
-.PHONY : hydromapper_v3_defo.i
+.PHONY : hydromapper_multiplecuts.i
 
 # target to preprocess a source file
-hydromapper_v3_defo.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_v3_defo.dir/build.make examples/CMakeFiles/hydromapper_v3_defo.dir/hydromapper_v3_defo.cpp.i
-.PHONY : hydromapper_v3_defo.cpp.i
+hydromapper_multiplecuts.cpp.i:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_multiplecuts.dir/build.make examples/CMakeFiles/hydromapper_multiplecuts.dir/hydromapper_multiplecuts.cpp.i
+.PHONY : hydromapper_multiplecuts.cpp.i
 
-hydromapper_v3_defo.s: hydromapper_v3_defo.cpp.s
+hydromapper_multiplecuts.s: hydromapper_multiplecuts.cpp.s
 
-.PHONY : hydromapper_v3_defo.s
+.PHONY : hydromapper_multiplecuts.s
 
 # target to generate assembly for a file
-hydromapper_v3_defo.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_v3_defo.dir/build.make examples/CMakeFiles/hydromapper_v3_defo.dir/hydromapper_v3_defo.cpp.s
-.PHONY : hydromapper_v3_defo.cpp.s
+hydromapper_multiplecuts.cpp.s:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_multiplecuts.dir/build.make examples/CMakeFiles/hydromapper_multiplecuts.dir/hydromapper_multiplecuts.cpp.s
+.PHONY : hydromapper_multiplecuts.cpp.s
 
 mauer.o: mauer.cpp.o
 
@@ -576,6 +507,33 @@ mauer.cpp.s:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/mauer.cpp.s
 .PHONY : mauer.cpp.s
 
+verformungen.o: verformungen.cpp.o
+
+.PHONY : verformungen.o
+
+# target to build an object file
+verformungen.cpp.o:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.o
+.PHONY : verformungen.cpp.o
+
+verformungen.i: verformungen.cpp.i
+
+.PHONY : verformungen.i
+
+# target to preprocess a source file
+verformungen.cpp.i:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.i
+.PHONY : verformungen.cpp.i
+
+verformungen.s: verformungen.cpp.s
+
+.PHONY : verformungen.s
+
+# target to generate assembly for a file
+verformungen.cpp.s:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.s
+.PHONY : verformungen.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -584,20 +542,19 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... hydromapper_v3_defo"
 	@echo "... rebuild_cache"
-	@echo "... hydromapper_v2"
-	@echo "... install/local"
-	@echo "... mauer"
+	@echo "... extrusion"
+	@echo "... verformungen"
+	@echo "... hydromapper_multiplecuts"
 	@echo "... IfcOpenHouse"
-	@echo "... hydromapper"
 	@echo "... IfcAdvancedHouse"
 	@echo "... IfcParseExamples"
 	@echo "... install"
 	@echo "... hellowall"
 	@echo "... edit_cache"
 	@echo "... hellowalls"
-	@echo "... extrusion"
+	@echo "... install/local"
+	@echo "... mauer"
 	@echo "... IfcAdvancedHouse.o"
 	@echo "... IfcAdvancedHouse.i"
 	@echo "... IfcAdvancedHouse.s"
@@ -616,18 +573,15 @@ help:
 	@echo "... hellowalls.o"
 	@echo "... hellowalls.i"
 	@echo "... hellowalls.s"
-	@echo "... hydromapper.o"
-	@echo "... hydromapper.i"
-	@echo "... hydromapper.s"
-	@echo "... hydromapper_v2.o"
-	@echo "... hydromapper_v2.i"
-	@echo "... hydromapper_v2.s"
-	@echo "... hydromapper_v3_defo.o"
-	@echo "... hydromapper_v3_defo.i"
-	@echo "... hydromapper_v3_defo.s"
+	@echo "... hydromapper_multiplecuts.o"
+	@echo "... hydromapper_multiplecuts.i"
+	@echo "... hydromapper_multiplecuts.s"
 	@echo "... mauer.o"
 	@echo "... mauer.i"
 	@echo "... mauer.s"
+	@echo "... verformungen.o"
+	@echo "... verformungen.i"
+	@echo "... verformungen.s"
 .PHONY : help
 
 
