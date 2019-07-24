@@ -123,6 +123,7 @@ ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libTKXSBase.so
 ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libTKSTEP209.so
 ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libTKIGES.so
 ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libTKOffset.so
+ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libTKSTL.so
 ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libicuuc.so
 ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libicudata.so
 ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libdl.so

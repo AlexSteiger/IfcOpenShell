@@ -113,6 +113,7 @@ examples/IfcOpenHouse: /usr/lib/x86_64-linux-gnu/libTKXSBase.so
 examples/IfcOpenHouse: /usr/lib/x86_64-linux-gnu/libTKSTEP209.so
 examples/IfcOpenHouse: /usr/lib/x86_64-linux-gnu/libTKIGES.so
 examples/IfcOpenHouse: /usr/lib/x86_64-linux-gnu/libTKOffset.so
+examples/IfcOpenHouse: /usr/lib/x86_64-linux-gnu/libTKSTL.so
 examples/IfcOpenHouse: libIfcParse.a
 examples/IfcOpenHouse: /usr/lib/x86_64-linux-gnu/libicuuc.so
 examples/IfcOpenHouse: /usr/lib/x86_64-linux-gnu/libicudata.so

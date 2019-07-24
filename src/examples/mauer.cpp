@@ -159,7 +159,7 @@ int main() {
 	createBSplineShape(shape);
     
     //Make a Triangula Mesh
-    double const deflection = 1000;
+    double const deflection = 100;
     double const angulardeflection = 1000;
     BRepMesh_IncrementalMesh tess(shape, deflection, angulardeflection);
     tess.Perform();
@@ -190,6 +190,7 @@ int main() {
     //writer.Transfer(outer,STEPControl_AsIs);
     writer.Transfer(wall_shell_with_window,STEPControl_AsIs);
     writer.Transfer(shape,STEPControl_AsIs);
+		//writer.Transfer(meshFace,STEPControl_AsIs);
     //writer.Transfer(UpperHalf,STEPControl_AsIs);    
     writer.Write("Mauer.stp");
     

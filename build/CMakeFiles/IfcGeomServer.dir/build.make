@@ -113,6 +113,7 @@ IfcGeomServer: /usr/lib/x86_64-linux-gnu/libTKXSBase.so
 IfcGeomServer: /usr/lib/x86_64-linux-gnu/libTKSTEP209.so
 IfcGeomServer: /usr/lib/x86_64-linux-gnu/libTKIGES.so
 IfcGeomServer: /usr/lib/x86_64-linux-gnu/libTKOffset.so
+IfcGeomServer: /usr/lib/x86_64-linux-gnu/libTKSTL.so
 IfcGeomServer: /usr/lib/x86_64-linux-gnu/libboost_system.so
 IfcGeomServer: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
 IfcGeomServer: /usr/lib/x86_64-linux-gnu/libboost_regex.so

@@ -113,6 +113,7 @@ examples/mauer: /usr/lib/x86_64-linux-gnu/libTKXSBase.so
 examples/mauer: /usr/lib/x86_64-linux-gnu/libTKSTEP209.so
 examples/mauer: /usr/lib/x86_64-linux-gnu/libTKIGES.so
 examples/mauer: /usr/lib/x86_64-linux-gnu/libTKOffset.so
+examples/mauer: /usr/lib/x86_64-linux-gnu/libTKSTL.so
 examples/mauer: /usr/local/lib/libpcl_surface.so
 examples/mauer: /usr/local/lib/libpcl_keypoints.so
 examples/mauer: /usr/local/lib/libpcl_tracking.so

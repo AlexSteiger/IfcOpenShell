@@ -269,6 +269,7 @@ IfcConvert: /usr/lib/x86_64-linux-gnu/libTKXSBase.so
 IfcConvert: /usr/lib/x86_64-linux-gnu/libTKSTEP209.so
 IfcConvert: /usr/lib/x86_64-linux-gnu/libTKIGES.so
 IfcConvert: /usr/lib/x86_64-linux-gnu/libTKOffset.so
+IfcConvert: /usr/lib/x86_64-linux-gnu/libTKSTL.so
 IfcConvert: /usr/lib/x86_64-linux-gnu/libboost_system.so
 IfcConvert: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
 IfcConvert: /usr/lib/x86_64-linux-gnu/libboost_regex.so

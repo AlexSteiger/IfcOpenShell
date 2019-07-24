@@ -22,14 +22,13 @@ cmake_minimum_required (VERSION 2.8.5)
 project (IfcOpenShell)
 
 ########################################################
-#Changed by me..
 #For PCL:
+#Included by me (Alex)
 find_package(PCL 1.2 REQUIRED)
 
 include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
-
 ########################################################
 
 
@@ -191,10 +190,10 @@ IF(gp_Pnt_hxx)
 ELSE()
 	MESSAGE(FATAL_ERROR "Unable to find header files, aborting")
 ENDIF()
-
+# TKSTL was added by me (Alex)!
 SET(OPENCASCADE_LIBRARY_NAMES
 	TKernel TKMath TKBRep TKGeomBase TKGeomAlgo TKG3d TKG2d TKShHealing TKTopAlgo TKMesh TKPrim TKBool TKBO
-	TKFillet TKSTEP TKSTEPBase TKSTEPAttr TKXSBase TKSTEP209 TKIGES TKOffset
+	TKFillet TKSTEP TKSTEPBase TKSTEPAttr TKXSBase TKSTEP209 TKIGES TKOffset TKSTL
 )
 
 IF("${OCC_LIBRARY_DIR}" STREQUAL "")

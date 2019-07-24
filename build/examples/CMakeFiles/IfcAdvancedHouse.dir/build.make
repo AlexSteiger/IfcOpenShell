@@ -113,6 +113,7 @@ examples/IfcAdvancedHouse: /usr/lib/x86_64-linux-gnu/libTKXSBase.so
 examples/IfcAdvancedHouse: /usr/lib/x86_64-linux-gnu/libTKSTEP209.so
 examples/IfcAdvancedHouse: /usr/lib/x86_64-linux-gnu/libTKIGES.so
 examples/IfcAdvancedHouse: /usr/lib/x86_64-linux-gnu/libTKOffset.so
+examples/IfcAdvancedHouse: /usr/lib/x86_64-linux-gnu/libTKSTL.so
 examples/IfcAdvancedHouse: libIfcParse.a
 examples/IfcAdvancedHouse: /usr/lib/x86_64-linux-gnu/libicuuc.so
 examples/IfcAdvancedHouse: /usr/lib/x86_64-linux-gnu/libicudata.so
