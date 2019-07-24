@@ -116,7 +116,7 @@ main (int argc, char** argv)
   std::cout << "starting Poisson" << std::endl;
   pcl::Poisson<pcl::PointNormal> poisson;  
   // Set the maximum depth of the tree that will be used for surface reconstruction. Higher -> more Details
-  poisson.setDepth (7);  // 7 is ok
+  poisson.setDepth (2);  // 7 is ok
   // Set the minimum number of sample points that should fall within an octree node as the octree construction is adapted to sampling density.  For noise-free samples, small values in the range [1.0 - 5.0] can be used. For more noisy samples, larger values in the range [15.0 - 20.0] may be needed to provide a smoother, noise-reduced, reconstruction. 
   poisson.setSamplesPerNode(6);
   poisson.setScale(1);

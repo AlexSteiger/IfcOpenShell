@@ -159,7 +159,7 @@ int main() {
 	createBSplineShape(shape);
     
     //Make a Triangula Mesh
-    double const deflection = 100;
+    double const deflection = 1000;
     double const angulardeflection = 1000;
     BRepMesh_IncrementalMesh tess(shape, deflection, angulardeflection);
     tess.Perform();
@@ -207,7 +207,7 @@ void createBSplineShape(TopoDS_Shape& shape) {
 	cv.SetValue(0, 1, gp_Pnt(-10000,  -2330, -1130));
 	cv.SetValue(0, 2, gp_Pnt(-10000,      0,  -530));
 	cv.SetValue(0, 3, gp_Pnt(-10000,   2330,  -130));
-    cv.SetValue(0, 4, gp_Pnt(-10000,   5000,  2000));
+	cv.SetValue(0, 4, gp_Pnt(-10000,   5000,  2000));
 	cv.SetValue(1, 0, gp_Pnt( -3330,  -5000, -5130));
 	cv.SetValue(1, 1, gp_Pnt( -7670,  -2670,  2000));
 	cv.SetValue(1, 2, gp_Pnt( -9000,      0,  1000));
