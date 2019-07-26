@@ -12,6 +12,7 @@
 #include <pcl/filters/statistical_outlier_removal.h>
 #include <pcl/visualization/pcl_visualizer.h>
 
+#include <pcl/filters/voxel_grid.h>  // for downsampling
 //IFC
 #include "../ifcparse/IfcFile.h"
 
@@ -62,11 +63,22 @@ main (int argc, char** argv)
   std::cout << cloud_filtered->points.size() << " points left" << std::endl; 
   pcl::io::savePCDFile ("V2_cloud_filtered.pcd", *cloud_filtered);
 	
+	// Downsample the Cloud with a Voxelgrid filter
+	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_downsampled (new pcl::PointCloud<pcl::PointXYZ>);
+	pcl::VoxelGrid<pcl::PointXYZ> sor;
+  sor.setInputCloud (cloud_filtered);
+  sor.setLeafSize (0.1f, 0.1f, 0.1f);
+  sor.filter (*cloud_downsampled);
+	pcl::io::savePCDFile ("V3_cloud_downsampled.pcd", *cloud_downsampled);
+	std::cout << "Downsampling:" <<  cloud_filtered->points.size()- cloud_downsampled->points.size();
+	std::cout << " points where removed. " << std::endl;
+	
+	
   // This part is only here because otherwise this Error occurs for the following normal estimation:
   // surface_reconstruction: /build/pcl-OilVEB/pcl-1.8.1+dfsg1/kdtree/include/pcl/kdtree/impl/kdtree_flann.hpp:172: int pcl::KdTreeFLANN<PointT, Dist>::radiusSearch(const PointT&, double, std::vector<int>&, std::vector<float>&, unsigned int) const [with PointT = pcl::PointXYZ; Dist = flann::L2_Simple<float>]: Assertion `point_representation_->isValid (point) && "Invalid (NaN, Inf) point coordinates given to radiusSearch!"' failed.
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_temp (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::PCLPointCloud2 cloud_blob2;
-  pcl::io::loadPCDFile ("V2_cloud_filtered.pcd", cloud_blob2);
+  pcl::io::loadPCDFile ("V3_cloud_downsampled.pcd", cloud_blob2);
   pcl::fromPCLPointCloud2 (cloud_blob2, *cloud_temp);
   std::cout << "Temp has: " << cloud_temp->points.size () << " data points." << std::endl;
 
@@ -78,31 +90,34 @@ main (int argc, char** argv)
   ne.setNumberOfThreads (8);
   ne.setInputCloud (cloud_temp);
   ne.setRadiusSearch (0.1);
-  ne.setViewPoint(20,-150,-5);
+  ne.setViewPoint(30,-50,-5);
   ne.compute (*cloud_normals);
   pcl::PointCloud<pcl::PointNormal>::Ptr cloud_smoothed_normals (new pcl::PointCloud<pcl::PointNormal> ());
   pcl::concatenateFields (*cloud_temp, *cloud_normals, *cloud_smoothed_normals);
-  pcl::io::savePCDFile ("V3_cloud_smoothed_normals.pcd", *cloud_smoothed_normals);
+  pcl::io::savePCDFile ("V4_cloud_smoothed_normals.pcd", *cloud_smoothed_normals);
 	
-//   // Viewer
-//   pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
-//   viewer->setBackgroundColor (0, 0, 0);
-//   viewer->addPointCloud<pcl::PointNormal> (cloud_smoothed_normals, "sample cloud");
-//   viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
-//   viewer->addPointCloudNormals<pcl::PointNormal> (cloud_smoothed_normals, 10, 0.5,"normals");
-//   viewer->addCoordinateSystem (1.0);
-//   viewer->initCameraParameters ();
-//     while (!viewer->wasStopped ())
-//   {
-//     viewer->spinOnce (100);
-//     //std::this_thread::sleep_for(100ms);
-//   }
+	
+
+	
+  // Viewer
+  pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
+  viewer->setBackgroundColor (0, 0, 0);
+  viewer->addPointCloud<pcl::PointNormal> (cloud_smoothed_normals, "sample cloud");
+  viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
+  viewer->addPointCloudNormals<pcl::PointNormal> (cloud_smoothed_normals, 10, 0.5,"normals");
+  viewer->addCoordinateSystem (1.0);
+  viewer->initCameraParameters ();
+    while (!viewer->wasStopped ())
+  {
+    viewer->spinOnce (100);
+    //std::this_thread::sleep_for(100ms);
+  }
   
   //Poisson - Sensitive to noise, but still best outcome
-  std::cout << "starting Poisson" << std::endl;
   pcl::Poisson<pcl::PointNormal> poisson;  
   // Set the maximum depth of the tree that will be used for surface reconstruction. Higher -> more Details
-  poisson.setDepth (7);  // 7 is ok
+  poisson.setDepth (5);  // 6 is ok
+	  std::cout << "starting Poisson with " << poisson.getDepth() << std::endl;
   // Set the minimum number of sample points that should fall within an octree node as the octree construction is adapted to sampling density.  For noise-free samples, small values in the range [1.0 - 5.0] can be used. For more noisy samples, larger values in the range [15.0 - 20.0] may be needed to provide a smoother, noise-reduced, reconstruction. 
   poisson.setSamplesPerNode(5);
   poisson.setScale(1);
@@ -110,10 +125,11 @@ main (int argc, char** argv)
   pcl::PolygonMesh mesh;  
   poisson.reconstruct (mesh);
   //std::cout << poisson.getDegree() << std::endl; //what is Degree for?
-  pcl::io::savePolygonFileSTL("V4_Poisson.stl", mesh); 
+  pcl::io::savePolygonFileSTL("V5_Poisson.stl", mesh); 
 
 	
-  
+  //remove the "boarders" around the poissonmesh:
+	//The best way would be to get the convex hull of the original point cloud and then "crop" the reconstructed mesh with this convex hull as a bounding volume. 
   
   
    

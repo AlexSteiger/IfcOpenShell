@@ -103,7 +103,7 @@ int main() {
   pcl::PassThrough<pcl::PointXYZ> seg;
   seg.setInputCloud (cloud_smoothed);
   seg.setFilterFieldName ("z");
-  seg.setFilterLimits (maxPt.z - 2, maxPt.z);   //(unten, oben)
+  seg.setFilterLimits (maxPt.z - 1.5, maxPt.z);   //(unten, oben)
   seg.setFilterLimitsNegative (false);
   seg.filter (*cloud_segmented);
   // Some informations about the segmented Cloud
