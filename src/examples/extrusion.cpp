@@ -28,8 +28,9 @@
 #include "STEPControl_Writer.hxx"
 #include "STEPControl_Reader.hxx"
 #include "StlAPI_Reader.hxx"
-#include <ShapeFix_Shape.hxx>
-#include <ShapeFix_Face.hxx>
+#include <TopExp_Explorer.hxx>
+#include <Standard_PrimitiveTypes.hxx>
+#include <BRepAdaptor_Surface.hxx>
 
 //IFC:
 #ifdef USE_IFC4
@@ -51,26 +52,9 @@ typedef std::string S;
 typedef IfcParse::IfcGlobalId guid;
 boost::none_t const null = boost::none;
 
-
-
-// void cadElement::loadStl(QString file) {
-// 			StlAPI_Reader reader;
-// 			TopoDS_Shape theShape;
-// 			reader.Read(theShape, (Standard_CString)file.toLatin1().constData());
-// 			this->setShape(theShape);
-// 			
-// }
-
-
 int main() {
-	
-	STEPControl_Reader stpreader;
-	stpreader.ReadFile("V4_Poisson.stp");
-	stpreader.TransferRoots();
-	TopoDS_Shape shape2 = stpreader.OneShape();
-	TopoDS_Face face2 = TopoDS::Face(shape2);  //Cast shape2 to face2
 
-  //The Clouds: input, semgmentation, projection, concave
+	//The Clouds: input, semgmentation, projection, concave
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_input (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_segmented (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_projected (new pcl::PointCloud<pcl::PointXYZ>);
@@ -119,7 +103,7 @@ int main() {
   pcl::PassThrough<pcl::PointXYZ> seg;
   seg.setInputCloud (cloud_smoothed);
   seg.setFilterFieldName ("z");
-  seg.setFilterLimits (maxPt.z - 3, maxPt.z);   //(unten, oben)
+  seg.setFilterLimits (maxPt.z - 2, maxPt.z);   //(unten, oben)
   seg.setFilterLimitsNegative (false);
   seg.filter (*cloud_segmented);
   // Some informations about the segmented Cloud
@@ -159,7 +143,7 @@ int main() {
   pcl::StatisticalOutlierRemoval<pcl::PointXYZ> sor;
   sor.setInputCloud (cloud_projected);
   sor.setMeanK (20);
-  sor.setStddevMulThresh (3);
+  sor.setStddevMulThresh (2);
   sor.setNegative (false);
   sor.filter (*cloud_filtered);
   std::cout << cloud_projected->points.size() - cloud_filtered->points.size ();
@@ -170,7 +154,7 @@ int main() {
   std::cout << "Construct the Concave Hull... ";
   pcl::ConcaveHull<pcl::PointXYZ> chull;
   chull.setInputCloud (cloud_filtered);
-  chull.setAlpha (0.05);  //limits the size of the hull semements, smaller->more Detail
+  chull.setAlpha (0.06);  //limits the size of the hull semements, smaller->more Detail
   chull.reconstruct (*cloud_hull);
   std::cerr << "Concave Hull has " << cloud_hull->points.size () << " data points." << std::endl;
 
@@ -197,42 +181,35 @@ int main() {
   wire = mpoly.Wire();
   face = BRepLib_MakeFace (wire);
   solid = BRepPrimAPI_MakePrism(face,gp_Vec(0.,0.,minPt.z-maxPt.z));
-  
 
-		std::cout << "starting reading the stl-file" << std::endl;
+	std::cout << "starting reading the stl-file" << std::endl;
   StlAPI_Reader stlreader;
-	QString qfilename = "V4_Poisson.stl";
-	TopoDS_Face verformung_face;
-	stlreader.Read(verformung_face, (Standard_CString)qfilename.toLatin1().constData());
+	QString qfilename = "Verformung_cutout.stl";
+	TopoDS_Shape verformung_shape;
+	stlreader.Read(verformung_shape, (Standard_CString)qfilename.toLatin1().constData());
 	std::cout << "finish reading the stl-file" << std::endl;
-// 	
-// 	TopoDS_Face face2 = verformung_face;
+ 	
 	
+	std::cout << "building shell from faces... (one \"I\" for each face)" << std::endl;
+	BRep_Builder builder;
+	TopoDS_Shell verformung_shell;
+	builder.MakeShell(verformung_shell);
+for( TopExp_Explorer ex(verformung_shape, TopAbs_FACE); ex.More(); ex.Next() )
+{
+	TopoDS_Face currentFace = TopoDS::Face( ex.Current() );
+	BRepAdaptor_Surface brepAdaptorSurface( currentFace,Standard_True );
+	builder.Add(verformung_shell, currentFace);
+	//std::cout << "I";
+}
 	
-	
-// 	//Creates a tool and adds a wire to the face 
-// 	ShapeFix_Face sff; 
-//   sff.Init(face2);
-// 	//sff.FixAddNaturalBound();
-// 	//use method Perform to fix the wire and the face 
-// 	sff.Perform(); 
-// 
-// 	//Get the resulting face 
-// 	TopoDS_Face newface = sff.Face(); 
-	
-/*	
-	std::cout << "verformung_face is type: " << typeid(verformung_face).name() << std::endl;
-	std::cout << "face2 is type: " << typeid(face2).name() << std::endl; */ 
-	//std::cout << "tess is type: " << typeid(tess).name() << std::endl; 
-	
-// 	// Cut a solid with a face
-// 	// 1. Use BRepPrimAPI_MakeHalfSpace to create a half-space. 
-// TopoDS_Solid Halbraum = BRepPrimAPI_MakeHalfSpace(verformung_face, gp_Pnt(150.,-40.,-5.)).Solid();
-// 	// 2. Use Boolean APIs do sub and intersection operations
- 	//TopoDS_Shape UpperHalf = BRepAlgoAPI_Cut(solid,Halbraum);
+	// Cut a solid with a face
+	// 1. Use BRepPrimAPI_MakeHalfSpace to create a half-space. 
+	// One side: 150.,0.,-5.
+	// Other side: 
+	TopoDS_Solid Halbraum = BRepPrimAPI_MakeHalfSpace(verformung_shell, gp_Pnt(150.,-100.,-5.)).Solid();
+	// 2. Use Boolean APIs do sub and intersection operations
+ 	TopoDS_Shape Remaining_Extrusion = BRepAlgoAPI_Cut(solid,Halbraum);
 
-	std::cout << "made the Halbraum" << std::endl;
-	
   //write Files
   pcl::PCDWriter writer;
   writer.write ("E1_0_Input_Cloud.pcd", *cloud_input, false);
@@ -243,14 +220,12 @@ int main() {
   writer.write ("E6_Cloud_inliers.pcd", *cloud_filtered, false);
   writer.write ("E7_Concave_Hull.pcd", *cloud_hull, false);
   STEPControl_Writer OCC_writer;
-  OCC_writer.Transfer(verformung_face,STEPControl_AsIs);
-	//OCC_writer.Transfer(Halbraum,STEPControl_AsIs);
-	OCC_writer.Write("Verformung_cutout.stp");
-  //OCC_writer.Write("E8_Spundwand.stp");
+  OCC_writer.Transfer(solid,STEPControl_AsIs);
+	//OCC_writer.Transfer(verformung_shell,STEPControl_AsIs);
+	//OCC_writer.Write("E9_Remaining_Extrusion.stp");
+  OCC_writer.Write("E8_Spundwand.stp");
 
 
-	
-  
 //////////////////////////////////
 //////////IFC STARTS HERE/////////
 //////////////////////////////////

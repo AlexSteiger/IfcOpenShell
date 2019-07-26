@@ -157,6 +157,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+examples/CMakeFiles/boolean.dir/rule:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/boolean.dir/rule
+.PHONY : examples/CMakeFiles/boolean.dir/rule
+
+# Convenience name for target.
+boolean: examples/CMakeFiles/boolean.dir/rule
+
+.PHONY : boolean
+
+# fast build rule for target.
+boolean/fast:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/boolean.dir/build.make examples/CMakeFiles/boolean.dir/build
+.PHONY : boolean/fast
+
+# Convenience name for target.
 examples/CMakeFiles/extrusion.dir/rule:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/extrusion.dir/rule
 .PHONY : examples/CMakeFiles/extrusion.dir/rule
@@ -187,19 +202,19 @@ verformungen/fast:
 .PHONY : verformungen/fast
 
 # Convenience name for target.
-examples/CMakeFiles/hydromapper_multiplecuts.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hydromapper_multiplecuts.dir/rule
-.PHONY : examples/CMakeFiles/hydromapper_multiplecuts.dir/rule
+examples/CMakeFiles/middleline.dir/rule:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/middleline.dir/rule
+.PHONY : examples/CMakeFiles/middleline.dir/rule
 
 # Convenience name for target.
-hydromapper_multiplecuts: examples/CMakeFiles/hydromapper_multiplecuts.dir/rule
+middleline: examples/CMakeFiles/middleline.dir/rule
 
-.PHONY : hydromapper_multiplecuts
+.PHONY : middleline
 
 # fast build rule for target.
-hydromapper_multiplecuts/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_multiplecuts.dir/build.make examples/CMakeFiles/hydromapper_multiplecuts.dir/build
-.PHONY : hydromapper_multiplecuts/fast
+middleline/fast:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/middleline.dir/build.make examples/CMakeFiles/middleline.dir/build
+.PHONY : middleline/fast
 
 # Convenience name for target.
 examples/CMakeFiles/IfcOpenHouse.dir/rule:
@@ -372,6 +387,33 @@ IfcParseExamples.cpp.s:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/IfcParseExamples.cpp.s
 .PHONY : IfcParseExamples.cpp.s
 
+boolean.o: boolean.cpp.o
+
+.PHONY : boolean.o
+
+# target to build an object file
+boolean.cpp.o:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/boolean.dir/build.make examples/CMakeFiles/boolean.dir/boolean.cpp.o
+.PHONY : boolean.cpp.o
+
+boolean.i: boolean.cpp.i
+
+.PHONY : boolean.i
+
+# target to preprocess a source file
+boolean.cpp.i:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/boolean.dir/build.make examples/CMakeFiles/boolean.dir/boolean.cpp.i
+.PHONY : boolean.cpp.i
+
+boolean.s: boolean.cpp.s
+
+.PHONY : boolean.s
+
+# target to generate assembly for a file
+boolean.cpp.s:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/boolean.dir/build.make examples/CMakeFiles/boolean.dir/boolean.cpp.s
+.PHONY : boolean.cpp.s
+
 extrusion.o: extrusion.cpp.o
 
 .PHONY : extrusion.o
@@ -453,33 +495,6 @@ hellowalls.cpp.s:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/hellowalls.cpp.s
 .PHONY : hellowalls.cpp.s
 
-hydromapper_multiplecuts.o: hydromapper_multiplecuts.cpp.o
-
-.PHONY : hydromapper_multiplecuts.o
-
-# target to build an object file
-hydromapper_multiplecuts.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_multiplecuts.dir/build.make examples/CMakeFiles/hydromapper_multiplecuts.dir/hydromapper_multiplecuts.cpp.o
-.PHONY : hydromapper_multiplecuts.cpp.o
-
-hydromapper_multiplecuts.i: hydromapper_multiplecuts.cpp.i
-
-.PHONY : hydromapper_multiplecuts.i
-
-# target to preprocess a source file
-hydromapper_multiplecuts.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_multiplecuts.dir/build.make examples/CMakeFiles/hydromapper_multiplecuts.dir/hydromapper_multiplecuts.cpp.i
-.PHONY : hydromapper_multiplecuts.cpp.i
-
-hydromapper_multiplecuts.s: hydromapper_multiplecuts.cpp.s
-
-.PHONY : hydromapper_multiplecuts.s
-
-# target to generate assembly for a file
-hydromapper_multiplecuts.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hydromapper_multiplecuts.dir/build.make examples/CMakeFiles/hydromapper_multiplecuts.dir/hydromapper_multiplecuts.cpp.s
-.PHONY : hydromapper_multiplecuts.cpp.s
-
 mauer.o: mauer.cpp.o
 
 .PHONY : mauer.o
@@ -506,6 +521,33 @@ mauer.s: mauer.cpp.s
 mauer.cpp.s:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/mauer.cpp.s
 .PHONY : mauer.cpp.s
+
+middleline.o: middleline.cpp.o
+
+.PHONY : middleline.o
+
+# target to build an object file
+middleline.cpp.o:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/middleline.dir/build.make examples/CMakeFiles/middleline.dir/middleline.cpp.o
+.PHONY : middleline.cpp.o
+
+middleline.i: middleline.cpp.i
+
+.PHONY : middleline.i
+
+# target to preprocess a source file
+middleline.cpp.i:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/middleline.dir/build.make examples/CMakeFiles/middleline.dir/middleline.cpp.i
+.PHONY : middleline.cpp.i
+
+middleline.s: middleline.cpp.s
+
+.PHONY : middleline.s
+
+# target to generate assembly for a file
+middleline.cpp.s:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/middleline.dir/build.make examples/CMakeFiles/middleline.dir/middleline.cpp.s
+.PHONY : middleline.cpp.s
 
 verformungen.o: verformungen.cpp.o
 
@@ -543,9 +585,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... boolean"
 	@echo "... extrusion"
 	@echo "... verformungen"
-	@echo "... hydromapper_multiplecuts"
+	@echo "... middleline"
 	@echo "... IfcOpenHouse"
 	@echo "... IfcAdvancedHouse"
 	@echo "... IfcParseExamples"
@@ -564,6 +607,9 @@ help:
 	@echo "... IfcParseExamples.o"
 	@echo "... IfcParseExamples.i"
 	@echo "... IfcParseExamples.s"
+	@echo "... boolean.o"
+	@echo "... boolean.i"
+	@echo "... boolean.s"
 	@echo "... extrusion.o"
 	@echo "... extrusion.i"
 	@echo "... extrusion.s"
@@ -573,12 +619,12 @@ help:
 	@echo "... hellowalls.o"
 	@echo "... hellowalls.i"
 	@echo "... hellowalls.s"
-	@echo "... hydromapper_multiplecuts.o"
-	@echo "... hydromapper_multiplecuts.i"
-	@echo "... hydromapper_multiplecuts.s"
 	@echo "... mauer.o"
 	@echo "... mauer.i"
 	@echo "... mauer.s"
+	@echo "... middleline.o"
+	@echo "... middleline.i"
+	@echo "... middleline.s"
 	@echo "... verformungen.o"
 	@echo "... verformungen.i"
 	@echo "... verformungen.s"

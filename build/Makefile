@@ -222,6 +222,19 @@ _ifcopenshell_wrapper/fast:
 .PHONY : _ifcopenshell_wrapper/fast
 
 #=============================================================================
+# Target rules for targets named boolean
+
+# Build rule for target.
+boolean: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 boolean
+.PHONY : boolean
+
+# fast build rule for target.
+boolean/fast:
+	$(MAKE) -f examples/CMakeFiles/boolean.dir/build.make examples/CMakeFiles/boolean.dir/build
+.PHONY : boolean/fast
+
+#=============================================================================
 # Target rules for targets named extrusion
 
 # Build rule for target.
@@ -248,17 +261,17 @@ verformungen/fast:
 .PHONY : verformungen/fast
 
 #=============================================================================
-# Target rules for targets named hydromapper_multiplecuts
+# Target rules for targets named middleline
 
 # Build rule for target.
-hydromapper_multiplecuts: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hydromapper_multiplecuts
-.PHONY : hydromapper_multiplecuts
+middleline: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 middleline
+.PHONY : middleline
 
 # fast build rule for target.
-hydromapper_multiplecuts/fast:
-	$(MAKE) -f examples/CMakeFiles/hydromapper_multiplecuts.dir/build.make examples/CMakeFiles/hydromapper_multiplecuts.dir/build
-.PHONY : hydromapper_multiplecuts/fast
+middleline/fast:
+	$(MAKE) -f examples/CMakeFiles/middleline.dir/build.make examples/CMakeFiles/middleline.dir/build
+.PHONY : middleline/fast
 
 #=============================================================================
 # Target rules for targets named IfcOpenHouse
@@ -1165,9 +1178,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... _ifcopenshell_wrapper"
+	@echo "... boolean"
 	@echo "... extrusion"
 	@echo "... verformungen"
-	@echo "... hydromapper_multiplecuts"
+	@echo "... middleline"
 	@echo "... IfcOpenHouse"
 	@echo "... IfcAdvancedHouse"
 	@echo "... IfcParseExamples"
