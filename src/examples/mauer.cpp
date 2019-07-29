@@ -13,22 +13,16 @@
 #include <TColgp_Array1OfPnt.hxx>
 #include <TColStd_Array1OfReal.hxx>
 #include <TColStd_Array1OfInteger.hxx>
-
 #include <Geom_BSplineSurface.hxx>
-
 #include "STEPControl_Writer.hxx"
-
 #include <BRepBuilderAPI_MakeFace.hxx>
 #include <BRepBuilderAPI_NurbsConvert.hxx>
 #include <BRepMesh_IncrementalMesh.hxx>
 #include <TopoDS_Face.hxx>
 #include <TopoDS.hxx>
-
 #include <BRepPrimAPI_MakeBox.hxx>
 #include <BRepPrimAPI_MakeHalfSpace.hxx>
-
 #include <BRepAlgoAPI_Cut.hxx>
-
 #include <Standard_Version.hxx>
 
 #ifdef USE_IFC4

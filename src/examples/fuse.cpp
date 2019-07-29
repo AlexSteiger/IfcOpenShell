@@ -11,6 +11,7 @@
 #include <BRepBuilderAPI_MakePolygon.hxx>
 #include <BRepPrimAPI_MakeHalfSpace.hxx>
 #include <BRepAlgoAPI_Cut.hxx>
+#include <BRepAlgoAPI_Fuse.hxx>
 #include <BRepPrimAPI_MakePrism.hxx>
 #include <TopoDS.hxx>
 #include <TopoDS_Face.hxx>
@@ -24,6 +25,7 @@
 #include <BRepAdaptor_Surface.hxx>
 
 #include <BRepBuilderAPI_MakeSolid.hxx>
+#include <ShapeUpgrade_UnifySameDomain.hxx>
 
 int main() {
 
@@ -31,7 +33,7 @@ int main() {
 	STEPControl_Reader stpreader;
 	stpreader.ReadFile("E8_Spundwand.stp");
 	stpreader.TransferRoots();
-	TopoDS_Shape solid = stpreader.OneShape();
+	TopoDS_Shape spwand_shape = stpreader.OneShape();
   std::cout << "finish reading the stp-file" << std::endl;
 
 	std::cout << "starting reading the stl-file" << std::endl;
@@ -51,26 +53,35 @@ for( TopExp_Explorer ex(verformung_shape, TopAbs_FACE); ex.More(); ex.Next() )
 	TopoDS_Face currentFace = TopoDS::Face( ex.Current() );
 	BRepAdaptor_Surface brepAdaptorSurface( currentFace,Standard_True );
 	builder.Add(verformung_shell, currentFace);
-	//std::cout << "l";
+	std::cout << "l";
 }
 	
-	TopoDS_Solid soli2 = BRepBuilderAPI_MakeSolid 	(verformung_shell);
+	TopoDS_Solid solid2 = BRepBuilderAPI_MakeSolid (verformung_shell);
+	TopoDS_Shape fused = BRepAlgoAPI_Fuse(spwand_shape,solid2);
 	
-// 	// Cut a solid with a face
-// 	// 1. Use BRepPrimAPI_MakeHalfSpace to create a half-space. 
-// 	// One side: 150.,0.,-5.  Other side: 150.,-100.,-5.)
-// 	TopoDS_Solid Halbraum = BRepPrimAPI_MakeHalfSpace(verformung_shell, gp_Pnt(150.,-100.,-5.)).Solid();
-// 	// 2. Use Boolean APIs do sub and intersection operations
-//  	TopoDS_Shape Remaining_Extrusion = BRepAlgoAPI_Cut(solid,Halbraum);
-
+	//This tool tries to unify faces and edges of the shape which lie on the same geometry
+	ShapeUpgrade_UnifySameDomain unif(fused, true, true, false);
+	unif.Build();
+	TopoDS_Shape fixed = unif.Shape();
+	
+	//TopoDS_Solid solid3 = TopoDS::Solid(fused);
+	// This tries to put the holes in the spwand_shape, but doesn't quite work yet
+	// 1. Use BRepPrimAPI_MakeHalfSpace to create a half-space.
+	// 2. Use Boolean APIs do sub and intersection operations
+	// Waterside: (10,-375,-5) ; Landside: (300,300,-5)
+	// Works only for sections of the spwand_shape, which are through the shell "cut off" of the rest
+	//TopoDS_Solid Halbraum = BRepPrimAPI_MakeHalfSpace(verformung_shell, gp_Pnt(10,-375,-5)).Solid();
+	//TopoDS_Shape Remaining_Extrusion = BRepAlgoAPI_Cut(spwand_shape,Halbraum);
+	//TopoDS_Solid Halbraum2 = BRepPrimAPI_MakeHalfSpace(verformung_shell, gp_Pnt(300,300,-5)).Solid();
+	//TopoDS_Shape Remaining_Extrusion2 = BRepAlgoAPI_Cut(spwand_shape,Halbraum2);
+	
 
 	
-   //write Files
-   STEPControl_Writer OCC_writer;
-   OCC_writer.Transfer(soli2,STEPControl_AsIs);
-// 	//OCC_writer.Transfer(verformung_shell,STEPControl_AsIs);
- 	OCC_writer.Write("B1.stp");
-//   //OCC_writer.Write("E8_Spundwand.stp");
+	
+	//write Files
+	STEPControl_Writer OCC_writer;
+	OCC_writer.Transfer(fixed,STEPControl_AsIs);
+ 	OCC_writer.Write("F1.stp");
 
 
 //////////////////////////////////

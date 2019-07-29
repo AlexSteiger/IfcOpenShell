@@ -1,3 +1,8 @@
+#include <chrono> // for high_resolution_clock
+#include <string>
+#include <iostream>
+#include <fstream>
+
 #include <pcl/common/common.h>
 #include <pcl/surface/poisson.h>
 #include <pcl/surface/mls.h>
@@ -27,7 +32,8 @@ main (int argc, char** argv)
   // Input Cloud
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_input (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::PCLPointCloud2 cloud_blob;
-  pcl::io::loadPCDFile ("Spundwand.pcd", cloud_blob);
+  //pcl::io::loadPCDFile ("../../../PCL_Hydromapper/Samples_PCD/Spundwand.pcd", cloud_blob);
+  pcl::io::loadPCDFile ("E1_0_Input_Cloud.pcd", cloud_blob);
   pcl::fromPCLPointCloud2 (cloud_blob, *cloud_input);
   std::cout << "Input has: " << cloud_input->points.size () << " data points." << std::endl;
   pcl::io::savePCDFile ("V0_cloud_input.pcd", *cloud_input);
@@ -67,7 +73,7 @@ main (int argc, char** argv)
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_downsampled (new pcl::PointCloud<pcl::PointXYZ>);
 	pcl::VoxelGrid<pcl::PointXYZ> sor;
   sor.setInputCloud (cloud_filtered);
-  sor.setLeafSize (0.1f, 0.1f, 0.1f);
+  sor.setLeafSize (0.03f, 0.03f, 0.03f);
   sor.filter (*cloud_downsampled);
 	pcl::io::savePCDFile ("V3_cloud_downsampled.pcd", *cloud_downsampled);
 	std::cout << "Downsampling:" <<  cloud_filtered->points.size()- cloud_downsampled->points.size();
@@ -80,8 +86,7 @@ main (int argc, char** argv)
   pcl::PCLPointCloud2 cloud_blob2;
   pcl::io::loadPCDFile ("V3_cloud_downsampled.pcd", cloud_blob2);
   pcl::fromPCLPointCloud2 (cloud_blob2, *cloud_temp);
-  std::cout << "Temp has: " << cloud_temp->points.size () << " data points." << std::endl;
-
+	
   // Normal Estimation
   // Ziel: dass die Normalen in eine Richtung schauen(?)
   std::cout << "starting normal estimation" << std::endl;
@@ -89,45 +94,48 @@ main (int argc, char** argv)
   pcl::PointCloud<pcl::Normal>::Ptr cloud_normals (new pcl::PointCloud<pcl::Normal> ());
   ne.setNumberOfThreads (8);
   ne.setInputCloud (cloud_temp);
-  ne.setRadiusSearch (0.1);
-  ne.setViewPoint(30,-50,-5);
+  ne.setRadiusSearch (0.3);
+  ne.setViewPoint(10,-375,-5);
   ne.compute (*cloud_normals);
   pcl::PointCloud<pcl::PointNormal>::Ptr cloud_smoothed_normals (new pcl::PointCloud<pcl::PointNormal> ());
   pcl::concatenateFields (*cloud_temp, *cloud_normals, *cloud_smoothed_normals);
   pcl::io::savePCDFile ("V4_cloud_smoothed_normals.pcd", *cloud_smoothed_normals);
-	
-	
 
-	
-  // Viewer
-  pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
-  viewer->setBackgroundColor (0, 0, 0);
-  viewer->addPointCloud<pcl::PointNormal> (cloud_smoothed_normals, "sample cloud");
-  viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
-  viewer->addPointCloudNormals<pcl::PointNormal> (cloud_smoothed_normals, 10, 0.5,"normals");
-  viewer->addCoordinateSystem (1.0);
-  viewer->initCameraParameters ();
-    while (!viewer->wasStopped ())
-  {
-    viewer->spinOnce (100);
-    //std::this_thread::sleep_for(100ms);
-  }
+//   // Viewer
+// 	  pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
+//   viewer->setBackgroundColor (0, 0, 0);
+//  	pcl::visualization::PointCloudColorHandlerCustom<pcl::PointNormal> single_color(cloud_smoothed_normals, 90, 0, 0);
+//   viewer->addPointCloud<pcl::PointNormal> (cloud_smoothed_normals, single_color, "sample cloud");
+//   viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
+// 	//addPointCloudNormals(cloud, level, scale, id)
+//   viewer->addPointCloudNormals<pcl::PointNormal> (cloud_smoothed_normals, 5, 0.1,"normals");
+//   viewer->addCoordinateSystem (1.0);
+//   viewer->initCameraParameters ();
+//     while (!viewer->wasStopped ()) //Calls the interactor and updates the screen once. 
+//   {
+//     viewer->spinOnce (100);
+//     //std::this_thread::sleep_for(100ms);
+//   }
   
   //Poisson - Sensitive to noise, but still best outcome
+	auto start = std::chrono::high_resolution_clock::now();
   pcl::Poisson<pcl::PointNormal> poisson;  
   // Set the maximum depth of the tree that will be used for surface reconstruction. Higher -> more Details
-  poisson.setDepth (5);  // 6 is ok
-	  std::cout << "starting Poisson with " << poisson.getDepth() << std::endl;
+  poisson.setDepth (7);  // 7 is ok
+	std::cout << "starting Poisson with  tree depth " << poisson.getDepth();
+	std::cout << " and " << cloud_smoothed_normals->points.size() << " points." << std::endl;
   // Set the minimum number of sample points that should fall within an octree node as the octree construction is adapted to sampling density.  For noise-free samples, small values in the range [1.0 - 5.0] can be used. For more noisy samples, larger values in the range [15.0 - 20.0] may be needed to provide a smoother, noise-reduced, reconstruction. 
-  poisson.setSamplesPerNode(5);
+  poisson.setSamplesPerNode(6);
   poisson.setScale(1);
   poisson.setInputCloud (cloud_smoothed_normals);  
   pcl::PolygonMesh mesh;  
+	std::cout << "here" << std::endl;
   poisson.reconstruct (mesh);
   //std::cout << poisson.getDegree() << std::endl; //what is Degree for?
   pcl::io::savePolygonFileSTL("V5_Poisson.stl", mesh); 
-
-	
+	auto finish = std::chrono::high_resolution_clock::now();
+	std::chrono::duration<double> elapsed = finish - start;
+	std::cout << "Poisson took: " << elapsed.count() << " s\n";
   //remove the "boarders" around the poissonmesh:
 	//The best way would be to get the convex hull of the original point cloud and then "crop" the reconstructed mesh with this convex hull as a bounding volume. 
   

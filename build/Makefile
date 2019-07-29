@@ -222,19 +222,6 @@ _ifcopenshell_wrapper/fast:
 .PHONY : _ifcopenshell_wrapper/fast
 
 #=============================================================================
-# Target rules for targets named boolean
-
-# Build rule for target.
-boolean: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 boolean
-.PHONY : boolean
-
-# fast build rule for target.
-boolean/fast:
-	$(MAKE) -f examples/CMakeFiles/boolean.dir/build.make examples/CMakeFiles/boolean.dir/build
-.PHONY : boolean/fast
-
-#=============================================================================
 # Target rules for targets named extrusion
 
 # Build rule for target.
@@ -261,17 +248,17 @@ verformungen/fast:
 .PHONY : verformungen/fast
 
 #=============================================================================
-# Target rules for targets named middleline
+# Target rules for targets named createIFC
 
 # Build rule for target.
-middleline: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 middleline
-.PHONY : middleline
+createIFC: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 createIFC
+.PHONY : createIFC
 
 # fast build rule for target.
-middleline/fast:
-	$(MAKE) -f examples/CMakeFiles/middleline.dir/build.make examples/CMakeFiles/middleline.dir/build
-.PHONY : middleline/fast
+createIFC/fast:
+	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/build
+.PHONY : createIFC/fast
 
 #=============================================================================
 # Target rules for targets named IfcOpenHouse
@@ -337,6 +324,19 @@ hellowalls: cmake_check_build_system
 hellowalls/fast:
 	$(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/build
 .PHONY : hellowalls/fast
+
+#=============================================================================
+# Target rules for targets named fuse
+
+# Build rule for target.
+fuse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fuse
+.PHONY : fuse
+
+# fast build rule for target.
+fuse/fast:
+	$(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/build
+.PHONY : fuse/fast
 
 #=============================================================================
 # Target rules for targets named mauer
@@ -1178,15 +1178,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... _ifcopenshell_wrapper"
-	@echo "... boolean"
 	@echo "... extrusion"
 	@echo "... verformungen"
-	@echo "... middleline"
+	@echo "... createIFC"
 	@echo "... IfcOpenHouse"
 	@echo "... IfcAdvancedHouse"
 	@echo "... IfcParseExamples"
 	@echo "... hellowall"
 	@echo "... hellowalls"
+	@echo "... fuse"
 	@echo "... mauer"
 	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.o"
 	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.i"

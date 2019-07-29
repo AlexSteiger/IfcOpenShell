@@ -157,21 +157,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-examples/CMakeFiles/boolean.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/boolean.dir/rule
-.PHONY : examples/CMakeFiles/boolean.dir/rule
-
-# Convenience name for target.
-boolean: examples/CMakeFiles/boolean.dir/rule
-
-.PHONY : boolean
-
-# fast build rule for target.
-boolean/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/boolean.dir/build.make examples/CMakeFiles/boolean.dir/build
-.PHONY : boolean/fast
-
-# Convenience name for target.
 examples/CMakeFiles/extrusion.dir/rule:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/extrusion.dir/rule
 .PHONY : examples/CMakeFiles/extrusion.dir/rule
@@ -202,19 +187,19 @@ verformungen/fast:
 .PHONY : verformungen/fast
 
 # Convenience name for target.
-examples/CMakeFiles/middleline.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/middleline.dir/rule
-.PHONY : examples/CMakeFiles/middleline.dir/rule
+examples/CMakeFiles/createIFC.dir/rule:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/createIFC.dir/rule
+.PHONY : examples/CMakeFiles/createIFC.dir/rule
 
 # Convenience name for target.
-middleline: examples/CMakeFiles/middleline.dir/rule
+createIFC: examples/CMakeFiles/createIFC.dir/rule
 
-.PHONY : middleline
+.PHONY : createIFC
 
 # fast build rule for target.
-middleline/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/middleline.dir/build.make examples/CMakeFiles/middleline.dir/build
-.PHONY : middleline/fast
+createIFC/fast:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/build
+.PHONY : createIFC/fast
 
 # Convenience name for target.
 examples/CMakeFiles/IfcOpenHouse.dir/rule:
@@ -290,6 +275,21 @@ hellowalls: examples/CMakeFiles/hellowalls.dir/rule
 hellowalls/fast:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/build
 .PHONY : hellowalls/fast
+
+# Convenience name for target.
+examples/CMakeFiles/fuse.dir/rule:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/fuse.dir/rule
+.PHONY : examples/CMakeFiles/fuse.dir/rule
+
+# Convenience name for target.
+fuse: examples/CMakeFiles/fuse.dir/rule
+
+.PHONY : fuse
+
+# fast build rule for target.
+fuse/fast:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/build
+.PHONY : fuse/fast
 
 # Convenience name for target.
 examples/CMakeFiles/mauer.dir/rule:
@@ -387,32 +387,32 @@ IfcParseExamples.cpp.s:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/IfcParseExamples.cpp.s
 .PHONY : IfcParseExamples.cpp.s
 
-boolean.o: boolean.cpp.o
+createIFC.o: createIFC.cpp.o
 
-.PHONY : boolean.o
+.PHONY : createIFC.o
 
 # target to build an object file
-boolean.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/boolean.dir/build.make examples/CMakeFiles/boolean.dir/boolean.cpp.o
-.PHONY : boolean.cpp.o
+createIFC.cpp.o:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/createIFC.cpp.o
+.PHONY : createIFC.cpp.o
 
-boolean.i: boolean.cpp.i
+createIFC.i: createIFC.cpp.i
 
-.PHONY : boolean.i
+.PHONY : createIFC.i
 
 # target to preprocess a source file
-boolean.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/boolean.dir/build.make examples/CMakeFiles/boolean.dir/boolean.cpp.i
-.PHONY : boolean.cpp.i
+createIFC.cpp.i:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/createIFC.cpp.i
+.PHONY : createIFC.cpp.i
 
-boolean.s: boolean.cpp.s
+createIFC.s: createIFC.cpp.s
 
-.PHONY : boolean.s
+.PHONY : createIFC.s
 
 # target to generate assembly for a file
-boolean.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/boolean.dir/build.make examples/CMakeFiles/boolean.dir/boolean.cpp.s
-.PHONY : boolean.cpp.s
+createIFC.cpp.s:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/createIFC.cpp.s
+.PHONY : createIFC.cpp.s
 
 extrusion.o: extrusion.cpp.o
 
@@ -440,6 +440,33 @@ extrusion.s: extrusion.cpp.s
 extrusion.cpp.s:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/extrusion.cpp.s
 .PHONY : extrusion.cpp.s
+
+fuse.o: fuse.cpp.o
+
+.PHONY : fuse.o
+
+# target to build an object file
+fuse.cpp.o:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/fuse.cpp.o
+.PHONY : fuse.cpp.o
+
+fuse.i: fuse.cpp.i
+
+.PHONY : fuse.i
+
+# target to preprocess a source file
+fuse.cpp.i:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/fuse.cpp.i
+.PHONY : fuse.cpp.i
+
+fuse.s: fuse.cpp.s
+
+.PHONY : fuse.s
+
+# target to generate assembly for a file
+fuse.cpp.s:
+	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/fuse.cpp.s
+.PHONY : fuse.cpp.s
 
 hellowall.o: hellowall.cpp.o
 
@@ -522,33 +549,6 @@ mauer.cpp.s:
 	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/mauer.cpp.s
 .PHONY : mauer.cpp.s
 
-middleline.o: middleline.cpp.o
-
-.PHONY : middleline.o
-
-# target to build an object file
-middleline.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/middleline.dir/build.make examples/CMakeFiles/middleline.dir/middleline.cpp.o
-.PHONY : middleline.cpp.o
-
-middleline.i: middleline.cpp.i
-
-.PHONY : middleline.i
-
-# target to preprocess a source file
-middleline.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/middleline.dir/build.make examples/CMakeFiles/middleline.dir/middleline.cpp.i
-.PHONY : middleline.cpp.i
-
-middleline.s: middleline.cpp.s
-
-.PHONY : middleline.s
-
-# target to generate assembly for a file
-middleline.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/middleline.dir/build.make examples/CMakeFiles/middleline.dir/middleline.cpp.s
-.PHONY : middleline.cpp.s
-
 verformungen.o: verformungen.cpp.o
 
 .PHONY : verformungen.o
@@ -585,10 +585,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... boolean"
 	@echo "... extrusion"
 	@echo "... verformungen"
-	@echo "... middleline"
+	@echo "... createIFC"
 	@echo "... IfcOpenHouse"
 	@echo "... IfcAdvancedHouse"
 	@echo "... IfcParseExamples"
@@ -597,6 +596,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... hellowalls"
 	@echo "... install/local"
+	@echo "... fuse"
 	@echo "... mauer"
 	@echo "... IfcAdvancedHouse.o"
 	@echo "... IfcAdvancedHouse.i"
@@ -607,12 +607,15 @@ help:
 	@echo "... IfcParseExamples.o"
 	@echo "... IfcParseExamples.i"
 	@echo "... IfcParseExamples.s"
-	@echo "... boolean.o"
-	@echo "... boolean.i"
-	@echo "... boolean.s"
+	@echo "... createIFC.o"
+	@echo "... createIFC.i"
+	@echo "... createIFC.s"
 	@echo "... extrusion.o"
 	@echo "... extrusion.i"
 	@echo "... extrusion.s"
+	@echo "... fuse.o"
+	@echo "... fuse.i"
+	@echo "... fuse.s"
 	@echo "... hellowall.o"
 	@echo "... hellowall.i"
 	@echo "... hellowall.s"
@@ -622,9 +625,6 @@ help:
 	@echo "... mauer.o"
 	@echo "... mauer.i"
 	@echo "... mauer.s"
-	@echo "... middleline.o"
-	@echo "... middleline.i"
-	@echo "... middleline.s"
 	@echo "... verformungen.o"
 	@echo "... verformungen.i"
 	@echo "... verformungen.s"

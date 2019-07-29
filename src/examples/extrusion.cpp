@@ -63,7 +63,8 @@ int main() {
   
   // Input Cloud
   pcl::PCLPointCloud2 cloud_blob;
-  pcl::io::loadPCDFile ("Spundwand.pcd", cloud_blob);
+  //pcl::io::loadPCDFile ("Spundwand.pcd", cloud_blob);
+  pcl::io::loadPCDFile ("../../../PCL_Hydromapper/Samples_PCD/Spundwand.pcd", cloud_blob);
   pcl::fromPCLPointCloud2 (cloud_blob, *cloud_input);
   // Some informations about input Cloud
   pcl::PointXYZ minPt, maxPt;
@@ -103,7 +104,7 @@ int main() {
   pcl::PassThrough<pcl::PointXYZ> seg;
   seg.setInputCloud (cloud_smoothed);
   seg.setFilterFieldName ("z");
-  seg.setFilterLimits (maxPt.z - 1.5, maxPt.z);   //(unten, oben)
+  seg.setFilterLimits (maxPt.z - 3, maxPt.z);   //(unten, oben)
   seg.setFilterLimitsNegative (false);
   seg.filter (*cloud_segmented);
   // Some informations about the segmented Cloud
@@ -138,12 +139,12 @@ int main() {
   std::cout << "Min y: " << minPt_p.y << " | Max y: " << maxPt_p.y << std::endl;
   std::cout << "Min z: " << minPt_p.z << " | Max z: " << maxPt_p.z << std::endl;
   
-  // Statistical outlier removal
+  // Statistical outlier removal 2
   std::cout << "Starting Statistical outlier removal of projected cloud... " ;
   pcl::StatisticalOutlierRemoval<pcl::PointXYZ> sor;
   sor.setInputCloud (cloud_projected);
-  sor.setMeanK (20);
-  sor.setStddevMulThresh (2);
+  sor.setMeanK (40);
+  sor.setStddevMulThresh (2.5);
   sor.setNegative (false);
   sor.filter (*cloud_filtered);
   std::cout << cloud_projected->points.size() - cloud_filtered->points.size ();
@@ -154,7 +155,7 @@ int main() {
   std::cout << "Construct the Concave Hull... ";
   pcl::ConcaveHull<pcl::PointXYZ> chull;
   chull.setInputCloud (cloud_filtered);
-  chull.setAlpha (0.06);  //limits the size of the hull semements, smaller->more Detail
+  chull.setAlpha (0.07);  //limits the size of the hull semements, smaller->more Detail
   chull.reconstruct (*cloud_hull);
   std::cerr << "Concave Hull has " << cloud_hull->points.size () << " data points." << std::endl;
 
@@ -182,33 +183,33 @@ int main() {
   face = BRepLib_MakeFace (wire);
   solid = BRepPrimAPI_MakePrism(face,gp_Vec(0.,0.,minPt.z-maxPt.z));
 
-	std::cout << "starting reading the stl-file" << std::endl;
-  StlAPI_Reader stlreader;
-	QString qfilename = "Verformung_cutout.stl";
-	TopoDS_Shape verformung_shape;
-	stlreader.Read(verformung_shape, (Standard_CString)qfilename.toLatin1().constData());
-	std::cout << "finish reading the stl-file" << std::endl;
- 	
-	
-	std::cout << "building shell from faces... (one \"I\" for each face)" << std::endl;
-	BRep_Builder builder;
-	TopoDS_Shell verformung_shell;
-	builder.MakeShell(verformung_shell);
-for( TopExp_Explorer ex(verformung_shape, TopAbs_FACE); ex.More(); ex.Next() )
-{
-	TopoDS_Face currentFace = TopoDS::Face( ex.Current() );
-	BRepAdaptor_Surface brepAdaptorSurface( currentFace,Standard_True );
-	builder.Add(verformung_shell, currentFace);
-	//std::cout << "I";
-}
-	
-	// Cut a solid with a face
-	// 1. Use BRepPrimAPI_MakeHalfSpace to create a half-space. 
-	// One side: 150.,0.,-5.
-	// Other side: 
-	TopoDS_Solid Halbraum = BRepPrimAPI_MakeHalfSpace(verformung_shell, gp_Pnt(150.,-100.,-5.)).Solid();
-	// 2. Use Boolean APIs do sub and intersection operations
- 	TopoDS_Shape Remaining_Extrusion = BRepAlgoAPI_Cut(solid,Halbraum);
+// 	std::cout << "starting reading the stl-file" << std::endl;
+//   StlAPI_Reader stlreader;
+// 	QString qfilename = "Verformung_cutout.stl";
+// 	TopoDS_Shape verformung_shape;
+// 	stlreader.Read(verformung_shape, (Standard_CString)qfilename.toLatin1().constData());
+// 	std::cout << "finish reading the stl-file" << std::endl;
+//  	
+// 	
+// 	std::cout << "building shell from faces... (one \"I\" for each face)" << std::endl;
+// 	BRep_Builder builder;
+// 	TopoDS_Shell verformung_shell;
+// 	builder.MakeShell(verformung_shell);
+// for( TopExp_Explorer ex(verformung_shape, TopAbs_FACE); ex.More(); ex.Next() )
+// {
+// 	TopoDS_Face currentFace = TopoDS::Face( ex.Current() );
+// 	BRepAdaptor_Surface brepAdaptorSurface( currentFace,Standard_True );
+// 	builder.Add(verformung_shell, currentFace);
+// 	//std::cout << "I";
+// }
+// 	
+// 	// Cut a solid with a face
+// 	// 1. Use BRepPrimAPI_MakeHalfSpace to create a half-space. 
+// 	// One side: 150.,0.,-5.
+// 	// Other side: 
+// 	TopoDS_Solid Halbraum = BRepPrimAPI_MakeHalfSpace(verformung_shell, gp_Pnt(150.,-100.,-5.)).Solid();
+// 	// 2. Use Boolean APIs do sub and intersection operations
+//  	TopoDS_Shape Remaining_Extrusion = BRepAlgoAPI_Cut(solid,Halbraum);
 
   //write Files
   pcl::PCDWriter writer;
