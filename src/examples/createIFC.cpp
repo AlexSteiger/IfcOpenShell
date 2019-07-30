@@ -23,11 +23,24 @@ typedef std::string S;
 typedef IfcParse::IfcGlobalId guid;
 boost::none_t const null = boost::none;
 
-int main() {
+int main(int argc, char *argv[]) {
 
+	std::string filename;
+	if (!argv[1])
+	{
+		filename = "E7_Extrusion.stp";
+		std::cout << "kein Inputdatei angegeben. " << filename << " wird aufgerufen.\n";
+	}
+		
+	if (argv[1])
+	{
+		std:: cout << "Inputdatei angegeben" << std::endl;
+		filename = argv[1];
+	}
+	
 	std::cout << "starting reading the stp-file" << std::endl;
 	STEPControl_Reader stpreader;
-	stpreader.ReadFile("F1.stp");
+	stpreader.ReadFile(filename.c_str());
 	stpreader.TransferRoots();
 	TopoDS_Shape spwand_shape = stpreader.OneShape();
   std::cout << "finish reading the stp-file" << std::endl;
@@ -39,14 +52,14 @@ int main() {
   // The IfcHierarchyHelper is a subclass of the regular IfcFile that provides several
   // convenience functions for working with geometry in IFC files.
   IfcHierarchyHelper file;
-  file.header().file_name().name("E8_Spundwand.ifc");
+  //file.header().file_name().name("E8_Spundwand.ifc");
 
   // Start by adding a wall to the file, initially leaving most attributes blank.
   IfcSchema::IfcWallStandardCase* wall = new IfcSchema::IfcWallStandardCase(
     guid(), 		// GlobalId
     0, 					// OwnerHistory
     S("Spundwand"),     // Name
-    S("Automatisch erstellt durch extrusion.cpp"), 	// Description
+    S("Automatisch erstellt durch createIFC.cpp"), 	// Description
     null, 			// ObjectType
     0, 					// ObjectPlacement
     0, 					// Representation
@@ -84,6 +97,9 @@ int main() {
 	// write the ifc File
   std::ofstream f("C1_Spundwand.ifc");
   f << file;
+	
+	
+
 }
 
 

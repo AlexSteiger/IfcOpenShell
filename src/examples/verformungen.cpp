@@ -139,58 +139,8 @@ main (int argc, char** argv)
   //remove the "boarders" around the poissonmesh:
 	//The best way would be to get the convex hull of the original point cloud and then "crop" the reconstructed mesh with this convex hull as a bounding volume. 
   
-  
-   
-   
-  
-//   IfcParse::IfcFile file;
-//   file.Init("Mauer.ifc");
-//   
-//   IfcSchema::IfcBuildingElement::list::ptr elements = file.entitiesByType<IfcSchema::IfcBuildingElement>();
-//   std::cout << "Found " << elements->size() << " elements in " << "Mauer.ifc" << ":" << std::endl;
-//   
-//   
-//   for ( IfcSchema::IfcBuildingElement::list::it it = elements->begin(); it != elements->end(); ++ it ) {
-// 		
-// 		const IfcSchema::IfcBuildingElement* element = *it;
-// 		std::cout << element->entity->toString() << std::endl;
-// 		
-// 		if ( element->is(IfcSchema::IfcWindow::Class()) ) {
-// 			const IfcSchema::IfcWindow* window = (IfcSchema::IfcWindow*)element;
-// 			
-// 			if ( window->hasOverallWidth() && window->hasOverallHeight() ) {
-// 				const double area = window->OverallWidth()*window->OverallHeight();
-// 				std::cout << "The area of this window is " << area << std::endl;
-// 			}
-// 		}
-// 
-// 	}
-  
-  
-  
-  
-  
-  
   return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

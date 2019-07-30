@@ -213,18 +213,18 @@ int main() {
 
   //write Files
   pcl::PCDWriter writer;
-  writer.write ("E1_0_Input_Cloud.pcd", *cloud_input, false);
-  writer.write ("E2_Cloud_filtered.pcd", *cloud_filtered1);
-  writer.write ("E3_cloud_smoothed.pcd", *cloud_smoothed);
-  writer.write ("E4_Cloud_segmented.pcd", *cloud_segmented, false);      
-  writer.write ("E5_Cloud_projected.pcd", *cloud_projected, false);    
-  writer.write ("E6_Cloud_inliers.pcd", *cloud_filtered, false);
-  writer.write ("E7_Concave_Hull.pcd", *cloud_hull, false);
+  writer.write ("E0_Input_Cloud.pcd", *cloud_input, false);
+  writer.write ("E1_Cloud_filtered.pcd", *cloud_filtered1);
+  writer.write ("E2_cloud_smoothed.pcd", *cloud_smoothed);
+  writer.write ("E3_Cloud_segmented.pcd", *cloud_segmented, false);      
+  writer.write ("E4_Cloud_projected.pcd", *cloud_projected, false);    
+  writer.write ("E5_Cloud_inliers.pcd", *cloud_filtered, false);
+  writer.write ("E6_Concave_Hull.pcd", *cloud_hull, false);
   STEPControl_Writer OCC_writer;
   OCC_writer.Transfer(solid,STEPControl_AsIs);
 	//OCC_writer.Transfer(verformung_shell,STEPControl_AsIs);
 	//OCC_writer.Write("E9_Remaining_Extrusion.stp");
-  OCC_writer.Write("E8_Spundwand.stp");
+  OCC_writer.Write("E7_Extrusion.stp");
 
 
 //////////////////////////////////

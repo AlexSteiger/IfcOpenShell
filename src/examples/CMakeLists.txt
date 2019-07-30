@@ -56,3 +56,7 @@ set_target_properties(extrusion PROPERTIES FOLDER Examples)
 ADD_EXECUTABLE(fuse fuse.cpp)
 TARGET_LINK_LIBRARIES(fuse ${PCL_LIBRARIES} ${OPENCASCADE_LIBRARIES})
 set_target_properties(fuse PROPERTIES FOLDER Examples)
+
+ADD_EXECUTABLE(updateIFC updateIFC.cpp)
+TARGET_LINK_LIBRARIES(updateIFC ${IFCOPENSHELL_LIBRARIES} ${OPENCASCADE_LIBRARIES})
+set_target_properties(updateIFC PROPERTIES FOLDER Examples)

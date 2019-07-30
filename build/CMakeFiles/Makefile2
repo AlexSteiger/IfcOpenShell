@@ -269,30 +269,32 @@ clean: ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/clean
 # Directory level rules for directory examples
 
 # Convenience name for "all" pass in the directory.
-examples/all: examples/CMakeFiles/extrusion.dir/all
-examples/all: examples/CMakeFiles/verformungen.dir/all
-examples/all: examples/CMakeFiles/createIFC.dir/all
-examples/all: examples/CMakeFiles/IfcOpenHouse.dir/all
-examples/all: examples/CMakeFiles/IfcAdvancedHouse.dir/all
-examples/all: examples/CMakeFiles/IfcParseExamples.dir/all
-examples/all: examples/CMakeFiles/hellowall.dir/all
-examples/all: examples/CMakeFiles/hellowalls.dir/all
-examples/all: examples/CMakeFiles/fuse.dir/all
 examples/all: examples/CMakeFiles/mauer.dir/all
+examples/all: examples/CMakeFiles/fuse.dir/all
+examples/all: examples/CMakeFiles/hellowall.dir/all
+examples/all: examples/CMakeFiles/IfcParseExamples.dir/all
+examples/all: examples/CMakeFiles/IfcOpenHouse.dir/all
+examples/all: examples/CMakeFiles/createIFC.dir/all
+examples/all: examples/CMakeFiles/IfcAdvancedHouse.dir/all
+examples/all: examples/CMakeFiles/verformungen.dir/all
+examples/all: examples/CMakeFiles/hellowalls.dir/all
+examples/all: examples/CMakeFiles/extrusion.dir/all
+examples/all: examples/CMakeFiles/updateIFC.dir/all
 
 .PHONY : examples/all
 
 # Convenience name for "clean" pass in the directory.
-examples/clean: examples/CMakeFiles/extrusion.dir/clean
-examples/clean: examples/CMakeFiles/verformungen.dir/clean
-examples/clean: examples/CMakeFiles/createIFC.dir/clean
-examples/clean: examples/CMakeFiles/IfcOpenHouse.dir/clean
-examples/clean: examples/CMakeFiles/IfcAdvancedHouse.dir/clean
-examples/clean: examples/CMakeFiles/IfcParseExamples.dir/clean
-examples/clean: examples/CMakeFiles/hellowall.dir/clean
-examples/clean: examples/CMakeFiles/hellowalls.dir/clean
-examples/clean: examples/CMakeFiles/fuse.dir/clean
 examples/clean: examples/CMakeFiles/mauer.dir/clean
+examples/clean: examples/CMakeFiles/fuse.dir/clean
+examples/clean: examples/CMakeFiles/hellowall.dir/clean
+examples/clean: examples/CMakeFiles/IfcParseExamples.dir/clean
+examples/clean: examples/CMakeFiles/IfcOpenHouse.dir/clean
+examples/clean: examples/CMakeFiles/createIFC.dir/clean
+examples/clean: examples/CMakeFiles/IfcAdvancedHouse.dir/clean
+examples/clean: examples/CMakeFiles/verformungen.dir/clean
+examples/clean: examples/CMakeFiles/hellowalls.dir/clean
+examples/clean: examples/CMakeFiles/extrusion.dir/clean
+examples/clean: examples/CMakeFiles/updateIFC.dir/clean
 
 .PHONY : examples/clean
 
@@ -302,229 +304,77 @@ examples/preinstall:
 .PHONY : examples/preinstall
 
 #=============================================================================
-# Target rules for target examples/CMakeFiles/extrusion.dir
+# Target rules for target examples/CMakeFiles/mauer.dir
 
 # All Build rule for target.
-examples/CMakeFiles/extrusion.dir/all: CMakeFiles/IfcGeom.dir/all
-examples/CMakeFiles/extrusion.dir/all: CMakeFiles/IfcParse.dir/all
-	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/depend
-	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=46,47 "Built target extrusion"
-.PHONY : examples/CMakeFiles/extrusion.dir/all
+examples/CMakeFiles/mauer.dir/all: CMakeFiles/IfcGeom.dir/all
+examples/CMakeFiles/mauer.dir/all: CMakeFiles/IfcParse.dir/all
+	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/depend
+	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=54,55 "Built target mauer"
+.PHONY : examples/CMakeFiles/mauer.dir/all
 
 # Include target in all.
-all: examples/CMakeFiles/extrusion.dir/all
+all: examples/CMakeFiles/mauer.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-examples/CMakeFiles/extrusion.dir/rule: cmake_check_build_system
+examples/CMakeFiles/mauer.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
-	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/extrusion.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/mauer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/extrusion.dir/rule
+.PHONY : examples/CMakeFiles/mauer.dir/rule
 
 # Convenience name for target.
-extrusion: examples/CMakeFiles/extrusion.dir/rule
+mauer: examples/CMakeFiles/mauer.dir/rule
 
-.PHONY : extrusion
-
-# clean rule for target.
-examples/CMakeFiles/extrusion.dir/clean:
-	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/clean
-.PHONY : examples/CMakeFiles/extrusion.dir/clean
+.PHONY : mauer
 
 # clean rule for target.
-clean: examples/CMakeFiles/extrusion.dir/clean
+examples/CMakeFiles/mauer.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/clean
+.PHONY : examples/CMakeFiles/mauer.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/mauer.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target examples/CMakeFiles/verformungen.dir
+# Target rules for target examples/CMakeFiles/fuse.dir
 
 # All Build rule for target.
-examples/CMakeFiles/verformungen.dir/all: CMakeFiles/IfcGeom.dir/all
-examples/CMakeFiles/verformungen.dir/all: CMakeFiles/IfcParse.dir/all
-	$(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/depend
-	$(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=56,57 "Built target verformungen"
-.PHONY : examples/CMakeFiles/verformungen.dir/all
+examples/CMakeFiles/fuse.dir/all:
+	$(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/depend
+	$(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=48,49 "Built target fuse"
+.PHONY : examples/CMakeFiles/fuse.dir/all
 
 # Include target in all.
-all: examples/CMakeFiles/verformungen.dir/all
+all: examples/CMakeFiles/fuse.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-examples/CMakeFiles/verformungen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
-	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/verformungen.dir/all
+examples/CMakeFiles/fuse.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/fuse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/verformungen.dir/rule
+.PHONY : examples/CMakeFiles/fuse.dir/rule
 
 # Convenience name for target.
-verformungen: examples/CMakeFiles/verformungen.dir/rule
+fuse: examples/CMakeFiles/fuse.dir/rule
 
-.PHONY : verformungen
-
-# clean rule for target.
-examples/CMakeFiles/verformungen.dir/clean:
-	$(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/clean
-.PHONY : examples/CMakeFiles/verformungen.dir/clean
+.PHONY : fuse
 
 # clean rule for target.
-clean: examples/CMakeFiles/verformungen.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target examples/CMakeFiles/createIFC.dir
-
-# All Build rule for target.
-examples/CMakeFiles/createIFC.dir/all: CMakeFiles/IfcGeom.dir/all
-examples/CMakeFiles/createIFC.dir/all: CMakeFiles/IfcParse.dir/all
-	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/depend
-	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=44,45 "Built target createIFC"
-.PHONY : examples/CMakeFiles/createIFC.dir/all
-
-# Include target in all.
-all: examples/CMakeFiles/createIFC.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-examples/CMakeFiles/createIFC.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
-	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/createIFC.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/createIFC.dir/rule
-
-# Convenience name for target.
-createIFC: examples/CMakeFiles/createIFC.dir/rule
-
-.PHONY : createIFC
+examples/CMakeFiles/fuse.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/clean
+.PHONY : examples/CMakeFiles/fuse.dir/clean
 
 # clean rule for target.
-examples/CMakeFiles/createIFC.dir/clean:
-	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/clean
-.PHONY : examples/CMakeFiles/createIFC.dir/clean
-
-# clean rule for target.
-clean: examples/CMakeFiles/createIFC.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target examples/CMakeFiles/IfcOpenHouse.dir
-
-# All Build rule for target.
-examples/CMakeFiles/IfcOpenHouse.dir/all: CMakeFiles/IfcGeom.dir/all
-examples/CMakeFiles/IfcOpenHouse.dir/all: CMakeFiles/IfcParse.dir/all
-	$(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/depend
-	$(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=25,26 "Built target IfcOpenHouse"
-.PHONY : examples/CMakeFiles/IfcOpenHouse.dir/all
-
-# Include target in all.
-all: examples/CMakeFiles/IfcOpenHouse.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-examples/CMakeFiles/IfcOpenHouse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
-	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/IfcOpenHouse.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/IfcOpenHouse.dir/rule
-
-# Convenience name for target.
-IfcOpenHouse: examples/CMakeFiles/IfcOpenHouse.dir/rule
-
-.PHONY : IfcOpenHouse
-
-# clean rule for target.
-examples/CMakeFiles/IfcOpenHouse.dir/clean:
-	$(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/clean
-.PHONY : examples/CMakeFiles/IfcOpenHouse.dir/clean
-
-# clean rule for target.
-clean: examples/CMakeFiles/IfcOpenHouse.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target examples/CMakeFiles/IfcAdvancedHouse.dir
-
-# All Build rule for target.
-examples/CMakeFiles/IfcAdvancedHouse.dir/all: CMakeFiles/IfcGeom.dir/all
-examples/CMakeFiles/IfcAdvancedHouse.dir/all: CMakeFiles/IfcParse.dir/all
-	$(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/depend
-	$(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=1,2 "Built target IfcAdvancedHouse"
-.PHONY : examples/CMakeFiles/IfcAdvancedHouse.dir/all
-
-# Include target in all.
-all: examples/CMakeFiles/IfcAdvancedHouse.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-examples/CMakeFiles/IfcAdvancedHouse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
-	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/IfcAdvancedHouse.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/IfcAdvancedHouse.dir/rule
-
-# Convenience name for target.
-IfcAdvancedHouse: examples/CMakeFiles/IfcAdvancedHouse.dir/rule
-
-.PHONY : IfcAdvancedHouse
-
-# clean rule for target.
-examples/CMakeFiles/IfcAdvancedHouse.dir/clean:
-	$(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/clean
-.PHONY : examples/CMakeFiles/IfcAdvancedHouse.dir/clean
-
-# clean rule for target.
-clean: examples/CMakeFiles/IfcAdvancedHouse.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target examples/CMakeFiles/IfcParseExamples.dir
-
-# All Build rule for target.
-examples/CMakeFiles/IfcParseExamples.dir/all: CMakeFiles/IfcParse.dir/all
-	$(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/depend
-	$(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=39,40 "Built target IfcParseExamples"
-.PHONY : examples/CMakeFiles/IfcParseExamples.dir/all
-
-# Include target in all.
-all: examples/CMakeFiles/IfcParseExamples.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-examples/CMakeFiles/IfcParseExamples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 14
-	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/IfcParseExamples.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/IfcParseExamples.dir/rule
-
-# Convenience name for target.
-IfcParseExamples: examples/CMakeFiles/IfcParseExamples.dir/rule
-
-.PHONY : IfcParseExamples
-
-# clean rule for target.
-examples/CMakeFiles/IfcParseExamples.dir/clean:
-	$(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/clean
-.PHONY : examples/CMakeFiles/IfcParseExamples.dir/clean
-
-# clean rule for target.
-clean: examples/CMakeFiles/IfcParseExamples.dir/clean
+clean: examples/CMakeFiles/fuse.dir/clean
 
 .PHONY : clean
 
@@ -567,6 +417,195 @@ clean: examples/CMakeFiles/hellowall.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target examples/CMakeFiles/IfcParseExamples.dir
+
+# All Build rule for target.
+examples/CMakeFiles/IfcParseExamples.dir/all: CMakeFiles/IfcParse.dir/all
+	$(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/depend
+	$(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=39,40 "Built target IfcParseExamples"
+.PHONY : examples/CMakeFiles/IfcParseExamples.dir/all
+
+# Include target in all.
+all: examples/CMakeFiles/IfcParseExamples.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/IfcParseExamples.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/IfcParseExamples.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/IfcParseExamples.dir/rule
+
+# Convenience name for target.
+IfcParseExamples: examples/CMakeFiles/IfcParseExamples.dir/rule
+
+.PHONY : IfcParseExamples
+
+# clean rule for target.
+examples/CMakeFiles/IfcParseExamples.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/clean
+.PHONY : examples/CMakeFiles/IfcParseExamples.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/IfcParseExamples.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/IfcOpenHouse.dir
+
+# All Build rule for target.
+examples/CMakeFiles/IfcOpenHouse.dir/all: CMakeFiles/IfcGeom.dir/all
+examples/CMakeFiles/IfcOpenHouse.dir/all: CMakeFiles/IfcParse.dir/all
+	$(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/depend
+	$(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=25,26 "Built target IfcOpenHouse"
+.PHONY : examples/CMakeFiles/IfcOpenHouse.dir/all
+
+# Include target in all.
+all: examples/CMakeFiles/IfcOpenHouse.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/IfcOpenHouse.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/IfcOpenHouse.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/IfcOpenHouse.dir/rule
+
+# Convenience name for target.
+IfcOpenHouse: examples/CMakeFiles/IfcOpenHouse.dir/rule
+
+.PHONY : IfcOpenHouse
+
+# clean rule for target.
+examples/CMakeFiles/IfcOpenHouse.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/clean
+.PHONY : examples/CMakeFiles/IfcOpenHouse.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/IfcOpenHouse.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/createIFC.dir
+
+# All Build rule for target.
+examples/CMakeFiles/createIFC.dir/all: CMakeFiles/IfcGeom.dir/all
+examples/CMakeFiles/createIFC.dir/all: CMakeFiles/IfcParse.dir/all
+	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/depend
+	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=44,45 "Built target createIFC"
+.PHONY : examples/CMakeFiles/createIFC.dir/all
+
+# Include target in all.
+all: examples/CMakeFiles/createIFC.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/createIFC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/createIFC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/createIFC.dir/rule
+
+# Convenience name for target.
+createIFC: examples/CMakeFiles/createIFC.dir/rule
+
+.PHONY : createIFC
+
+# clean rule for target.
+examples/CMakeFiles/createIFC.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/clean
+.PHONY : examples/CMakeFiles/createIFC.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/createIFC.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/IfcAdvancedHouse.dir
+
+# All Build rule for target.
+examples/CMakeFiles/IfcAdvancedHouse.dir/all: CMakeFiles/IfcGeom.dir/all
+examples/CMakeFiles/IfcAdvancedHouse.dir/all: CMakeFiles/IfcParse.dir/all
+	$(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/depend
+	$(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=1,2 "Built target IfcAdvancedHouse"
+.PHONY : examples/CMakeFiles/IfcAdvancedHouse.dir/all
+
+# Include target in all.
+all: examples/CMakeFiles/IfcAdvancedHouse.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/IfcAdvancedHouse.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/IfcAdvancedHouse.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/IfcAdvancedHouse.dir/rule
+
+# Convenience name for target.
+IfcAdvancedHouse: examples/CMakeFiles/IfcAdvancedHouse.dir/rule
+
+.PHONY : IfcAdvancedHouse
+
+# clean rule for target.
+examples/CMakeFiles/IfcAdvancedHouse.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/clean
+.PHONY : examples/CMakeFiles/IfcAdvancedHouse.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/IfcAdvancedHouse.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/verformungen.dir
+
+# All Build rule for target.
+examples/CMakeFiles/verformungen.dir/all: CMakeFiles/IfcGeom.dir/all
+examples/CMakeFiles/verformungen.dir/all: CMakeFiles/IfcParse.dir/all
+	$(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/depend
+	$(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=58,59 "Built target verformungen"
+.PHONY : examples/CMakeFiles/verformungen.dir/all
+
+# Include target in all.
+all: examples/CMakeFiles/verformungen.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/verformungen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/verformungen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/verformungen.dir/rule
+
+# Convenience name for target.
+verformungen: examples/CMakeFiles/verformungen.dir/rule
+
+.PHONY : verformungen
+
+# clean rule for target.
+examples/CMakeFiles/verformungen.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/clean
+.PHONY : examples/CMakeFiles/verformungen.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/verformungen.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target examples/CMakeFiles/hellowalls.dir
 
 # All Build rule for target.
@@ -605,77 +644,78 @@ clean: examples/CMakeFiles/hellowalls.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target examples/CMakeFiles/fuse.dir
+# Target rules for target examples/CMakeFiles/extrusion.dir
 
 # All Build rule for target.
-examples/CMakeFiles/fuse.dir/all:
-	$(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/depend
-	$(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=48,49 "Built target fuse"
-.PHONY : examples/CMakeFiles/fuse.dir/all
+examples/CMakeFiles/extrusion.dir/all: CMakeFiles/IfcGeom.dir/all
+examples/CMakeFiles/extrusion.dir/all: CMakeFiles/IfcParse.dir/all
+	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/depend
+	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=46,47 "Built target extrusion"
+.PHONY : examples/CMakeFiles/extrusion.dir/all
 
 # Include target in all.
-all: examples/CMakeFiles/fuse.dir/all
+all: examples/CMakeFiles/extrusion.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-examples/CMakeFiles/fuse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/fuse.dir/all
+examples/CMakeFiles/extrusion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/extrusion.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/fuse.dir/rule
+.PHONY : examples/CMakeFiles/extrusion.dir/rule
 
 # Convenience name for target.
-fuse: examples/CMakeFiles/fuse.dir/rule
+extrusion: examples/CMakeFiles/extrusion.dir/rule
 
-.PHONY : fuse
-
-# clean rule for target.
-examples/CMakeFiles/fuse.dir/clean:
-	$(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/clean
-.PHONY : examples/CMakeFiles/fuse.dir/clean
+.PHONY : extrusion
 
 # clean rule for target.
-clean: examples/CMakeFiles/fuse.dir/clean
+examples/CMakeFiles/extrusion.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/clean
+.PHONY : examples/CMakeFiles/extrusion.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/extrusion.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target examples/CMakeFiles/mauer.dir
+# Target rules for target examples/CMakeFiles/updateIFC.dir
 
 # All Build rule for target.
-examples/CMakeFiles/mauer.dir/all: CMakeFiles/IfcGeom.dir/all
-examples/CMakeFiles/mauer.dir/all: CMakeFiles/IfcParse.dir/all
-	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/depend
-	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=54,55 "Built target mauer"
-.PHONY : examples/CMakeFiles/mauer.dir/all
+examples/CMakeFiles/updateIFC.dir/all: CMakeFiles/IfcGeom.dir/all
+examples/CMakeFiles/updateIFC.dir/all: CMakeFiles/IfcParse.dir/all
+	$(MAKE) -f examples/CMakeFiles/updateIFC.dir/build.make examples/CMakeFiles/updateIFC.dir/depend
+	$(MAKE) -f examples/CMakeFiles/updateIFC.dir/build.make examples/CMakeFiles/updateIFC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=56,57 "Built target updateIFC"
+.PHONY : examples/CMakeFiles/updateIFC.dir/all
 
 # Include target in all.
-all: examples/CMakeFiles/mauer.dir/all
+all: examples/CMakeFiles/updateIFC.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-examples/CMakeFiles/mauer.dir/rule: cmake_check_build_system
+examples/CMakeFiles/updateIFC.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 26
-	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/mauer.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/updateIFC.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/mauer.dir/rule
+.PHONY : examples/CMakeFiles/updateIFC.dir/rule
 
 # Convenience name for target.
-mauer: examples/CMakeFiles/mauer.dir/rule
+updateIFC: examples/CMakeFiles/updateIFC.dir/rule
 
-.PHONY : mauer
-
-# clean rule for target.
-examples/CMakeFiles/mauer.dir/clean:
-	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/clean
-.PHONY : examples/CMakeFiles/mauer.dir/clean
+.PHONY : updateIFC
 
 # clean rule for target.
-clean: examples/CMakeFiles/mauer.dir/clean
+examples/CMakeFiles/updateIFC.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/updateIFC.dir/build.make examples/CMakeFiles/updateIFC.dir/clean
+.PHONY : examples/CMakeFiles/updateIFC.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/updateIFC.dir/clean
 
 .PHONY : clean
 

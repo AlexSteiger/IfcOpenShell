@@ -31,14 +31,14 @@ int main() {
 
 	std::cout << "starting reading the stp-file" << std::endl;
 	STEPControl_Reader stpreader;
-	stpreader.ReadFile("E8_Spundwand.stp");
+	stpreader.ReadFile("E7_Extrusion.stp");
 	stpreader.TransferRoots();
 	TopoDS_Shape spwand_shape = stpreader.OneShape();
   std::cout << "finish reading the stp-file" << std::endl;
 
 	std::cout << "starting reading the stl-file" << std::endl;
   StlAPI_Reader stlreader;
-	QString qfilename = "Verformung_cutout.stl";
+	QString qfilename = "V6_Verformung_cutout.stl";
 	TopoDS_Shape verformung_shape;
 	stlreader.Read(verformung_shape, (Standard_CString)qfilename.toLatin1().constData());
 	std::cout << "finish reading the stl-file" << std::endl;
@@ -81,7 +81,7 @@ for( TopExp_Explorer ex(verformung_shape, TopAbs_FACE); ex.More(); ex.Next() )
 	//write Files
 	STEPControl_Writer OCC_writer;
 	OCC_writer.Transfer(fixed,STEPControl_AsIs);
- 	OCC_writer.Write("F1.stp");
+ 	OCC_writer.Write("F1_Spundwand.stp");
 
 
 //////////////////////////////////
