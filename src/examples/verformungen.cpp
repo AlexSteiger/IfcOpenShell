@@ -25,15 +25,27 @@
 #include <vld.h>
 #endif
 
-int
-main (int argc, char** argv)
+int main(int argc, char *argv[])
 {
-  
   // Input Cloud
+	
+	std::string filename;
+	if (!argv[1])
+	{
+		filename = "E0_Input_Cloud.pcd";
+		std::cout << "Keine Inputdatei als Argument angegeben.";
+		std::cout << filename << " wird aufgerufen.\n";
+	}
+	if (argv[1])
+	{
+		std:: cout << "Inputdatei angegeben" << std::endl;
+		filename = argv[1];
+	}
+	
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_input (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::PCLPointCloud2 cloud_blob;
   //pcl::io::loadPCDFile ("../../../PCL_Hydromapper/Samples_PCD/Spundwand.pcd", cloud_blob);
-  pcl::io::loadPCDFile ("E1_0_Input_Cloud.pcd", cloud_blob);
+  pcl::io::loadPCDFile (filename, cloud_blob);
   pcl::fromPCLPointCloud2 (cloud_blob, *cloud_input);
   std::cout << "Input has: " << cloud_input->points.size () << " data points." << std::endl;
   pcl::io::savePCDFile ("V0_cloud_input.pcd", *cloud_input);

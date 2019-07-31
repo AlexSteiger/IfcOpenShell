@@ -52,7 +52,7 @@ typedef std::string S;
 typedef IfcParse::IfcGlobalId guid;
 boost::none_t const null = boost::none;
 
-int main() {
+int main(int argc, char *argv[]) {
 
 	//The Clouds: input, semgmentation, projection, concave
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_input (new pcl::PointCloud<pcl::PointXYZ>);
@@ -61,10 +61,23 @@ int main() {
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filtered (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_hull (new pcl::PointCloud<pcl::PointXYZ>);
   
+		std::string filename;
+	if (!argv[1])
+	{
+		filename = "../../../PCL_Hydromapper/Samples_PCD/Spundwand.pcd";
+		std::cout << "Keine Inputdatei als Argument angegeben.";
+		std::cout << filename << " wird aufgerufen.\n";
+	}
+	if (argv[1])
+	{
+		std:: cout << "Inputdatei angegeben" << std::endl;
+		filename = argv[1];
+	}
+	
   // Input Cloud
   pcl::PCLPointCloud2 cloud_blob;
   //pcl::io::loadPCDFile ("Spundwand.pcd", cloud_blob);
-  pcl::io::loadPCDFile ("../../../PCL_Hydromapper/Samples_PCD/Spundwand.pcd", cloud_blob);
+  pcl::io::loadPCDFile (filename.c_str(), cloud_blob);
   pcl::fromPCLPointCloud2 (cloud_blob, *cloud_input);
   // Some informations about input Cloud
   pcl::PointXYZ minPt, maxPt;

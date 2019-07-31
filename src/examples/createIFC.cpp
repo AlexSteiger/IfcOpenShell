@@ -31,10 +31,10 @@ int main(int argc, char *argv[]) {
 		filename = "E7_Extrusion.stp";
 		std::cout << "kein Inputdatei angegeben. " << filename << " wird aufgerufen.\n";
 	}
-		
 	if (argv[1])
 	{
-		std:: cout << "Inputdatei angegeben" << std::endl;
+		std::cout << "Keine Inputdatei als Argument angegeben.";
+		std::cout << filename << " wird aufgerufen.\n";
 		filename = argv[1];
 	}
 	
