@@ -222,95 +222,17 @@ _ifcopenshell_wrapper/fast:
 .PHONY : _ifcopenshell_wrapper/fast
 
 #=============================================================================
-# Target rules for targets named mauer
+# Target rules for targets named extrusion
 
 # Build rule for target.
-mauer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mauer
-.PHONY : mauer
+extrusion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 extrusion
+.PHONY : extrusion
 
 # fast build rule for target.
-mauer/fast:
-	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
-.PHONY : mauer/fast
-
-#=============================================================================
-# Target rules for targets named fuse
-
-# Build rule for target.
-fuse: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 fuse
-.PHONY : fuse
-
-# fast build rule for target.
-fuse/fast:
-	$(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/build
-.PHONY : fuse/fast
-
-#=============================================================================
-# Target rules for targets named hellowall
-
-# Build rule for target.
-hellowall: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hellowall
-.PHONY : hellowall
-
-# fast build rule for target.
-hellowall/fast:
-	$(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/build
-.PHONY : hellowall/fast
-
-#=============================================================================
-# Target rules for targets named IfcParseExamples
-
-# Build rule for target.
-IfcParseExamples: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 IfcParseExamples
-.PHONY : IfcParseExamples
-
-# fast build rule for target.
-IfcParseExamples/fast:
-	$(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/build
-.PHONY : IfcParseExamples/fast
-
-#=============================================================================
-# Target rules for targets named IfcOpenHouse
-
-# Build rule for target.
-IfcOpenHouse: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 IfcOpenHouse
-.PHONY : IfcOpenHouse
-
-# fast build rule for target.
-IfcOpenHouse/fast:
-	$(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/build
-.PHONY : IfcOpenHouse/fast
-
-#=============================================================================
-# Target rules for targets named createIFC
-
-# Build rule for target.
-createIFC: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 createIFC
-.PHONY : createIFC
-
-# fast build rule for target.
-createIFC/fast:
-	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/build
-.PHONY : createIFC/fast
-
-#=============================================================================
-# Target rules for targets named IfcAdvancedHouse
-
-# Build rule for target.
-IfcAdvancedHouse: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 IfcAdvancedHouse
-.PHONY : IfcAdvancedHouse
-
-# fast build rule for target.
-IfcAdvancedHouse/fast:
-	$(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/build
-.PHONY : IfcAdvancedHouse/fast
+extrusion/fast:
+	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
+.PHONY : extrusion/fast
 
 #=============================================================================
 # Target rules for targets named verformungen
@@ -326,6 +248,71 @@ verformungen/fast:
 .PHONY : verformungen/fast
 
 #=============================================================================
+# Target rules for targets named createIFC
+
+# Build rule for target.
+createIFC: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 createIFC
+.PHONY : createIFC
+
+# fast build rule for target.
+createIFC/fast:
+	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/build
+.PHONY : createIFC/fast
+
+#=============================================================================
+# Target rules for targets named IfcOpenHouse
+
+# Build rule for target.
+IfcOpenHouse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 IfcOpenHouse
+.PHONY : IfcOpenHouse
+
+# fast build rule for target.
+IfcOpenHouse/fast:
+	$(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/build
+.PHONY : IfcOpenHouse/fast
+
+#=============================================================================
+# Target rules for targets named IfcAdvancedHouse
+
+# Build rule for target.
+IfcAdvancedHouse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 IfcAdvancedHouse
+.PHONY : IfcAdvancedHouse
+
+# fast build rule for target.
+IfcAdvancedHouse/fast:
+	$(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/build
+.PHONY : IfcAdvancedHouse/fast
+
+#=============================================================================
+# Target rules for targets named IfcParseExamples
+
+# Build rule for target.
+IfcParseExamples: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 IfcParseExamples
+.PHONY : IfcParseExamples
+
+# fast build rule for target.
+IfcParseExamples/fast:
+	$(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/build
+.PHONY : IfcParseExamples/fast
+
+#=============================================================================
+# Target rules for targets named hellowall
+
+# Build rule for target.
+hellowall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hellowall
+.PHONY : hellowall
+
+# fast build rule for target.
+hellowall/fast:
+	$(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/build
+.PHONY : hellowall/fast
+
+#=============================================================================
 # Target rules for targets named hellowalls
 
 # Build rule for target.
@@ -339,30 +326,30 @@ hellowalls/fast:
 .PHONY : hellowalls/fast
 
 #=============================================================================
-# Target rules for targets named extrusion
+# Target rules for targets named fuse
 
 # Build rule for target.
-extrusion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 extrusion
-.PHONY : extrusion
+fuse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fuse
+.PHONY : fuse
 
 # fast build rule for target.
-extrusion/fast:
-	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
-.PHONY : extrusion/fast
+fuse/fast:
+	$(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/build
+.PHONY : fuse/fast
 
 #=============================================================================
-# Target rules for targets named updateIFC
+# Target rules for targets named mauer
 
 # Build rule for target.
-updateIFC: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 updateIFC
-.PHONY : updateIFC
+mauer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mauer
+.PHONY : mauer
 
 # fast build rule for target.
-updateIFC/fast:
-	$(MAKE) -f examples/CMakeFiles/updateIFC.dir/build.make examples/CMakeFiles/updateIFC.dir/build
-.PHONY : updateIFC/fast
+mauer/fast:
+	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
+.PHONY : mauer/fast
 
 home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.o: home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
 
@@ -1191,17 +1178,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... _ifcopenshell_wrapper"
-	@echo "... mauer"
-	@echo "... fuse"
-	@echo "... hellowall"
-	@echo "... IfcParseExamples"
-	@echo "... IfcOpenHouse"
-	@echo "... createIFC"
-	@echo "... IfcAdvancedHouse"
-	@echo "... verformungen"
-	@echo "... hellowalls"
 	@echo "... extrusion"
-	@echo "... updateIFC"
+	@echo "... verformungen"
+	@echo "... createIFC"
+	@echo "... IfcOpenHouse"
+	@echo "... IfcAdvancedHouse"
+	@echo "... IfcParseExamples"
+	@echo "... hellowall"
+	@echo "... hellowalls"
+	@echo "... fuse"
+	@echo "... mauer"
 	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.o"
 	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.i"
 	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.s"
