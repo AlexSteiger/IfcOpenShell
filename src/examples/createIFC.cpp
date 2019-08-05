@@ -28,13 +28,12 @@ int main(int argc, char *argv[]) {
 	std::string filename;
 	if (!argv[1])
 	{
-		filename = "E7_Extrusion.stp";
+		filename = "F1_Spundwand.stp";
 		std::cout << "kein Inputdatei angegeben. " << filename << " wird aufgerufen.\n";
 	}
 	if (argv[1])
 	{
-		std::cout << "Keine Inputdatei als Argument angegeben.";
-		std::cout << filename << " wird aufgerufen.\n";
+		std:: cout << "Inputdatei angegeben" << std::endl;
 		filename = argv[1];
 	}
 	

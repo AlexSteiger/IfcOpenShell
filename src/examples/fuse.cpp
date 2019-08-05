@@ -31,7 +31,7 @@ int main() {
 
 	std::cout << "starting reading the stp-file" << std::endl;
 	STEPControl_Reader stpreader;
-	stpreader.ReadFile("E7_Extrusion.stp");
+	stpreader.ReadFile("E13_Extrusion.stp");
 	stpreader.TransferRoots();
 	TopoDS_Shape spwand_shape = stpreader.OneShape();
   std::cout << "finish reading the stp-file" << std::endl;

@@ -71,22 +71,22 @@ int main(int argc, char *argv[])
 	
   // Statistical outlier removal
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filtered (new pcl::PointCloud<pcl::PointXYZ>);
-  pcl::StatisticalOutlierRemoval<pcl::PointXYZ> sor2;
-  sor2.setInputCloud (cloud_smoothed);
-  sor2.setMeanK (60);
-  sor2.setStddevMulThresh (3);
-  sor2.setNegative (false);
-  sor2.filter (*cloud_filtered);
+  pcl::StatisticalOutlierRemoval<pcl::PointXYZ> sor;
+  sor.setInputCloud (cloud_smoothed);
+  sor.setMeanK (60);
+  sor.setStddevMulThresh (3);
+  sor.setNegative (false);
+  sor.filter (*cloud_filtered);
   std::cout << cloud_smoothed->points.size() - cloud_filtered->points.size () << " outliers where removed. ";
   std::cout << cloud_filtered->points.size() << " points left" << std::endl; 
   pcl::io::savePCDFile ("V2_cloud_filtered.pcd", *cloud_filtered);
 	
 	// Downsample the Cloud with a Voxelgrid filter
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_downsampled (new pcl::PointCloud<pcl::PointXYZ>);
-	pcl::VoxelGrid<pcl::PointXYZ> sor;
-  sor.setInputCloud (cloud_filtered);
-  sor.setLeafSize (0.03f, 0.03f, 0.03f);
-  sor.filter (*cloud_downsampled);
+	pcl::VoxelGrid<pcl::PointXYZ> vox;
+  vox.setInputCloud (cloud_filtered);
+  vox.setLeafSize (0.03f, 0.03f, 0.03f);
+  vox.filter (*cloud_downsampled);
 	pcl::io::savePCDFile ("V3_cloud_downsampled.pcd", *cloud_downsampled);
 	std::cout << "Downsampling:" <<  cloud_filtered->points.size()- cloud_downsampled->points.size();
 	std::cout << " points where removed. " << std::endl;

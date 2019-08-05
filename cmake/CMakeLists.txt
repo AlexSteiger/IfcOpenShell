@@ -30,7 +30,16 @@ include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 ########################################################
-
+########################################################
+#For CGAL:
+#Included by me (Alex)
+find_package(CGAL REQUIRED COMPONENTS Qt5 Core)
+if(CGAL_FOUND AND CGAL_Qt5_FOUND)
+  add_definitions(-DCGAL_USE_BASIC_VIEWER -DQT_NO_KEYWORDS)
+else()
+  message("ERROR: this program requires CGAL and CGAL_Qt5 and will not be compiled.")
+endif()
+########################################################
 
 OPTION(UNICODE_SUPPORT "Build IfcOpenShell with Unicode support (requires ICU)." ON)
 OPTION(COLLADA_SUPPORT "Build IfcConvert with COLLADA support (requires OpenCOLLADA)." ON)
