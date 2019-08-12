@@ -114,13 +114,14 @@ int main(int argc, char *argv[])
   pcl::io::savePCDFile ("V4_cloud_smoothed_normals.pcd", *cloud_smoothed_normals);
 
 //   // Viewer
-// 	  pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
-//   viewer->setBackgroundColor (0, 0, 0);
-//  	pcl::visualization::PointCloudColorHandlerCustom<pcl::PointNormal> single_color(cloud_smoothed_normals, 90, 0, 0);
-//   viewer->addPointCloud<pcl::PointNormal> (cloud_smoothed_normals, single_color, "sample cloud");
+// 	pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
+//   viewer->setBackgroundColor (255,255,255);
+//  	pcl::visualization::PointCloudColorHandlerCustom<pcl::PointNormal> single_color(cloud_smoothed_normals, 30, 30, 30);
+// 	viewer->addPointCloud<pcl::PointNormal> (cloud_smoothed_normals, single_color, "sample cloud");
 //   viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
 // 	//addPointCloudNormals(cloud, level, scale, id)
-//   viewer->addPointCloudNormals<pcl::PointNormal> (cloud_smoothed_normals, 5, 0.1,"normals");
+//   viewer->addPointCloudNormals<pcl::PointNormal> (cloud_smoothed_normals, 1, 0.1,  "normals");
+//   viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_COLOR, 90,0,0, "normals");
 //   viewer->addCoordinateSystem (1.0);
 //   viewer->initCameraParameters ();
 //     while (!viewer->wasStopped ()) //Calls the interactor and updates the screen once. 
@@ -133,7 +134,7 @@ int main(int argc, char *argv[])
 	auto start = std::chrono::high_resolution_clock::now();
   pcl::Poisson<pcl::PointNormal> poisson;  
   // Set the maximum depth of the tree that will be used for surface reconstruction. Higher -> more Details
-  poisson.setDepth (7);  // 7 is ok
+  poisson.setDepth (7);  // More = More Detail
 	std::cout << "starting Poisson with  tree depth " << poisson.getDepth();
 	std::cout << " and " << cloud_smoothed_normals->points.size() << " points." << std::endl;
   // Set the minimum number of sample points that should fall within an octree node as the octree construction is adapted to sampling density.  For noise-free samples, small values in the range [1.0 - 5.0] can be used. For more noisy samples, larger values in the range [15.0 - 20.0] may be needed to provide a smoother, noise-reduced, reconstruction. 

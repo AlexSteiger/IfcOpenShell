@@ -204,6 +204,7 @@ int main(int argc, char *argv[]) {
 	PCDwriter.write ("E8_Cloud_Skeleton_filtered.pcd", *cloud_skeleton);
 		
 	// Downsample the Cloud with a Voxelgrid filter
+	// Some Points of the Skeleton are very close together and can be removed
 	nrpoints = cloud_skeleton->points.size();
 	pcl::VoxelGrid<pcl::PointXYZ> vox;
   vox.setInputCloud (cloud_skeleton);

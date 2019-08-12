@@ -51,21 +51,23 @@ int main(int argc, char *argv[]) {
   // The IfcHierarchyHelper is a subclass of the regular IfcFile that provides several
   // convenience functions for working with geometry in IFC files.
   IfcHierarchyHelper file;
-  //file.header().file_name().name("E8_Spundwand.ifc");
+	
+	// Writes the filename in the Header of the IFC file.
+  file.header().file_name().name("Spundwand.ifc");
 
   // Start by adding a wall to the file, initially leaving most attributes blank.
-  IfcSchema::IfcWallStandardCase* wall = new IfcSchema::IfcWallStandardCase(
+  IfcSchema::IfcWall* wall = new IfcSchema::IfcWall(
     guid(), 		// GlobalId
     0, 					// OwnerHistory
     S("Spundwand"),     // Name
-    S("Automatisch erstellt durch createIFC.cpp"), 	// Description
+    S("Mönckebergkai (Ausschnitt)"), 	// Description
     null, 			// ObjectType
     0, 					// ObjectPlacement
     0, 					// Representation
     null				// Tag
-  #ifdef USE_IFC4
-    , IfcSchema::IfcWallTypeEnum::IfcWallType_STANDARD
-  #endif
+//   #ifdef USE_IFC4
+//     , IfcSchema::IfcWallTypeEnum::IfcWallType_STANDARD
+//   #endif
   );
 
   file.addBuildingProduct(wall);
@@ -85,7 +87,7 @@ int main(int argc, char *argv[]) {
   rep->setContextOfItems(file.getRepresentationContext("model"));
   wall->setRepresentation(object_shape);
   // A red colour is assigned to the wall.
-  file.setSurfaceColour(object_shape, 0.55 , 0.25 , 0.05);
+  file.setSurfaceColour(object_shape, 0.57 , 0.24 , 0.15);
     
   // Obtain a reference to the placement of the IfcBuildingStorey in order to create a hierarchy of placements for the products
   IfcSchema::IfcObjectPlacement* storey_placement = file.getSingle<IfcSchema::IfcBuildingStorey>()->ObjectPlacement();
@@ -94,7 +96,7 @@ int main(int argc, char *argv[]) {
   wall->setObjectPlacement(file.addLocalPlacement(storey_placement));
 
 	// write the ifc File
-  std::ofstream f("C1_Spundwand.ifc");
+  std::ofstream f("Spundwand.ifc");
   f << file;
 	
 	

@@ -33,111 +33,56 @@ int main() {
 	STEPControl_Reader stpreader;
 	stpreader.ReadFile("E13_Extrusion.stp");
 	stpreader.TransferRoots();
-	TopoDS_Shape spwand_shape = stpreader.OneShape();
+	TopoDS_Shape extrusion_shape = stpreader.OneShape();
   std::cout << "finish reading the stp-file" << std::endl;
 
 	std::cout << "starting reading the stl-file" << std::endl;
   StlAPI_Reader stlreader;
-	QString qfilename = "V6_Verformung_cutout.stl";
-	TopoDS_Shape verformung_shape;
-	stlreader.Read(verformung_shape, (Standard_CString)qfilename.toLatin1().constData());
+	QString qfilename = "V6_Verformung_cutout1.stl";
+	TopoDS_Shape ausbuchtung_shape;
+	stlreader.Read(ausbuchtung_shape, (Standard_CString)qfilename.toLatin1().constData());
 	std::cout << "finish reading the stl-file" << std::endl;
  	
 	
-	std::cout << "building shell from faces... (one \"l\" for each face)" << std::endl;
+	std::cout << "building shell from faces... " << std::endl;
 	BRep_Builder builder;
 	TopoDS_Shell verformung_shell;
 	builder.MakeShell(verformung_shell);
-for( TopExp_Explorer ex(verformung_shape, TopAbs_FACE); ex.More(); ex.Next() )
+for( TopExp_Explorer ex(ausbuchtung_shape, TopAbs_FACE); ex.More(); ex.Next() )
 {
 	TopoDS_Face currentFace = TopoDS::Face( ex.Current() );
 	BRepAdaptor_Surface brepAdaptorSurface( currentFace,Standard_True );
 	builder.Add(verformung_shell, currentFace);
-	std::cout << "l";
 }
-	
-	TopoDS_Solid solid2 = BRepBuilderAPI_MakeSolid (verformung_shell);
-	TopoDS_Shape fused = BRepAlgoAPI_Fuse(spwand_shape,solid2);
-	
-	//This tool tries to unify faces and edges of the shape which lie on the same geometry
-	ShapeUpgrade_UnifySameDomain unif(fused, true, true, false);
-	unif.Build();
-	TopoDS_Shape fixed = unif.Shape();
-	
-	//TopoDS_Solid solid3 = TopoDS::Solid(fused);
-	// This tries to put the holes in the spwand_shape, but doesn't quite work yet
-	// 1. Use BRepPrimAPI_MakeHalfSpace to create a half-space.
-	// 2. Use Boolean APIs do sub and intersection operations
-	// Waterside: (10,-375,-5) ; Landside: (300,300,-5)
-	// Works only for sections of the spwand_shape, which are through the shell "cut off" of the rest
-	//TopoDS_Solid Halbraum = BRepPrimAPI_MakeHalfSpace(verformung_shell, gp_Pnt(10,-375,-5)).Solid();
-	//TopoDS_Shape Remaining_Extrusion = BRepAlgoAPI_Cut(spwand_shape,Halbraum);
-	//TopoDS_Solid Halbraum2 = BRepPrimAPI_MakeHalfSpace(verformung_shell, gp_Pnt(300,300,-5)).Solid();
-	//TopoDS_Shape Remaining_Extrusion2 = BRepAlgoAPI_Cut(spwand_shape,Halbraum2);
-	
 
+	TopoDS_Solid verformung_solid = BRepBuilderAPI_MakeSolid (verformung_shell);
+	TopoDS_Shape fused = BRepAlgoAPI_Fuse(extrusion_shape,verformung_solid);
 	
+	// Second deformation
+	std::cout << "starting reading the stl-file" << std::endl;
+	qfilename = "V6_Verformung_cutout2.stl";
+	TopoDS_Shape einbuchtung_shape2;
+	stlreader.Read(einbuchtung_shape2, (Standard_CString)qfilename.toLatin1().constData());
+	std::cout << "finish reading the stl-file" << std::endl;
+	
+	gp_Vec vectorToFront = gp_Vec(-0.2f,-0.1f,0);
+	gp_Vec vectorToBack = gp_Vec(0.02f,0.01f,0);
+	
+	// Second deformation is inward, so a different algorithm is needed
+	TopoDS_Shape prism  = BRepPrimAPI_MakePrism(einbuchtung_shape2,vectorToFront);
+	TopoDS_Shape cuted = BRepAlgoAPI_Cut(fused,prism);
+	TopoDS_Shape prism2 = BRepPrimAPI_MakePrism(einbuchtung_shape2,vectorToBack);
+	TopoDS_Shape final_shape = BRepAlgoAPI_Fuse(cuted,prism2);
+	
+// 	//This tool tries to unify faces and edges of the shape which lie on the same geometry
+// 	ShapeUpgrade_UnifySameDomain unif(fused2, true, true, false);
+// 	unif.Build();
+// 	TopoDS_Shape fixed = unif.Shape();
 	
 	//write Files
 	STEPControl_Writer OCC_writer;
-	OCC_writer.Transfer(fixed,STEPControl_AsIs);
+	OCC_writer.Transfer(final_shape,STEPControl_AsIs);
  	OCC_writer.Write("F1_Spundwand.stp");
-
-
-//////////////////////////////////
-//////////IFC STARTS HERE/////////
-//////////////////////////////////
-    
-  
-//   // The IfcHierarchyHelper is a subclass of the regular IfcFile that provides several
-//   // convenience functions for working with geometry in IFC files.
-//   IfcHierarchyHelper file;
-//   file.header().file_name().name("E8_Spundwand.ifc");
-// 
-//   // Start by adding a wall to the file, initially leaving most attributes blank.
-//   IfcSchema::IfcWallStandardCase* wall = new IfcSchema::IfcWallStandardCase(
-//     guid(), 		// GlobalId
-//     0, 					// OwnerHistory
-//     S("Spundwand"),     // Name
-//     S("Automatisch erstellt durch extrusion.cpp"), 	// Description
-//     null, 			// ObjectType
-//     0, 					// ObjectPlacement
-//     0, 					// Representation
-//     null				// Tag
-//   #ifdef USE_IFC4
-//     , IfcSchema::IfcWallTypeEnum::IfcWallType_STANDARD
-//   #endif
-//   );
-// 
-//   file.addBuildingProduct(wall);
-//   // By adding a wall, a hierarchy has been automatically created that consists of the following
-//   // structure: IfcProject > IfcSite > IfcBuilding > IfcBuildingStorey > IfcWall
-// 
-//   // An IfcOwnerHistory has been initialized as well, which should be assigned to the wall.
-//   wall->setOwnerHistory(file.getSingle<IfcSchema::IfcOwnerHistory>());
-// 
-//   // Since the solid consists only of planar faces and straight edges it can be serialized as an
-//   // IfcFacetedBRep. If it would not be a polyhedron, serialise() can only be successful when linked
-//   // to the IFC4 model and with `advanced` set to `true` which introduces IfcAdvancedFace. It would
-//   // return `0` otherwise.
-//   IfcSchema::IfcProductDefinitionShape* object_shape = IfcGeom::serialise(solid, false);
-//   file.addEntity(object_shape);
-//   IfcSchema::IfcRepresentation* rep = *object_shape->Representations()->begin();
-//   rep->setContextOfItems(file.getRepresentationContext("model"));
-//   wall->setRepresentation(object_shape);
-//   // A red colour is assigned to the wall.
-//   file.setSurfaceColour(object_shape, 0.55 , 0.25 , 0.05);
-//     
-//   // Obtain a reference to the placement of the IfcBuildingStorey in order to create a hierarchy of placements for the products
-//   IfcSchema::IfcObjectPlacement* storey_placement = file.getSingle<IfcSchema::IfcBuildingStorey>()->ObjectPlacement();
-// 
-//   // wall and is placed at the origin of the coordinate system.
-//   wall->setObjectPlacement(file.addLocalPlacement(storey_placement));
-// 
-// 
-// 
-//   std::ofstream f("E8_Spundwand.ifc");
-//   f << file;
 
 }
 
