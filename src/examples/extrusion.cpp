@@ -15,7 +15,6 @@
 #include <pcl/filters/statistical_outlier_removal.h>
 #include <pcl/filters/voxel_grid.h>  // for downsampling
 #include <pcl/surface/concave_hull.h>
-#include <pcl/surface/convex_hull.h>
 #include <pcl/surface/reconstruction.h>
 #include <pcl/surface/mls.h>    //MovingLeastSquares
 
@@ -54,7 +53,7 @@ int main(int argc, char *argv[]) {
 	std::string filename;
 	if (!argv[1])
 	{
-		filename = "../../../PCL_Hydromapper/Samples_PCD/Spundwand.pcd";
+		filename = "Spundwand.pcd";
 		std::cout << "Keine Inputdatei als Argument angegeben.";
 		std::cout << filename << " wird aufgerufen.\n";
 	}

@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.o"
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.o"
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.o"
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.o"
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.o"
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.o"
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.o"
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.o"
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.o"
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.o"
-  "/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -27,7 +27,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "DISABLE_PNG"
   "HAVE_ICU"
   "QT_NO_KEYWORDS"
-  "USE_IFC2x3"
+  "USE_IFC4"
   "WITH_OPENCOLLADA"
   "qh_QHpointer"
   "vtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)"

@@ -1,4 +1,4 @@
-# Install script for directory: /home/alex/Documents/IfcOpenShell/src/ifcwrap
+# Install script for directory: /home/alex/Dokumente/IfcOpenShell/src/ifcwrap
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,13 +47,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/lib/python3/dist-packages/ifcopenshell" TYPE FILE FILES
-    "/home/alex/Documents/IfcOpenShell/build/ifcwrap/ifcopenshell_wrapper.py"
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/__init__.py"
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/entity_instance.py"
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/file.py"
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/guid.py"
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/main.py"
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/template.py"
+    "/home/alex/Dokumente/IfcOpenShell/build/ifcwrap/ifcopenshell_wrapper.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/__init__.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/entity_instance.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/file.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/guid.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/main.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/template.py"
     )
 endif()
 
@@ -67,11 +67,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/lib/python3/dist-packages/ifcopenshell/geom" TYPE FILE FILES
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/geom/__init__.py"
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/geom/app.py"
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/geom/code_editor_pane.py"
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/geom/main.py"
-    "/home/alex/Documents/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/geom/occ_utils.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/geom/__init__.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/geom/app.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/geom/code_editor_pane.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/geom/main.py"
+    "/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/../ifcopenshell-python/ifcopenshell/geom/occ_utils.py"
     )
 endif()
 
@@ -90,7 +90,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/lib/python3/dist-packages/ifcopenshell" TYPE MODULE FILES "/home/alex/Documents/IfcOpenShell/build/ifcwrap/_ifcopenshell_wrapper.so")
+file(INSTALL DESTINATION "/usr/lib/python3/dist-packages/ifcopenshell" TYPE MODULE FILES "/home/alex/Dokumente/IfcOpenShell/build/ifcwrap/_ifcopenshell_wrapper.so")
   if(EXISTS "$ENV{DESTDIR}/usr/lib/python3/dist-packages/ifcopenshell/_ifcopenshell_wrapper.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/lib/python3/dist-packages/ifcopenshell/_ifcopenshell_wrapper.so")
     file(RPATH_CHANGE

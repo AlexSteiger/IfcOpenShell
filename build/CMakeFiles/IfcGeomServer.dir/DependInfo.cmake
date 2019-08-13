@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp" "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o"
+  "/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp" "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "DISABLE_PNG"
   "HAVE_ICU"
   "QT_NO_KEYWORDS"
-  "USE_IFC2x3"
+  "USE_IFC4"
   "WITH_OPENCOLLADA"
   "qh_QHpointer"
   "vtkFiltersFlowPaths_AUTOINIT=1(vtkFiltersParallelFlowPaths)"
@@ -56,8 +56,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcParse.dir/DependInfo.cmake"
-  "/home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcGeom.dir/DependInfo.cmake"
+  "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcParse.dir/DependInfo.cmake"
+  "/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcGeom.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

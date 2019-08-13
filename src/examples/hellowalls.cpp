@@ -31,11 +31,7 @@
 
 #include <Standard_Version.hxx>
 
-#ifdef USE_IFC4
 #include "../ifcparse/Ifc4.h"
-#else
-#include "../ifcparse/Ifc2x3.h"
-#endif
 
 #include "../ifcparse/IfcBaseClass.h"
 #include "../ifcparse/IfcHierarchyHelper.h"
@@ -78,9 +74,7 @@ int main() {
             0, 					// ObjectPlacement
             0, 					// Representation
             null				// Tag
-#ifdef USE_IFC4
-            , IfcSchema::IfcWallTypeEnum::IfcWallType_STANDARD
-#endif
+            ,IfcSchema::IfcWallTypeEnum::IfcWallType_STANDARD
         );
         file.addBuildingProduct(Mauer);
 

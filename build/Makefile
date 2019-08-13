@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alex/Documents/IfcOpenShell/cmake
+CMAKE_SOURCE_DIR = /home/alex/Dokumente/IfcOpenShell/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alex/Documents/IfcOpenShell/build
+CMAKE_BINARY_DIR = /home/alex/Dokumente/IfcOpenShell/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -104,8 +104,8 @@ list_install_components/fast: list_install_components
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,9 +126,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles /home/alex/Documents/IfcOpenShell/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Dokumente/IfcOpenShell/build/CMakeFiles /home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Dokumente/IfcOpenShell/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -222,97 +222,6 @@ _ifcopenshell_wrapper/fast:
 .PHONY : _ifcopenshell_wrapper/fast
 
 #=============================================================================
-# Target rules for targets named extrusion
-
-# Build rule for target.
-extrusion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 extrusion
-.PHONY : extrusion
-
-# fast build rule for target.
-extrusion/fast:
-	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
-.PHONY : extrusion/fast
-
-#=============================================================================
-# Target rules for targets named verformungen
-
-# Build rule for target.
-verformungen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 verformungen
-.PHONY : verformungen
-
-# fast build rule for target.
-verformungen/fast:
-	$(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/build
-.PHONY : verformungen/fast
-
-#=============================================================================
-# Target rules for targets named createIFC
-
-# Build rule for target.
-createIFC: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 createIFC
-.PHONY : createIFC
-
-# fast build rule for target.
-createIFC/fast:
-	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/build
-.PHONY : createIFC/fast
-
-#=============================================================================
-# Target rules for targets named IfcOpenHouse
-
-# Build rule for target.
-IfcOpenHouse: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 IfcOpenHouse
-.PHONY : IfcOpenHouse
-
-# fast build rule for target.
-IfcOpenHouse/fast:
-	$(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/build
-.PHONY : IfcOpenHouse/fast
-
-#=============================================================================
-# Target rules for targets named IfcAdvancedHouse
-
-# Build rule for target.
-IfcAdvancedHouse: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 IfcAdvancedHouse
-.PHONY : IfcAdvancedHouse
-
-# fast build rule for target.
-IfcAdvancedHouse/fast:
-	$(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/build
-.PHONY : IfcAdvancedHouse/fast
-
-#=============================================================================
-# Target rules for targets named IfcParseExamples
-
-# Build rule for target.
-IfcParseExamples: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 IfcParseExamples
-.PHONY : IfcParseExamples
-
-# fast build rule for target.
-IfcParseExamples/fast:
-	$(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/build
-.PHONY : IfcParseExamples/fast
-
-#=============================================================================
-# Target rules for targets named hellowall
-
-# Build rule for target.
-hellowall: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hellowall
-.PHONY : hellowall
-
-# fast build rule for target.
-hellowall/fast:
-	$(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/build
-.PHONY : hellowall/fast
-
-#=============================================================================
 # Target rules for targets named hellowalls
 
 # Build rule for target.
@@ -351,815 +260,867 @@ mauer/fast:
 	$(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
 .PHONY : mauer/fast
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.o: home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
+#=============================================================================
+# Target rules for targets named hellowall
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.o
+# Build rule for target.
+hellowall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hellowall
+.PHONY : hellowall
 
-# target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
+# fast build rule for target.
+hellowall/fast:
+	$(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/build
+.PHONY : hellowall/fast
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.i: home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i
+#=============================================================================
+# Target rules for targets named createIFC
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.i
+# Build rule for target.
+createIFC: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 createIFC
+.PHONY : createIFC
 
-# target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i
+# fast build rule for target.
+createIFC/fast:
+	$(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/build
+.PHONY : createIFC/fast
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.s: home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s
+#=============================================================================
+# Target rules for targets named verformungen
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.s
+# Build rule for target.
+verformungen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 verformungen
+.PHONY : verformungen
 
-# target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s
+# fast build rule for target.
+verformungen/fast:
+	$(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/build
+.PHONY : verformungen/fast
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.o: home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o
+#=============================================================================
+# Target rules for targets named extrusion
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.o
+# Build rule for target.
+extrusion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 extrusion
+.PHONY : extrusion
 
-# target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o
+# fast build rule for target.
+extrusion/fast:
+	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
+.PHONY : extrusion/fast
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.i: home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.o: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.i
-
-# target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i
-
-home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.s: home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s
-
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.s
-
-# target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s
-
-home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.o: home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o
-
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.i: home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.i: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.s: home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.s: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.o: home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.o: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.i: home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.i: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.s: home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.s: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.o: home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.o: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.i: home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.i: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.s: home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.s: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.o: home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.o: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.i: home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.i: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.s: home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.s: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/util.o: home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.o: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/util.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/util.i: home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.i: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/util.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcconvert/util.s: home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.s: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/util.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.o: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.i: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.s: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.o: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.i: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.s: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.o: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.i: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.s: home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.o: home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcGeomServer.dir/build.make CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.i: home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcGeomServer.dir/build.make CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.s: home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcGeomServer.dir/build.make CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.o: home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.i: home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.s: home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeom.dir/build.make CMakeFiles/IfcGeom.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.o: home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.o: home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcGeomServer.dir/build.make CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.i: home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.i: home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcGeomServer.dir/build.make CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.s: home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.s: home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcGeomServer.dir/build.make CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.o: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.i: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.s: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.o: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.i: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.s: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.o: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.i: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.s: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.o: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.i: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.s: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.o: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.i: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.s: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.o: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.i: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.s: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.o: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.i: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.s: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.o: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.i: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.s: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.cpp.s
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.o: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.o
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.o
 
 # target to build an object file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.o:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.o
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.o
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.o
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.i: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.i
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.i
 
 # target to preprocess a source file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.i:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.i
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.i
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.i
 
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.s: home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.s
 
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.s
 
 # target to generate assembly for a file
-home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.s:
-	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.s
-.PHONY : home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.cpp.s
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.cpp.s
+
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.o
+
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.o
+
+# target to build an object file
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.o
+
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.i
+
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.i
+
+# target to preprocess a source file
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.i
+
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.s
+
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.s
+
+# target to generate assembly for a file
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.cpp.s
+
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.o: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.o
+
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.o
+
+# target to build an object file
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.o:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.o
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.o
+
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.i: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.i
+
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.i
+
+# target to preprocess a source file
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.i:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.i
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.i
+
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.s: home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.s
+
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.s
+
+# target to generate assembly for a file
+home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.s:
+	$(MAKE) -f CMakeFiles/IfcParse.dir/build.make CMakeFiles/IfcParse.dir/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.s
+.PHONY : home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.cpp.s
 
 # Help Target
 help:
@@ -1178,106 +1139,103 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... _ifcopenshell_wrapper"
-	@echo "... extrusion"
-	@echo "... verformungen"
-	@echo "... createIFC"
-	@echo "... IfcOpenHouse"
-	@echo "... IfcAdvancedHouse"
-	@echo "... IfcParseExamples"
-	@echo "... hellowall"
 	@echo "... hellowalls"
 	@echo "... fuse"
 	@echo "... mauer"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/util.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/util.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcconvert/util.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomCurves.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFaces.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapes.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomWires.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSIPrefix.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcUtil.s"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.o"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.i"
-	@echo "... home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.s"
+	@echo "... hellowall"
+	@echo "... createIFC"
+	@echo "... verformungen"
+	@echo "... extrusion"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomCurves.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFaces.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFunctions.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomHelpers.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomSerialisation.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapes.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomWires.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcHierarchyHelper.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSIPrefix.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcUtil.s"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.o"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.i"
+	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.s"
 .PHONY : help
 
 

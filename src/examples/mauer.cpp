@@ -25,12 +25,7 @@
 #include <BRepAlgoAPI_Cut.hxx>
 #include <Standard_Version.hxx>
 
-#ifdef USE_IFC4
 #include "../ifcparse/Ifc4.h"
-#else
-#include "../ifcparse/Ifc2x3.h"
-#endif
-
 #include "../ifcparse/IfcBaseClass.h"
 #include "../ifcparse/IfcHierarchyHelper.h"
 #include "../ifcgeom/IfcGeom.h"
@@ -70,9 +65,7 @@ int main() {
         0,                      // Object Placement
         0,                      // Representation
         null                    // Tag
-#ifdef USE IFC4
-        , IfcSchema::IfcWallTypeEnum::IfcWallType Standard
-#endif
+        ,IfcSchema::IfcWallTypeEnum::IfcWallType_STANDARD
         );
     file.addBuildingProduct(wall);
  	// By adding a building, a hierarchy has been automatically created that consists of the following
@@ -96,9 +89,7 @@ int main() {
         file.addLocalPlacement(storey_placement, 0, 10000, 0),                      // Object Placement
         0,                      // Representation
         null                    // Tag
-#ifdef USE IFC4
-        , IfcSchema::IfcWallTypeEnum::IfcWallType Standard
-#endif
+        , IfcSchema::IfcWallTypeEnum::IfcWallType_STANDARD
         );
     file.addBuildingProduct(wall2);                                                                          
     wall2->setOwnerHistory(file.getSingle<IfcSchema::IfcOwnerHistory>());
@@ -118,9 +109,7 @@ int main() {
         file.addLocalPlacement(storey_placement, 0, 0, 0),                      // Object Placement
         0,                      // Representation
         null                    // Tag
-#ifdef USE IFC4
-        , IfcSchema::IfcWallTypeEnum::IfcWallType Standard
-#endif
+        , IfcSchema::IfcWallTypeEnum::IfcWallType_STANDARD
         );
     file.addBuildingProduct(wall2_2);                                                                          
     wall2_2->setOwnerHistory(file.getSingle<IfcSchema::IfcOwnerHistory>());
@@ -140,9 +129,7 @@ int main() {
         file.addLocalPlacement(storey_placement, 0, -10000, 0),                      // Object Placement
         0,                      // Representation
         null                    // Tag
-#ifdef USE IFC4
-        , IfcSchema::IfcWallTypeEnum::IfcWallType Standard
-#endif
+        , IfcSchema::IfcWallTypeEnum::IfcWallType_STANDARD
         );
     file.addBuildingProduct(wall3);                                                                          
     wall3->setOwnerHistory(file.getSingle<IfcSchema::IfcOwnerHistory>());

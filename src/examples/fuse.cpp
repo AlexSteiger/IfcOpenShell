@@ -1,7 +1,6 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <QString>
 
 //OCC:
 #include <Standard_Version.hxx>
@@ -38,9 +37,9 @@ int main() {
 
 	std::cout << "starting reading the stl-file" << std::endl;
   StlAPI_Reader stlreader;
-	QString qfilename = "V6_Verformung_cutout1.stl";
+	Standard_CString filename = "V6_Verformung_cutout1.stl";
 	TopoDS_Shape ausbuchtung_shape;
-	stlreader.Read(ausbuchtung_shape, (Standard_CString)qfilename.toLatin1().constData());
+	stlreader.Read(ausbuchtung_shape, filename);
 	std::cout << "finish reading the stl-file" << std::endl;
  	
 	
@@ -60,9 +59,9 @@ for( TopExp_Explorer ex(ausbuchtung_shape, TopAbs_FACE); ex.More(); ex.Next() )
 	
 	// Second deformation
 	std::cout << "starting reading the stl-file" << std::endl;
-	qfilename = "V6_Verformung_cutout2.stl";
+	filename = "V6_Verformung_cutout2.stl";
 	TopoDS_Shape einbuchtung_shape2;
-	stlreader.Read(einbuchtung_shape2, (Standard_CString)qfilename.toLatin1().constData());
+	stlreader.Read(einbuchtung_shape2, filename);
 	std::cout << "finish reading the stl-file" << std::endl;
 	
 	gp_Vec vectorToFront = gp_Vec(-0.2f,-0.1f,0);

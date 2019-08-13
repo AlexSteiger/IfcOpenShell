@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alex/Documents/IfcOpenShell/cmake
+CMAKE_SOURCE_DIR = /home/alex/Dokumente/IfcOpenShell/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alex/Documents/IfcOpenShell/build
+CMAKE_BINARY_DIR = /home/alex/Dokumente/IfcOpenShell/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -70,8 +70,8 @@ install/strip/fast: preinstall/fast
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/alex/Documents/IfcOpenShell/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles /home/alex/Documents/IfcOpenShell/build/ifcwrap/CMakeFiles/progress.marks
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 ifcwrap/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Dokumente/IfcOpenShell/build/CMakeFiles /home/alex/Dokumente/IfcOpenShell/build/ifcwrap/CMakeFiles/progress.marks
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 ifcwrap/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Dokumente/IfcOpenShell/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 ifcwrap/clean
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 ifcwrap/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 ifcwrap/preinstall
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 ifcwrap/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 ifcwrap/preinstall
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 ifcwrap/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/alex/Documents/IfcOpenShell/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/rule
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/rule
 .PHONY : ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ _ifcopenshell_wrapper: ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/rule
 
 # fast build rule for target.
 _ifcopenshell_wrapper/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build.make ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build.make ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build
 .PHONY : _ifcopenshell_wrapper/fast
 
 IfcPythonPYTHON_wrap.o: IfcPythonPYTHON_wrap.cxx.o
@@ -177,7 +177,7 @@ IfcPythonPYTHON_wrap.o: IfcPythonPYTHON_wrap.cxx.o
 
 # target to build an object file
 IfcPythonPYTHON_wrap.cxx.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build.make ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.o
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build.make ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.o
 .PHONY : IfcPythonPYTHON_wrap.cxx.o
 
 IfcPythonPYTHON_wrap.i: IfcPythonPYTHON_wrap.cxx.i
@@ -186,7 +186,7 @@ IfcPythonPYTHON_wrap.i: IfcPythonPYTHON_wrap.cxx.i
 
 # target to preprocess a source file
 IfcPythonPYTHON_wrap.cxx.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build.make ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.i
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build.make ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.i
 .PHONY : IfcPythonPYTHON_wrap.cxx.i
 
 IfcPythonPYTHON_wrap.s: IfcPythonPYTHON_wrap.cxx.s
@@ -195,7 +195,7 @@ IfcPythonPYTHON_wrap.s: IfcPythonPYTHON_wrap.cxx.s
 
 # target to generate assembly for a file
 IfcPythonPYTHON_wrap.cxx.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build.make ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.s
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build.make ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.s
 .PHONY : IfcPythonPYTHON_wrap.cxx.s
 
 # Help Target
@@ -225,6 +225,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/alex/Documents/IfcOpenShell/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

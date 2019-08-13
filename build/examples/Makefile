@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alex/Documents/IfcOpenShell/cmake
+CMAKE_SOURCE_DIR = /home/alex/Dokumente/IfcOpenShell/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alex/Documents/IfcOpenShell/build
+CMAKE_BINARY_DIR = /home/alex/Dokumente/IfcOpenShell/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -89,22 +89,10 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -124,16 +112,28 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/alex/Documents/IfcOpenShell/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles /home/alex/Documents/IfcOpenShell/build/examples/CMakeFiles/progress.marks
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Documents/IfcOpenShell/build/CMakeFiles 0
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Dokumente/IfcOpenShell/build/CMakeFiles /home/alex/Dokumente/IfcOpenShell/build/examples/CMakeFiles/progress.marks
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Dokumente/IfcOpenShell/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/clean
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,127 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/alex/Documents/IfcOpenShell/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-examples/CMakeFiles/extrusion.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/extrusion.dir/rule
-.PHONY : examples/CMakeFiles/extrusion.dir/rule
-
-# Convenience name for target.
-extrusion: examples/CMakeFiles/extrusion.dir/rule
-
-.PHONY : extrusion
-
-# fast build rule for target.
-extrusion/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
-.PHONY : extrusion/fast
-
-# Convenience name for target.
-examples/CMakeFiles/verformungen.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/verformungen.dir/rule
-.PHONY : examples/CMakeFiles/verformungen.dir/rule
-
-# Convenience name for target.
-verformungen: examples/CMakeFiles/verformungen.dir/rule
-
-.PHONY : verformungen
-
-# fast build rule for target.
-verformungen/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/build
-.PHONY : verformungen/fast
-
-# Convenience name for target.
-examples/CMakeFiles/createIFC.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/createIFC.dir/rule
-.PHONY : examples/CMakeFiles/createIFC.dir/rule
-
-# Convenience name for target.
-createIFC: examples/CMakeFiles/createIFC.dir/rule
-
-.PHONY : createIFC
-
-# fast build rule for target.
-createIFC/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/build
-.PHONY : createIFC/fast
-
-# Convenience name for target.
-examples/CMakeFiles/IfcOpenHouse.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/IfcOpenHouse.dir/rule
-.PHONY : examples/CMakeFiles/IfcOpenHouse.dir/rule
-
-# Convenience name for target.
-IfcOpenHouse: examples/CMakeFiles/IfcOpenHouse.dir/rule
-
-.PHONY : IfcOpenHouse
-
-# fast build rule for target.
-IfcOpenHouse/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/build
-.PHONY : IfcOpenHouse/fast
-
-# Convenience name for target.
-examples/CMakeFiles/IfcAdvancedHouse.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/IfcAdvancedHouse.dir/rule
-.PHONY : examples/CMakeFiles/IfcAdvancedHouse.dir/rule
-
-# Convenience name for target.
-IfcAdvancedHouse: examples/CMakeFiles/IfcAdvancedHouse.dir/rule
-
-.PHONY : IfcAdvancedHouse
-
-# fast build rule for target.
-IfcAdvancedHouse/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/build
-.PHONY : IfcAdvancedHouse/fast
-
-# Convenience name for target.
-examples/CMakeFiles/IfcParseExamples.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/IfcParseExamples.dir/rule
-.PHONY : examples/CMakeFiles/IfcParseExamples.dir/rule
-
-# Convenience name for target.
-IfcParseExamples: examples/CMakeFiles/IfcParseExamples.dir/rule
-
-.PHONY : IfcParseExamples
-
-# fast build rule for target.
-IfcParseExamples/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/build
-.PHONY : IfcParseExamples/fast
-
-# Convenience name for target.
-examples/CMakeFiles/hellowall.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hellowall.dir/rule
-.PHONY : examples/CMakeFiles/hellowall.dir/rule
-
-# Convenience name for target.
-hellowall: examples/CMakeFiles/hellowall.dir/rule
-
-.PHONY : hellowall
-
-# fast build rule for target.
-hellowall/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/build
-.PHONY : hellowall/fast
-
-# Convenience name for target.
 examples/CMakeFiles/hellowalls.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hellowalls.dir/rule
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hellowalls.dir/rule
 .PHONY : examples/CMakeFiles/hellowalls.dir/rule
 
 # Convenience name for target.
@@ -273,12 +168,12 @@ hellowalls: examples/CMakeFiles/hellowalls.dir/rule
 
 # fast build rule for target.
 hellowalls/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/build
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/build
 .PHONY : hellowalls/fast
 
 # Convenience name for target.
 examples/CMakeFiles/fuse.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/fuse.dir/rule
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/fuse.dir/rule
 .PHONY : examples/CMakeFiles/fuse.dir/rule
 
 # Convenience name for target.
@@ -288,12 +183,12 @@ fuse: examples/CMakeFiles/fuse.dir/rule
 
 # fast build rule for target.
 fuse/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/build
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/build
 .PHONY : fuse/fast
 
 # Convenience name for target.
 examples/CMakeFiles/mauer.dir/rule:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/mauer.dir/rule
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/mauer.dir/rule
 .PHONY : examples/CMakeFiles/mauer.dir/rule
 
 # Convenience name for target.
@@ -303,89 +198,68 @@ mauer: examples/CMakeFiles/mauer.dir/rule
 
 # fast build rule for target.
 mauer/fast:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/build
 .PHONY : mauer/fast
 
-IfcAdvancedHouse.o: IfcAdvancedHouse.cpp.o
+# Convenience name for target.
+examples/CMakeFiles/hellowall.dir/rule:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/hellowall.dir/rule
+.PHONY : examples/CMakeFiles/hellowall.dir/rule
 
-.PHONY : IfcAdvancedHouse.o
+# Convenience name for target.
+hellowall: examples/CMakeFiles/hellowall.dir/rule
 
-# target to build an object file
-IfcAdvancedHouse.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/IfcAdvancedHouse.cpp.o
-.PHONY : IfcAdvancedHouse.cpp.o
+.PHONY : hellowall
 
-IfcAdvancedHouse.i: IfcAdvancedHouse.cpp.i
+# fast build rule for target.
+hellowall/fast:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/build
+.PHONY : hellowall/fast
 
-.PHONY : IfcAdvancedHouse.i
+# Convenience name for target.
+examples/CMakeFiles/createIFC.dir/rule:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/createIFC.dir/rule
+.PHONY : examples/CMakeFiles/createIFC.dir/rule
 
-# target to preprocess a source file
-IfcAdvancedHouse.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/IfcAdvancedHouse.cpp.i
-.PHONY : IfcAdvancedHouse.cpp.i
+# Convenience name for target.
+createIFC: examples/CMakeFiles/createIFC.dir/rule
 
-IfcAdvancedHouse.s: IfcAdvancedHouse.cpp.s
+.PHONY : createIFC
 
-.PHONY : IfcAdvancedHouse.s
+# fast build rule for target.
+createIFC/fast:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/build
+.PHONY : createIFC/fast
 
-# target to generate assembly for a file
-IfcAdvancedHouse.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcAdvancedHouse.dir/build.make examples/CMakeFiles/IfcAdvancedHouse.dir/IfcAdvancedHouse.cpp.s
-.PHONY : IfcAdvancedHouse.cpp.s
+# Convenience name for target.
+examples/CMakeFiles/verformungen.dir/rule:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/verformungen.dir/rule
+.PHONY : examples/CMakeFiles/verformungen.dir/rule
 
-IfcOpenHouse.o: IfcOpenHouse.cpp.o
+# Convenience name for target.
+verformungen: examples/CMakeFiles/verformungen.dir/rule
 
-.PHONY : IfcOpenHouse.o
+.PHONY : verformungen
 
-# target to build an object file
-IfcOpenHouse.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/IfcOpenHouse.cpp.o
-.PHONY : IfcOpenHouse.cpp.o
+# fast build rule for target.
+verformungen/fast:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/build
+.PHONY : verformungen/fast
 
-IfcOpenHouse.i: IfcOpenHouse.cpp.i
+# Convenience name for target.
+examples/CMakeFiles/extrusion.dir/rule:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/extrusion.dir/rule
+.PHONY : examples/CMakeFiles/extrusion.dir/rule
 
-.PHONY : IfcOpenHouse.i
+# Convenience name for target.
+extrusion: examples/CMakeFiles/extrusion.dir/rule
 
-# target to preprocess a source file
-IfcOpenHouse.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/IfcOpenHouse.cpp.i
-.PHONY : IfcOpenHouse.cpp.i
+.PHONY : extrusion
 
-IfcOpenHouse.s: IfcOpenHouse.cpp.s
-
-.PHONY : IfcOpenHouse.s
-
-# target to generate assembly for a file
-IfcOpenHouse.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcOpenHouse.dir/build.make examples/CMakeFiles/IfcOpenHouse.dir/IfcOpenHouse.cpp.s
-.PHONY : IfcOpenHouse.cpp.s
-
-IfcParseExamples.o: IfcParseExamples.cpp.o
-
-.PHONY : IfcParseExamples.o
-
-# target to build an object file
-IfcParseExamples.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/IfcParseExamples.cpp.o
-.PHONY : IfcParseExamples.cpp.o
-
-IfcParseExamples.i: IfcParseExamples.cpp.i
-
-.PHONY : IfcParseExamples.i
-
-# target to preprocess a source file
-IfcParseExamples.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/IfcParseExamples.cpp.i
-.PHONY : IfcParseExamples.cpp.i
-
-IfcParseExamples.s: IfcParseExamples.cpp.s
-
-.PHONY : IfcParseExamples.s
-
-# target to generate assembly for a file
-IfcParseExamples.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/IfcParseExamples.dir/build.make examples/CMakeFiles/IfcParseExamples.dir/IfcParseExamples.cpp.s
-.PHONY : IfcParseExamples.cpp.s
+# fast build rule for target.
+extrusion/fast:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
+.PHONY : extrusion/fast
 
 createIFC.o: createIFC.cpp.o
 
@@ -393,7 +267,7 @@ createIFC.o: createIFC.cpp.o
 
 # target to build an object file
 createIFC.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/createIFC.cpp.o
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/createIFC.cpp.o
 .PHONY : createIFC.cpp.o
 
 createIFC.i: createIFC.cpp.i
@@ -402,7 +276,7 @@ createIFC.i: createIFC.cpp.i
 
 # target to preprocess a source file
 createIFC.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/createIFC.cpp.i
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/createIFC.cpp.i
 .PHONY : createIFC.cpp.i
 
 createIFC.s: createIFC.cpp.s
@@ -411,7 +285,7 @@ createIFC.s: createIFC.cpp.s
 
 # target to generate assembly for a file
 createIFC.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/createIFC.cpp.s
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/createIFC.cpp.s
 .PHONY : createIFC.cpp.s
 
 extrusion.o: extrusion.cpp.o
@@ -420,7 +294,7 @@ extrusion.o: extrusion.cpp.o
 
 # target to build an object file
 extrusion.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/extrusion.cpp.o
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/extrusion.cpp.o
 .PHONY : extrusion.cpp.o
 
 extrusion.i: extrusion.cpp.i
@@ -429,7 +303,7 @@ extrusion.i: extrusion.cpp.i
 
 # target to preprocess a source file
 extrusion.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/extrusion.cpp.i
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/extrusion.cpp.i
 .PHONY : extrusion.cpp.i
 
 extrusion.s: extrusion.cpp.s
@@ -438,7 +312,7 @@ extrusion.s: extrusion.cpp.s
 
 # target to generate assembly for a file
 extrusion.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/extrusion.cpp.s
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/extrusion.cpp.s
 .PHONY : extrusion.cpp.s
 
 fuse.o: fuse.cpp.o
@@ -447,7 +321,7 @@ fuse.o: fuse.cpp.o
 
 # target to build an object file
 fuse.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/fuse.cpp.o
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/fuse.cpp.o
 .PHONY : fuse.cpp.o
 
 fuse.i: fuse.cpp.i
@@ -456,7 +330,7 @@ fuse.i: fuse.cpp.i
 
 # target to preprocess a source file
 fuse.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/fuse.cpp.i
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/fuse.cpp.i
 .PHONY : fuse.cpp.i
 
 fuse.s: fuse.cpp.s
@@ -465,7 +339,7 @@ fuse.s: fuse.cpp.s
 
 # target to generate assembly for a file
 fuse.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/fuse.cpp.s
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/fuse.dir/build.make examples/CMakeFiles/fuse.dir/fuse.cpp.s
 .PHONY : fuse.cpp.s
 
 hellowall.o: hellowall.cpp.o
@@ -474,7 +348,7 @@ hellowall.o: hellowall.cpp.o
 
 # target to build an object file
 hellowall.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/hellowall.cpp.o
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/hellowall.cpp.o
 .PHONY : hellowall.cpp.o
 
 hellowall.i: hellowall.cpp.i
@@ -483,7 +357,7 @@ hellowall.i: hellowall.cpp.i
 
 # target to preprocess a source file
 hellowall.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/hellowall.cpp.i
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/hellowall.cpp.i
 .PHONY : hellowall.cpp.i
 
 hellowall.s: hellowall.cpp.s
@@ -492,7 +366,7 @@ hellowall.s: hellowall.cpp.s
 
 # target to generate assembly for a file
 hellowall.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/hellowall.cpp.s
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowall.dir/build.make examples/CMakeFiles/hellowall.dir/hellowall.cpp.s
 .PHONY : hellowall.cpp.s
 
 hellowalls.o: hellowalls.cpp.o
@@ -501,7 +375,7 @@ hellowalls.o: hellowalls.cpp.o
 
 # target to build an object file
 hellowalls.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/hellowalls.cpp.o
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/hellowalls.cpp.o
 .PHONY : hellowalls.cpp.o
 
 hellowalls.i: hellowalls.cpp.i
@@ -510,7 +384,7 @@ hellowalls.i: hellowalls.cpp.i
 
 # target to preprocess a source file
 hellowalls.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/hellowalls.cpp.i
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/hellowalls.cpp.i
 .PHONY : hellowalls.cpp.i
 
 hellowalls.s: hellowalls.cpp.s
@@ -519,7 +393,7 @@ hellowalls.s: hellowalls.cpp.s
 
 # target to generate assembly for a file
 hellowalls.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/hellowalls.cpp.s
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/hellowalls.dir/build.make examples/CMakeFiles/hellowalls.dir/hellowalls.cpp.s
 .PHONY : hellowalls.cpp.s
 
 mauer.o: mauer.cpp.o
@@ -528,7 +402,7 @@ mauer.o: mauer.cpp.o
 
 # target to build an object file
 mauer.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/mauer.cpp.o
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/mauer.cpp.o
 .PHONY : mauer.cpp.o
 
 mauer.i: mauer.cpp.i
@@ -537,7 +411,7 @@ mauer.i: mauer.cpp.i
 
 # target to preprocess a source file
 mauer.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/mauer.cpp.i
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/mauer.cpp.i
 .PHONY : mauer.cpp.i
 
 mauer.s: mauer.cpp.s
@@ -546,7 +420,7 @@ mauer.s: mauer.cpp.s
 
 # target to generate assembly for a file
 mauer.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/mauer.cpp.s
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/mauer.cpp.s
 .PHONY : mauer.cpp.s
 
 verformungen.o: verformungen.cpp.o
@@ -555,7 +429,7 @@ verformungen.o: verformungen.cpp.o
 
 # target to build an object file
 verformungen.cpp.o:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.o
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.o
 .PHONY : verformungen.cpp.o
 
 verformungen.i: verformungen.cpp.i
@@ -564,7 +438,7 @@ verformungen.i: verformungen.cpp.i
 
 # target to preprocess a source file
 verformungen.cpp.i:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.i
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.i
 .PHONY : verformungen.cpp.i
 
 verformungen.s: verformungen.cpp.s
@@ -573,7 +447,7 @@ verformungen.s: verformungen.cpp.s
 
 # target to generate assembly for a file
 verformungen.cpp.s:
-	cd /home/alex/Documents/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.s
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.s
 .PHONY : verformungen.cpp.s
 
 # Help Target
@@ -585,28 +459,16 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... extrusion"
-	@echo "... verformungen"
-	@echo "... createIFC"
-	@echo "... IfcOpenHouse"
-	@echo "... IfcAdvancedHouse"
-	@echo "... IfcParseExamples"
-	@echo "... install"
-	@echo "... hellowall"
 	@echo "... edit_cache"
 	@echo "... hellowalls"
 	@echo "... install/local"
 	@echo "... fuse"
 	@echo "... mauer"
-	@echo "... IfcAdvancedHouse.o"
-	@echo "... IfcAdvancedHouse.i"
-	@echo "... IfcAdvancedHouse.s"
-	@echo "... IfcOpenHouse.o"
-	@echo "... IfcOpenHouse.i"
-	@echo "... IfcOpenHouse.s"
-	@echo "... IfcParseExamples.o"
-	@echo "... IfcParseExamples.i"
-	@echo "... IfcParseExamples.s"
+	@echo "... install"
+	@echo "... hellowall"
+	@echo "... createIFC"
+	@echo "... verformungen"
+	@echo "... extrusion"
 	@echo "... createIFC.o"
 	@echo "... createIFC.i"
 	@echo "... createIFC.s"
@@ -639,6 +501,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/alex/Documents/IfcOpenShell/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

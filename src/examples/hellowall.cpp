@@ -4,11 +4,11 @@
 #include <fstream>
 
 //IFC
-#ifdef USE_IFC4
+// #ifdef USE_IFC4
 #include "../ifcparse/Ifc4.h"
-#else
-#include "../ifcparse/Ifc2x3.h"
-#endif
+// #else
+// #include "../ifcparse/Ifc2x3.h"
+// #endif
 
 #include "../ifcparse/IfcBaseClass.h"
 #include "../ifcparse/IfcHierarchyHelper.h"
@@ -42,9 +42,9 @@ int main() {
 		0, 					// ObjectPlacement
 		0, 					// Representation
 		null				// Tag
-#ifdef USE_IFC4
+// #ifdef USE_IFC4
 		, IfcSchema::IfcWallTypeEnum::IfcWallType_STANDARD
-#endif
+// #endif
 	);
 
     file.addBuildingProduct(wall);

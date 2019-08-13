@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/alex/Documents/IfcOpenShell/build/ifcwrap/IfcPythonPYTHON_wrap.cxx
+/home/alex/Dokumente/IfcOpenShell/build/ifcwrap/IfcPythonPYTHON_wrap.cxx
 basetsd.h
 -
 assert.h
@@ -48,19 +48,19 @@ stdexcept
 string
 -
 ../ifcgeom/IfcGeom.h
-/home/alex/Documents/IfcOpenShell/build/ifcgeom/IfcGeom.h
+/home/alex/Dokumente/IfcOpenShell/build/ifcgeom/IfcGeom.h
 ../ifcgeom/IfcGeomIterator.h
-/home/alex/Documents/IfcOpenShell/build/ifcgeom/IfcGeomIterator.h
+/home/alex/Dokumente/IfcOpenShell/build/ifcgeom/IfcGeomIterator.h
 ../ifcgeom/IfcGeomTree.h
-/home/alex/Documents/IfcOpenShell/build/ifcgeom/IfcGeomTree.h
+/home/alex/Dokumente/IfcOpenShell/build/ifcgeom/IfcGeomTree.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/build/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/build/ifcparse/IfcBaseClass.h
 ../ifcparse/IfcFile.h
-/home/alex/Documents/IfcOpenShell/build/ifcparse/IfcFile.h
+/home/alex/Dokumente/IfcOpenShell/build/ifcparse/IfcFile.h
 ../ifcparse/Ifc4-latebound.h
-/home/alex/Documents/IfcOpenShell/build/ifcparse/Ifc4-latebound.h
+/home/alex/Dokumente/IfcOpenShell/build/ifcparse/Ifc4-latebound.h
 ../ifcparse/Ifc2x3-latebound.h
-/home/alex/Documents/IfcOpenShell/build/ifcparse/Ifc2x3-latebound.h
+/home/alex/Dokumente/IfcOpenShell/build/ifcparse/Ifc2x3-latebound.h
 BRepTools_ShapeSet.hxx
 -
 limits.h
@@ -70,7 +70,7 @@ float.h
 math.h
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeom.h
 cmath
 -
 gp_Pnt.hxx
@@ -106,41 +106,41 @@ TopTools_ListOfShape.hxx
 BOPAlgo_Operation.hxx
 -
 ../ifcparse/IfcParse.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ../ifcgeom/IfcGeomElement.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
 ../ifcgeom/IfcGeomRepresentation.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.h
 ../ifcgeom/IfcRepresentationShapeItem.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRepresentationShapeItem.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRepresentationShapeItem.h
 ../ifcgeom/IfcGeomShapeType.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapeType.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapeType.h
 ifc_geom_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
 IfcRegisterCreateCache.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegisterCreateCache.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegisterCreateCache.h
 IfcRegisterGeomHeader.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegisterGeomHeader.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegisterGeomHeader.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
 string
 -
 algorithm
 -
 ../ifcparse/IfcGlobalId.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.h
 ../ifcgeom/IfcGeomRepresentation.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.h
 ../ifcgeom/IfcGeomIteratorSettings.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomIteratorSettings.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomIteratorSettings.h
 ifc_geom_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFilter.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFilter.h
 IfcGeom.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeom.h
 boost/foreach.hpp
 -
 boost/function.hpp
@@ -154,7 +154,7 @@ boost/algorithm/string/case_conv.hpp
 functional
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomIterator.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomIterator.h
 map
 -
 set
@@ -180,47 +180,47 @@ gp_Trsf.hxx
 gp_Trsf2d.hxx
 -
 ../ifcparse/IfcFile.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcFile.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcFile.h
 ../ifcgeom/IfcGeom.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeom.h
 ../ifcgeom/IfcGeomElement.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
 ../ifcgeom/IfcGeomMaterial.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.h
 ../ifcgeom/IfcGeomIteratorSettings.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomIteratorSettings.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomIteratorSettings.h
 ../ifcgeom/IfcRepresentationShapeItem.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRepresentationShapeItem.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRepresentationShapeItem.h
 ../ifcgeom/IfcGeomFilter.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomFilter.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomFilter.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomIteratorSettings.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomIteratorSettings.h
 ifc_geom_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
 ../ifcparse/IfcException.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcException.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcException.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.h
 string
 -
 ../ifcgeom/IfcGeomRenderStyles.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.h
 ifc_geom_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
 ../ifcparse/Ifc4.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.h
 ../ifcparse/Ifc2x3.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3.h
 boost/algorithm/string/case_conv.hpp
 -
 boost/algorithm/string/replace.hpp
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.h
 BRepMesh_IncrementalMesh.hxx
 -
 BRepGProp_Face.hxx
@@ -242,21 +242,21 @@ GCPnts_QuasiUniformDeflection.hxx
 Geom_SphericalSurface.hxx
 -
 ../ifcgeom/IfcGeomIteratorSettings.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomIteratorSettings.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomIteratorSettings.h
 ../ifcgeom/IfcGeomMaterial.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.h
 ../ifcgeom/IfcRepresentationShapeItem.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRepresentationShapeItem.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRepresentationShapeItem.h
 TopoDS_Compound.hxx
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomShapeType.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomShapeType.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomTree.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomTree.h
 ../ifcparse/IfcFile.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcFile.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcFile.h
 ../ifcgeom/IfcGeomIterator.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomIterator.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomIterator.h
 NCollection_UBTree.hxx
 -
 BRepBndLib.hxx
@@ -270,7 +270,7 @@ BRepAlgoAPI_Cut.hxx
 BRepClass3d_SolidClassifier.hxx
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.h
 TopoDS_Shape.hxx
 -
 TopoDS_Wire.hxx
@@ -296,41 +296,41 @@ gp_Trsf.hxx
 gp_Trsf2d.hxx
 -
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ../ifcparse/IfcParse.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegisterCreateCache.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegisterCreateCache.h
 IfcRegisterUndef.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegisterUndef.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegisterUndef.h
 IfcRegisterDef.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegisterDef.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegisterDef.h
 IfcRegister.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegisterDef.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegisterDef.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegisterGeomHeader.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegisterGeomHeader.h
 IfcRegisterUndef.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegisterUndef.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegisterUndef.h
 IfcRegisterDef.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegisterDef.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegisterDef.h
 IfcRegister.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegister.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegister.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRegisterUndef.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRegisterUndef.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcRepresentationShapeItem.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcRepresentationShapeItem.h
 gp_GTrsf.hxx
 -
 TopoDS_Shape.hxx
 -
 ../ifcgeom/IfcGeomRenderStyles.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRenderStyles.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Argument.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Argument.h
 set
 -
 string
@@ -342,29 +342,29 @@ sstream
 algorithm
 -
 ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/Ifc4enum.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4enum.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4enum.h
 ../ifcparse/Ifc2x3enum.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3enum.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3enum.h
 ../ifcparse/IfcEntityList.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcEntityList.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcEntityList.h
 boost/shared_ptr.hpp
 -
 boost/dynamic_bitset.hpp
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ArgumentType.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ArgumentType.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.h
 ../ifcparse/ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ../ifcparse/IfcEntityDescriptor.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcEntityDescriptor.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcEntityDescriptor.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3.h
 string
 -
 vector
@@ -372,35 +372,35 @@ vector
 boost/optional.hpp
 -
 ../ifcparse/ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/IfcEntityList.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcEntityList.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcEntityList.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ../ifcparse/IfcException.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcException.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcException.h
 ../ifcparse/Argument.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Argument.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Argument.h
 ../ifcparse/Ifc2x3enum.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3enum.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3enum.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3enum.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3enum.h
 ../ifcparse/ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 string
 -
 boost/optional.hpp
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4-latebound.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.h
 ../ifcparse/ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ../ifcparse/IfcEntityDescriptor.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcEntityDescriptor.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcEntityDescriptor.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.h
 string
 -
 vector
@@ -408,47 +408,47 @@ vector
 boost/optional.hpp
 -
 ../ifcparse/ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/IfcEntityList.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcEntityList.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcEntityList.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ../ifcparse/IfcException.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcException.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcException.h
 ../ifcparse/Argument.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Argument.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Argument.h
 ../ifcparse/Ifc4enum.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4enum.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4enum.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4enum.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4enum.h
 ../ifcparse/ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 string
 -
 boost/optional.hpp
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/Ifc4enum.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4enum.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4enum.h
 ../ifcparse/Ifc2x3enum.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3enum.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3enum.h
 ../ifcparse/IfcEntityInstanceData.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcEntityInstanceData.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcEntityInstanceData.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.h
 string
 -
 sstream
 -
 unicode/ucnv.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/unicode/ucnv.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/unicode/ucnv.h
 ../ifcparse/IfcSpfStream.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfStream.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfStream.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcEntityDescriptor.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcEntityDescriptor.h
 string
 -
 vector
@@ -462,33 +462,33 @@ algorithm
 boost/shared_ptr.hpp
 -
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ../ifcparse/IfcException.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcException.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcException.h
 ../ifcparse/Ifc4enum.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4enum.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4enum.h
 ../ifcparse/Ifc2x3enum.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3enum.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3enum.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcEntityInstanceData.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcEntityInstanceData.h
 ../ifcparse/ArgumentType.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ArgumentType.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ArgumentType.h
 boost/shared_ptr.hpp
 -
 vector
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcEntityList.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcEntityList.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 boost/shared_ptr.hpp
 -
 set
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcException.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcException.h
 ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 boost/lexical_cast.hpp
 -
 exception
@@ -496,7 +496,7 @@ exception
 string
 -
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcFile.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcFile.h
 map
 -
 set
@@ -504,21 +504,21 @@ set
 boost/unordered_map.hpp
 -
 ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/IfcParse.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.h
 ../ifcparse/IfcSpfHeader.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcGlobalId.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcGlobalId.h
 string
 -
 boost/uuid/uuid.hpp
 -
 ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.h
 set
 -
 string
@@ -532,15 +532,15 @@ algorithm
 exception
 -
 ../ifcparse/Ifc4.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.h
 ../ifcparse/Ifc2x3.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3.h
 boost/optional.hpp
 -
 ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.h
 string
 -
 sstream
@@ -560,31 +560,31 @@ boost/shared_ptr.hpp
 boost/dynamic_bitset.hpp
 -
 ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/IfcCharacterDecoder.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcCharacterDecoder.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ../ifcparse/IfcLogger.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcLogger.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcLogger.h
 ../ifcparse/Argument.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Argument.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Argument.h
 ../ifcparse/Ifc4.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4.h
 ../ifcparse/Ifc2x3.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3.h
 ../ifcparse/IfcSpfStream.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfStream.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfStream.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.h
 ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/IfcSpfStream.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfStream.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfStream.h
 ../ifcparse/IfcWrite.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfStream.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfStream.h
 fstream
 -
 string
@@ -592,9 +592,9 @@ string
 boost/iostreams/device/mapped_file.hpp
 -
 ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcWrite.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcWrite.h
 boost/variant.hpp
 -
 boost/optional.hpp
@@ -608,41 +608,41 @@ boost/type_traits/is_base_of.hpp
 boost/type_traits/remove_pointer.hpp
 -
 ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ../ifcparse/IfcParse.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcParse.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcParse.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/IfcGeomWrapper.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/IfcGeomWrapper.i
 ../ifcgeom/ifc_geom_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/ifc_geom_api.h
 ../ifcgeom/IfcGeomIteratorSettings.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomIteratorSettings.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomIteratorSettings.h
 ../ifcgeom/IfcGeomElement.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomElement.h
 ../ifcgeom/IfcGeomMaterial.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomMaterial.h
 ../ifcgeom/IfcGeomRepresentation.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomRepresentation.h
 ../ifcgeom/IfcGeomIterator.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomIterator.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomIterator.h
 ../ifcgeom/IfcGeomTree.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomTree.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomTree.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/IfcParseWrapper.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/IfcParseWrapper.i
 ../ifcparse/ifc_parse_api.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/ifc_parse_api.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/ifc_parse_api.h
 ../ifcparse/IfcSpfHeader.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcSpfHeader.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcSpfHeader.h
 ../ifcparse/IfcFile.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcFile.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcFile.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/IfcPython.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/IfcPython.i
 basetsd.h
 -
 assert.h
@@ -674,41 +674,41 @@ time.h
 wchar.h
 -
 std_string.i
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/std_string.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/std_string.i
 exception.i
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/exception.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/exception.i
 ../ifcgeom/IfcGeom.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeom.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeom.h
 ../ifcgeom/IfcGeomIterator.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomIterator.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomIterator.h
 ../ifcgeom/IfcGeomTree.h
-/home/alex/Documents/IfcOpenShell/src/ifcgeom/IfcGeomTree.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcgeom/IfcGeomTree.h
 ../ifcparse/IfcBaseClass.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcBaseClass.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcBaseClass.h
 ../ifcparse/IfcFile.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/IfcFile.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/IfcFile.h
 ../ifcparse/Ifc4-latebound.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc4-latebound.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc4-latebound.h
 ../ifcparse/Ifc2x3-latebound.h
-/home/alex/Documents/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.h
+/home/alex/Dokumente/IfcOpenShell/src/ifcparse/Ifc2x3-latebound.h
 BRepTools_ShapeSet.hxx
 -
 utils/type_conversion.i
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/utils/type_conversion.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/utils/type_conversion.i
 utils/typemaps_in.i
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/utils/typemaps_in.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/utils/typemaps_in.i
 utils/typemaps_out.i
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/utils/typemaps_out.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/utils/typemaps_out.i
 IfcGeomWrapper.i
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/IfcGeomWrapper.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/IfcGeomWrapper.i
 IfcParseWrapper.i
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/IfcParseWrapper.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/IfcParseWrapper.i
 
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/utils/type_conversion.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/utils/type_conversion.i
 
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/utils/typemaps_in.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/utils/typemaps_in.i
 
-/home/alex/Documents/IfcOpenShell/src/ifcwrap/utils/typemaps_out.i
+/home/alex/Dokumente/IfcOpenShell/src/ifcwrap/utils/typemaps_out.i
 
 /usr/include/oce/Adaptor2d_Curve2d.hxx
 Standard.hxx
@@ -5798,7 +5798,7 @@ boost/dynamic_bitset.hpp
 
 /usr/local/include/ifcparse/ArgumentType.h
 
-/usr/local/include/ifcparse/Ifc2x3-latebound.h
+/usr/local/include/ifcparse/Ifc4-latebound.h
 ../ifcparse/ifc_parse_api.h
 /usr/local/include/ifcparse/ifc_parse_api.h
 ../ifcparse/IfcBaseClass.h
@@ -5806,7 +5806,7 @@ boost/dynamic_bitset.hpp
 ../ifcparse/IfcEntityDescriptor.h
 /usr/local/include/ifcparse/IfcEntityDescriptor.h
 
-/usr/local/include/ifcparse/Ifc2x3.h
+/usr/local/include/ifcparse/Ifc4.h
 string
 -
 vector
@@ -5823,10 +5823,10 @@ boost/optional.hpp
 /usr/local/include/ifcparse/IfcException.h
 ../ifcparse/Argument.h
 /usr/local/include/ifcparse/Argument.h
-../ifcparse/Ifc2x3enum.h
-/usr/local/include/ifcparse/Ifc2x3enum.h
+../ifcparse/Ifc4enum.h
+/usr/local/include/ifcparse/Ifc4enum.h
 
-/usr/local/include/ifcparse/Ifc2x3enum.h
+/usr/local/include/ifcparse/Ifc4enum.h
 ../ifcparse/ifc_parse_api.h
 /usr/local/include/ifcparse/ifc_parse_api.h
 string
@@ -5853,6 +5853,28 @@ unicode/ucnv.h
 /usr/local/include/ifcparse/unicode/ucnv.h
 ../ifcparse/IfcSpfStream.h
 /usr/local/include/ifcparse/IfcSpfStream.h
+
+/usr/local/include/ifcparse/IfcEntityDescriptor.h
+string
+-
+vector
+-
+sstream
+-
+iostream
+-
+algorithm
+-
+boost/shared_ptr.hpp
+-
+../ifcparse/IfcBaseClass.h
+/usr/local/include/ifcparse/IfcBaseClass.h
+../ifcparse/IfcException.h
+/usr/local/include/ifcparse/IfcException.h
+../ifcparse/Ifc4enum.h
+/usr/local/include/ifcparse/Ifc4enum.h
+../ifcparse/Ifc2x3enum.h
+/usr/local/include/ifcparse/Ifc2x3enum.h
 
 /usr/local/include/ifcparse/IfcEntityInstanceData.h
 ../ifcparse/ArgumentType.h

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alex/Documents/IfcOpenShell/cmake
+CMAKE_SOURCE_DIR = /home/alex/Dokumente/IfcOpenShell/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alex/Documents/IfcOpenShell/build
+CMAKE_BINARY_DIR = /home/alex/Dokumente/IfcOpenShell/build
 
 # Include any dependencies generated for this target.
 include ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/depend.make
@@ -57,27 +57,27 @@ include ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/progress.make
 # Include the compile flags for this target's objects.
 include ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/flags.make
 
-ifcwrap/IfcPythonPYTHON_wrap.cxx: /home/alex/Documents/IfcOpenShell/src/ifcwrap/IfcPython.i
-ifcwrap/IfcPythonPYTHON_wrap.cxx: /home/alex/Documents/IfcOpenShell/src/ifcwrap/IfcPython.i
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Swig source"
-	cd /home/alex/Documents/IfcOpenShell/build/ifcwrap && /usr/bin/cmake -E make_directory /home/alex/Documents/IfcOpenShell/build/ifcwrap
-	cd /home/alex/Documents/IfcOpenShell/build/ifcwrap && /usr/bin/swig3.0 -python -outdir /home/alex/Documents/IfcOpenShell/build/ifcwrap -c++ -I/usr/include/vtk-6.3 -I/usr/include/freetype2 -I/usr/include -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I/usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/include/python2.7 -I/usr/include/x86_64-linux-gnu -I/usr/include/hdf5/openmpi -I/usr/include/libxml2 -I/usr/include/jsoncpp -I/usr/include/tcl -I/usr/local/include/pcl-1.9 -I/usr/include/eigen3 -I/usr/include/oce -I/usr/local/include/opencollada/COLLADABaseUtils -I/usr/local/include/opencollada/COLLADAStreamWriter -I/usr/include/python3.6m -I/home/alex/Documents/IfcOpenShell/src/ifcwrap -o /home/alex/Documents/IfcOpenShell/build/ifcwrap/IfcPythonPYTHON_wrap.cxx /home/alex/Documents/IfcOpenShell/src/ifcwrap/IfcPython.i
+ifcwrap/IfcPythonPYTHON_wrap.cxx: /home/alex/Dokumente/IfcOpenShell/src/ifcwrap/IfcPython.i
+ifcwrap/IfcPythonPYTHON_wrap.cxx: /home/alex/Dokumente/IfcOpenShell/src/ifcwrap/IfcPython.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Swig source"
+	cd /home/alex/Dokumente/IfcOpenShell/build/ifcwrap && /usr/bin/cmake -E make_directory /home/alex/Dokumente/IfcOpenShell/build/ifcwrap
+	cd /home/alex/Dokumente/IfcOpenShell/build/ifcwrap && /usr/bin/swig3.0 -python -outdir /home/alex/Dokumente/IfcOpenShell/build/ifcwrap -c++ -I/usr/include/vtk-6.3 -I/usr/include/freetype2 -I/usr/include -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I/usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/include/python2.7 -I/usr/include/x86_64-linux-gnu -I/usr/include/hdf5/openmpi -I/usr/include/libxml2 -I/usr/include/jsoncpp -I/usr/include/tcl -I/usr/local/include/pcl-1.9 -I/usr/include/eigen3 -I/usr/include/oce -I/usr/local/include/opencollada/COLLADABaseUtils -I/usr/local/include/opencollada/COLLADAStreamWriter -I/usr/include/python3.6m -I/home/alex/Dokumente/IfcOpenShell/src/ifcwrap -o /home/alex/Dokumente/IfcOpenShell/build/ifcwrap/IfcPythonPYTHON_wrap.cxx /home/alex/Dokumente/IfcOpenShell/src/ifcwrap/IfcPython.i
 
 ifcwrap/ifcopenshell_wrapper.py: ifcwrap/IfcPythonPYTHON_wrap.cxx
 	@$(CMAKE_COMMAND) -E touch_nocreate ifcwrap/ifcopenshell_wrapper.py
 
 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.o: ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/flags.make
 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.o: ifcwrap/IfcPythonPYTHON_wrap.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.o"
-	cd /home/alex/Documents/IfcOpenShell/build/ifcwrap && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.o -c /home/alex/Documents/IfcOpenShell/build/ifcwrap/IfcPythonPYTHON_wrap.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.o"
+	cd /home/alex/Dokumente/IfcOpenShell/build/ifcwrap && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.o -c /home/alex/Dokumente/IfcOpenShell/build/ifcwrap/IfcPythonPYTHON_wrap.cxx
 
 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.i"
-	cd /home/alex/Documents/IfcOpenShell/build/ifcwrap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Documents/IfcOpenShell/build/ifcwrap/IfcPythonPYTHON_wrap.cxx > CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.i
+	cd /home/alex/Dokumente/IfcOpenShell/build/ifcwrap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Dokumente/IfcOpenShell/build/ifcwrap/IfcPythonPYTHON_wrap.cxx > CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.i
 
 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.s"
-	cd /home/alex/Documents/IfcOpenShell/build/ifcwrap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Documents/IfcOpenShell/build/ifcwrap/IfcPythonPYTHON_wrap.cxx -o CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.s
+	cd /home/alex/Dokumente/IfcOpenShell/build/ifcwrap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Dokumente/IfcOpenShell/build/ifcwrap/IfcPythonPYTHON_wrap.cxx -o CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.s
 
 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/IfcPythonPYTHON_wrap.cxx.o.requires:
 
@@ -150,8 +150,8 @@ ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 ifcwrap/_ifcopenshell_wrapper.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 ifcwrap/_ifcopenshell_wrapper.so: ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module _ifcopenshell_wrapper.so"
-	cd /home/alex/Documents/IfcOpenShell/build/ifcwrap && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_ifcopenshell_wrapper.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module _ifcopenshell_wrapper.so"
+	cd /home/alex/Dokumente/IfcOpenShell/build/ifcwrap && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_ifcopenshell_wrapper.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/build: ifcwrap/_ifcopenshell_wrapper.so
@@ -163,11 +163,11 @@ ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/requires: ifcwrap/CMakeFiles/_ifcop
 .PHONY : ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/requires
 
 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/clean:
-	cd /home/alex/Documents/IfcOpenShell/build/ifcwrap && $(CMAKE_COMMAND) -P CMakeFiles/_ifcopenshell_wrapper.dir/cmake_clean.cmake
+	cd /home/alex/Dokumente/IfcOpenShell/build/ifcwrap && $(CMAKE_COMMAND) -P CMakeFiles/_ifcopenshell_wrapper.dir/cmake_clean.cmake
 .PHONY : ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/clean
 
 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/depend: ifcwrap/IfcPythonPYTHON_wrap.cxx
 ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/depend: ifcwrap/ifcopenshell_wrapper.py
-	cd /home/alex/Documents/IfcOpenShell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alex/Documents/IfcOpenShell/cmake /home/alex/Documents/IfcOpenShell/src/ifcwrap /home/alex/Documents/IfcOpenShell/build /home/alex/Documents/IfcOpenShell/build/ifcwrap /home/alex/Documents/IfcOpenShell/build/ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alex/Dokumente/IfcOpenShell/cmake /home/alex/Dokumente/IfcOpenShell/src/ifcwrap /home/alex/Dokumente/IfcOpenShell/build /home/alex/Dokumente/IfcOpenShell/build/ifcwrap /home/alex/Dokumente/IfcOpenShell/build/ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ifcwrap/CMakeFiles/_ifcopenshell_wrapper.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alex/Documents/IfcOpenShell/cmake
+CMAKE_SOURCE_DIR = /home/alex/Dokumente/IfcOpenShell/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alex/Documents/IfcOpenShell/build
+CMAKE_BINARY_DIR = /home/alex/Dokumente/IfcOpenShell/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/IfcGeomServer.dir/depend.make
@@ -57,38 +57,38 @@ include CMakeFiles/IfcGeomServer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/IfcGeomServer.dir/flags.make
 
-CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o: CMakeFiles/IfcGeomServer.dir/flags.make
-CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o -c /home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp
+CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o: CMakeFiles/IfcGeomServer.dir/flags.make
+CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o: /home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o -c /home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp
 
-CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp > CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i
+CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp > CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.i
 
-CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp -o CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s
+CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp -o CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.s
 
-CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.requires:
+CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.requires:
 
-.PHONY : CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.requires
+.PHONY : CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.requires
 
-CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.provides: CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IfcGeomServer.dir/build.make CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.provides.build
-.PHONY : CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.provides
+CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.provides: CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/IfcGeomServer.dir/build.make CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.provides.build
+.PHONY : CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.provides
 
-CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.provides.build: CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o
+CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.provides.build: CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o
 
 
 # Object files for target IfcGeomServer
 IfcGeomServer_OBJECTS = \
-"CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o"
+"CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o"
 
 # External object files for target IfcGeomServer
 IfcGeomServer_EXTERNAL_OBJECTS =
 
-IfcGeomServer: CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o
+IfcGeomServer: CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o
 IfcGeomServer: CMakeFiles/IfcGeomServer.dir/build.make
 IfcGeomServer: libIfcParse.a
 IfcGeomServer: libIfcGeom.a
@@ -140,7 +140,7 @@ IfcGeomServer: /usr/lib/x86_64-linux-gnu/libicudata.so
 IfcGeomServer: /usr/lib/x86_64-linux-gnu/libdl.so
 IfcGeomServer: /usr/lib/x86_64-linux-gnu/libicui18n.so
 IfcGeomServer: CMakeFiles/IfcGeomServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable IfcGeomServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable IfcGeomServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IfcGeomServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -148,7 +148,7 @@ CMakeFiles/IfcGeomServer.dir/build: IfcGeomServer
 
 .PHONY : CMakeFiles/IfcGeomServer.dir/build
 
-CMakeFiles/IfcGeomServer.dir/requires: CMakeFiles/IfcGeomServer.dir/home/alex/Documents/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.requires
+CMakeFiles/IfcGeomServer.dir/requires: CMakeFiles/IfcGeomServer.dir/home/alex/Dokumente/IfcOpenShell/src/ifcgeomserver/IfcGeomServer.cpp.o.requires
 
 .PHONY : CMakeFiles/IfcGeomServer.dir/requires
 
@@ -157,6 +157,6 @@ CMakeFiles/IfcGeomServer.dir/clean:
 .PHONY : CMakeFiles/IfcGeomServer.dir/clean
 
 CMakeFiles/IfcGeomServer.dir/depend:
-	cd /home/alex/Documents/IfcOpenShell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alex/Documents/IfcOpenShell/cmake /home/alex/Documents/IfcOpenShell/cmake /home/alex/Documents/IfcOpenShell/build /home/alex/Documents/IfcOpenShell/build /home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcGeomServer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alex/Dokumente/IfcOpenShell/cmake /home/alex/Dokumente/IfcOpenShell/cmake /home/alex/Dokumente/IfcOpenShell/build /home/alex/Dokumente/IfcOpenShell/build /home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcGeomServer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/IfcGeomServer.dir/depend
 

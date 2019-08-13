@@ -1,4 +1,4 @@
-# Install script for directory: /home/alex/Documents/IfcOpenShell/src/examples
+# Install script for directory: /home/alex/Dokumente/IfcOpenShell/src/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

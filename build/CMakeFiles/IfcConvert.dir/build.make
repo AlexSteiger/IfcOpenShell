@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alex/Documents/IfcOpenShell/cmake
+CMAKE_SOURCE_DIR = /home/alex/Dokumente/IfcOpenShell/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alex/Documents/IfcOpenShell/build
+CMAKE_BINARY_DIR = /home/alex/Dokumente/IfcOpenShell/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/IfcConvert.dir/depend.make
@@ -57,194 +57,194 @@ include CMakeFiles/IfcConvert.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/IfcConvert.dir/flags.make
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o -c /home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o: /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o -c /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp > CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp > CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.i
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.s
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.requires:
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.requires:
 
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.requires
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.requires
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.provides.build
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.provides
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.provides.build
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.provides
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
-
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o -c /home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp > CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.requires:
-
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.requires
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.provides.build
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.provides
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
 
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o -c /home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o: /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o -c /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp > CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp > CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.i
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.s
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.requires:
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.requires:
 
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.requires
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.requires
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.provides.build
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.provides
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.requires
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.provides.build
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.provides
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o
-
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o -c /home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp > CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.requires:
-
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.requires
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.provides.build
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.provides
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o
 
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o -c /home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o: /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o -c /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp > CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp > CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.i
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.s
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.requires:
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.requires:
 
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.requires
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.requires
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.provides.build
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.provides
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.provides.build
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.provides
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
-
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o -c /home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp > CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.requires:
-
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.requires
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.provides.build
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.provides
-
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o
 
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o: /home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o -c /home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o: /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o -c /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp > CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.i
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp > CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.i
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.s
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.s
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o.requires:
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.requires:
 
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o.requires
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.requires
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o.requires
-	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o.provides.build
-.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o.provides
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.provides.build
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.provides
 
-CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
+
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o: /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o -c /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp > CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.i
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.s
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.requires:
+
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.requires
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.provides.build
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.provides
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
+
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o: /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o -c /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp > CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.i
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.s
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.requires:
+
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.requires
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.provides.build
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.provides
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
+
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o: CMakeFiles/IfcConvert.dir/flags.make
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o: /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o -c /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp > CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.i
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp -o CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.s
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o.requires:
+
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o.requires
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o.provides: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o.requires
+	$(MAKE) -f CMakeFiles/IfcConvert.dir/build.make CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o.provides.build
+.PHONY : CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o.provides
+
+CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o.provides.build: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o
 
 
 # Object files for target IfcConvert
 IfcConvert_OBJECTS = \
-"CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o" \
-"CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o" \
-"CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o" \
-"CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o" \
-"CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o" \
-"CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o" \
-"CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o"
+"CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o" \
+"CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o" \
+"CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o" \
+"CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o" \
+"CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o" \
+"CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o" \
+"CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o"
 
 # External object files for target IfcConvert
 IfcConvert_EXTERNAL_OBJECTS =
 
-IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
-IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o
-IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o
-IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
-IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
-IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
-IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o
+IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
+IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o
+IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o
+IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o
+IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o
+IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o
+IfcConvert: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o
 IfcConvert: CMakeFiles/IfcConvert.dir/build.make
 IfcConvert: libIfcParse.a
 IfcConvert: libIfcGeom.a
@@ -306,7 +306,7 @@ IfcConvert: /usr/lib/x86_64-linux-gnu/libicudata.so
 IfcConvert: /usr/lib/x86_64-linux-gnu/libdl.so
 IfcConvert: /usr/lib/x86_64-linux-gnu/libicui18n.so
 IfcConvert: CMakeFiles/IfcConvert.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/Documents/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable IfcConvert"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/Dokumente/IfcOpenShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable IfcConvert"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IfcConvert.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -314,13 +314,13 @@ CMakeFiles/IfcConvert.dir/build: IfcConvert
 
 .PHONY : CMakeFiles/IfcConvert.dir/build
 
-CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.requires
-CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.requires
-CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.requires
-CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.requires
-CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.requires
-CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.requires
-CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Documents/IfcOpenShell/src/ifcconvert/util.cpp.o.requires
+CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o.requires
+CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/IfcConvert.cpp.o.requires
+CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/OpenCascadeBasedSerializer.cpp.o.requires
+CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/SvgSerializer.cpp.o.requires
+CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/WavefrontObjSerializer.cpp.o.requires
+CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/XmlSerializer.cpp.o.requires
+CMakeFiles/IfcConvert.dir/requires: CMakeFiles/IfcConvert.dir/home/alex/Dokumente/IfcOpenShell/src/ifcconvert/util.cpp.o.requires
 
 .PHONY : CMakeFiles/IfcConvert.dir/requires
 
@@ -329,6 +329,6 @@ CMakeFiles/IfcConvert.dir/clean:
 .PHONY : CMakeFiles/IfcConvert.dir/clean
 
 CMakeFiles/IfcConvert.dir/depend:
-	cd /home/alex/Documents/IfcOpenShell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alex/Documents/IfcOpenShell/cmake /home/alex/Documents/IfcOpenShell/cmake /home/alex/Documents/IfcOpenShell/build /home/alex/Documents/IfcOpenShell/build /home/alex/Documents/IfcOpenShell/build/CMakeFiles/IfcConvert.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alex/Dokumente/IfcOpenShell/cmake /home/alex/Dokumente/IfcOpenShell/cmake /home/alex/Dokumente/IfcOpenShell/build /home/alex/Dokumente/IfcOpenShell/build /home/alex/Dokumente/IfcOpenShell/build/CMakeFiles/IfcConvert.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/IfcConvert.dir/depend
 
