@@ -23,7 +23,6 @@ project (IfcOpenShell)
 
 ########################################################
 #For PCL:
-#Included by me (Alex)
 find_package(PCL 1.2 REQUIRED)
 
 include_directories(${PCL_INCLUDE_DIRS})
@@ -32,7 +31,6 @@ add_definitions(${PCL_DEFINITIONS})
 ########################################################
 ########################################################
 #For CGAL:
-#Included by me (Alex)
 find_package(CGAL REQUIRED COMPONENTS Qt5 Core)
 if(CGAL_FOUND AND CGAL_Qt5_FOUND)
   add_definitions(-DCGAL_USE_BASIC_VIEWER -DQT_NO_KEYWORDS)
