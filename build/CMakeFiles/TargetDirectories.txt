@@ -26,5 +26,5 @@
 /home/alex/Dokumente/IfcOpenShell/build/examples/CMakeFiles/install.dir
 /home/alex/Dokumente/IfcOpenShell/build/examples/CMakeFiles/hellowall.dir
 /home/alex/Dokumente/IfcOpenShell/build/examples/CMakeFiles/createIFC.dir
-/home/alex/Dokumente/IfcOpenShell/build/examples/CMakeFiles/verformungen.dir
-/home/alex/Dokumente/IfcOpenShell/build/examples/CMakeFiles/extrusion.dir
+/home/alex/Dokumente/IfcOpenShell/build/examples/CMakeFiles/basemodel.dir
+/home/alex/Dokumente/IfcOpenShell/build/examples/CMakeFiles/deformation.dir

@@ -287,30 +287,30 @@ createIFC/fast:
 .PHONY : createIFC/fast
 
 #=============================================================================
-# Target rules for targets named verformungen
+# Target rules for targets named basemodel
 
 # Build rule for target.
-verformungen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 verformungen
-.PHONY : verformungen
+basemodel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 basemodel
+.PHONY : basemodel
 
 # fast build rule for target.
-verformungen/fast:
-	$(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/build
-.PHONY : verformungen/fast
+basemodel/fast:
+	$(MAKE) -f examples/CMakeFiles/basemodel.dir/build.make examples/CMakeFiles/basemodel.dir/build
+.PHONY : basemodel/fast
 
 #=============================================================================
-# Target rules for targets named extrusion
+# Target rules for targets named deformation
 
 # Build rule for target.
-extrusion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 extrusion
-.PHONY : extrusion
+deformation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 deformation
+.PHONY : deformation
 
 # fast build rule for target.
-extrusion/fast:
-	$(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
-.PHONY : extrusion/fast
+deformation/fast:
+	$(MAKE) -f examples/CMakeFiles/deformation.dir/build.make examples/CMakeFiles/deformation.dir/build
+.PHONY : deformation/fast
 
 home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.o: home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.cpp.o
 
@@ -1144,8 +1144,8 @@ help:
 	@echo "... mauer"
 	@echo "... hellowall"
 	@echo "... createIFC"
-	@echo "... verformungen"
-	@echo "... extrusion"
+	@echo "... basemodel"
+	@echo "... deformation"
 	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.o"
 	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.i"
 	@echo "... home/alex/Dokumente/IfcOpenShell/src/ifcconvert/ColladaSerializer.s"

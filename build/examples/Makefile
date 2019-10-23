@@ -232,34 +232,61 @@ createIFC/fast:
 .PHONY : createIFC/fast
 
 # Convenience name for target.
-examples/CMakeFiles/verformungen.dir/rule:
-	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/verformungen.dir/rule
-.PHONY : examples/CMakeFiles/verformungen.dir/rule
+examples/CMakeFiles/basemodel.dir/rule:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/basemodel.dir/rule
+.PHONY : examples/CMakeFiles/basemodel.dir/rule
 
 # Convenience name for target.
-verformungen: examples/CMakeFiles/verformungen.dir/rule
+basemodel: examples/CMakeFiles/basemodel.dir/rule
 
-.PHONY : verformungen
+.PHONY : basemodel
 
 # fast build rule for target.
-verformungen/fast:
-	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/build
-.PHONY : verformungen/fast
+basemodel/fast:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/basemodel.dir/build.make examples/CMakeFiles/basemodel.dir/build
+.PHONY : basemodel/fast
 
 # Convenience name for target.
-examples/CMakeFiles/extrusion.dir/rule:
-	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/extrusion.dir/rule
-.PHONY : examples/CMakeFiles/extrusion.dir/rule
+examples/CMakeFiles/deformation.dir/rule:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/deformation.dir/rule
+.PHONY : examples/CMakeFiles/deformation.dir/rule
 
 # Convenience name for target.
-extrusion: examples/CMakeFiles/extrusion.dir/rule
+deformation: examples/CMakeFiles/deformation.dir/rule
 
-.PHONY : extrusion
+.PHONY : deformation
 
 # fast build rule for target.
-extrusion/fast:
-	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/build
-.PHONY : extrusion/fast
+deformation/fast:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/deformation.dir/build.make examples/CMakeFiles/deformation.dir/build
+.PHONY : deformation/fast
+
+basemodel.o: basemodel.cpp.o
+
+.PHONY : basemodel.o
+
+# target to build an object file
+basemodel.cpp.o:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/basemodel.dir/build.make examples/CMakeFiles/basemodel.dir/basemodel.cpp.o
+.PHONY : basemodel.cpp.o
+
+basemodel.i: basemodel.cpp.i
+
+.PHONY : basemodel.i
+
+# target to preprocess a source file
+basemodel.cpp.i:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/basemodel.dir/build.make examples/CMakeFiles/basemodel.dir/basemodel.cpp.i
+.PHONY : basemodel.cpp.i
+
+basemodel.s: basemodel.cpp.s
+
+.PHONY : basemodel.s
+
+# target to generate assembly for a file
+basemodel.cpp.s:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/basemodel.dir/build.make examples/CMakeFiles/basemodel.dir/basemodel.cpp.s
+.PHONY : basemodel.cpp.s
 
 createIFC.o: createIFC.cpp.o
 
@@ -288,32 +315,32 @@ createIFC.cpp.s:
 	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/createIFC.dir/build.make examples/CMakeFiles/createIFC.dir/createIFC.cpp.s
 .PHONY : createIFC.cpp.s
 
-extrusion.o: extrusion.cpp.o
+deformation.o: deformation.cpp.o
 
-.PHONY : extrusion.o
+.PHONY : deformation.o
 
 # target to build an object file
-extrusion.cpp.o:
-	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/extrusion.cpp.o
-.PHONY : extrusion.cpp.o
+deformation.cpp.o:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/deformation.dir/build.make examples/CMakeFiles/deformation.dir/deformation.cpp.o
+.PHONY : deformation.cpp.o
 
-extrusion.i: extrusion.cpp.i
+deformation.i: deformation.cpp.i
 
-.PHONY : extrusion.i
+.PHONY : deformation.i
 
 # target to preprocess a source file
-extrusion.cpp.i:
-	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/extrusion.cpp.i
-.PHONY : extrusion.cpp.i
+deformation.cpp.i:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/deformation.dir/build.make examples/CMakeFiles/deformation.dir/deformation.cpp.i
+.PHONY : deformation.cpp.i
 
-extrusion.s: extrusion.cpp.s
+deformation.s: deformation.cpp.s
 
-.PHONY : extrusion.s
+.PHONY : deformation.s
 
 # target to generate assembly for a file
-extrusion.cpp.s:
-	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/extrusion.dir/build.make examples/CMakeFiles/extrusion.dir/extrusion.cpp.s
-.PHONY : extrusion.cpp.s
+deformation.cpp.s:
+	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/deformation.dir/build.make examples/CMakeFiles/deformation.dir/deformation.cpp.s
+.PHONY : deformation.cpp.s
 
 fuse.o: fuse.cpp.o
 
@@ -423,33 +450,6 @@ mauer.cpp.s:
 	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/mauer.dir/build.make examples/CMakeFiles/mauer.dir/mauer.cpp.s
 .PHONY : mauer.cpp.s
 
-verformungen.o: verformungen.cpp.o
-
-.PHONY : verformungen.o
-
-# target to build an object file
-verformungen.cpp.o:
-	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.o
-.PHONY : verformungen.cpp.o
-
-verformungen.i: verformungen.cpp.i
-
-.PHONY : verformungen.i
-
-# target to preprocess a source file
-verformungen.cpp.i:
-	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.i
-.PHONY : verformungen.cpp.i
-
-verformungen.s: verformungen.cpp.s
-
-.PHONY : verformungen.s
-
-# target to generate assembly for a file
-verformungen.cpp.s:
-	cd /home/alex/Dokumente/IfcOpenShell/build && $(MAKE) -f examples/CMakeFiles/verformungen.dir/build.make examples/CMakeFiles/verformungen.dir/verformungen.cpp.s
-.PHONY : verformungen.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -467,14 +467,17 @@ help:
 	@echo "... install"
 	@echo "... hellowall"
 	@echo "... createIFC"
-	@echo "... verformungen"
-	@echo "... extrusion"
+	@echo "... basemodel"
+	@echo "... deformation"
+	@echo "... basemodel.o"
+	@echo "... basemodel.i"
+	@echo "... basemodel.s"
 	@echo "... createIFC.o"
 	@echo "... createIFC.i"
 	@echo "... createIFC.s"
-	@echo "... extrusion.o"
-	@echo "... extrusion.i"
-	@echo "... extrusion.s"
+	@echo "... deformation.o"
+	@echo "... deformation.i"
+	@echo "... deformation.s"
 	@echo "... fuse.o"
 	@echo "... fuse.i"
 	@echo "... fuse.s"
@@ -487,9 +490,6 @@ help:
 	@echo "... mauer.o"
 	@echo "... mauer.i"
 	@echo "... mauer.s"
-	@echo "... verformungen.o"
-	@echo "... verformungen.i"
-	@echo "... verformungen.s"
 .PHONY : help
 
 
